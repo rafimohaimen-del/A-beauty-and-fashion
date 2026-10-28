@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skincare — ABeauty & Fashion</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <span>Free shipping on orders over $50</span>
+    <span class="announcement-sep">·</span>
+    <span>New: The Glow Edit is live — <a href="shop.html">Shop now</a></span>
+    <span class="announcement-sep">·</span>
+    <span>Easy returns</span>
+  </div>
+
+  <!-- Pure CSS Drawer Toggle Checkbox -->
+  <input type="checkbox" id="mobile-drawer-toggle" class="drawer-checkbox">
+  <label for="mobile-drawer-toggle" class="drawer-overlay"></label>
+
+  <!-- Mobile Menu Drawer -->
+  <aside class="mobile-drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/images/logo.png" alt="ABeauty & Fashion Logo">
+      </a>
+      <label for="mobile-drawer-toggle" class="drawer-close-btn">&times;</label>
+    </div>
+    <div class="drawer-body">
+      <a href="account.html" class="drawer-user-card">
+        <div class="drawer-avatar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </div>
+        <div class="drawer-user-info">
+          <h4>Sign in or register</h4>
+          <p>Track orders, save favourites</p>
+        </div>
+      </a>
+
+      <ul class="drawer-nav-list">
+        <li class="drawer-nav-item"><a href="shop.html" class="drawer-nav-link">Shop All <span>&rsaquo;</span></a></li>
+        <li class="drawer-nav-item"><a href="shop.html" class="drawer-nav-link text-accent">Skincare <span>&rsaquo;</span></a></li>
+        <li class="drawer-nav-item"><a href="shop.html" class="drawer-nav-link">Makeup <span>&rsaquo;</span></a></li>
+        <li class="drawer-nav-item"><a href="shop.html" class="drawer-nav-link">Hair Care <span>&rsaquo;</span></a></li>
+        <li class="drawer-nav-item"><a href="shop.html" class="drawer-nav-link">Beauty Tools <span>&rsaquo;</span></a></li>
+        <li class="drawer-nav-item"><a href="shop.html" class="drawer-nav-link text-accent">Sale <span>&rsaquo;</span></a></li>
+      </ul>
+      <div style="margin-top: 15px;">
+        <a href="about.html#journal" style="display:block; padding: 8px 0; font-weight:600;">Beauty Journal</a>
+        <a href="account.html" style="display:block; padding: 8px 0; font-weight:600;">Track my order</a>
+        <a href="contact.html" style="display:block; padding: 8px 0; font-weight:600;">Help &amp; contact</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Site Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <label for="mobile-drawer-toggle" class="mobile-nav-toggle" aria-label="Open Navigation">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </label>
+
+        <a href="index.html" class="brand-logo">
+          <img src="assets/images/logo.png" alt="ABeauty & Fashion">
+        </a>
+
+        <nav class="main-nav">
+          <a href="shop.html" class="nav-link">Shop All</a>
+          <a href="shop.html" class="nav-link active">Skincare</a>
+          <a href="shop.html" class="nav-link">Makeup</a>
+          <a href="shop.html" class="nav-link">Hair Care</a>
+          <a href="shop.html" class="nav-link">Beauty Tools</a>
+          <a href="about.html#journal" class="nav-link">Journal</a>
+          <a href="shop.html" class="nav-link sale-link">Sale</a>
+        </nav>
+
+        <div class="header-actions">
+          <form action="search.html" method="get" class="search-form">
+            <span class="search-icon">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </span>
+            <input type="text" name="q" class="search-input" placeholder="Search serums, dryers...">
+          </form>
+
+          <div class="lang-switch">
+            <a href="shop.html" class="lang-btn active">EN</a>
+            <a href="index-bn.html" class="lang-btn">বাং</a>
+          </div>
+
+          <a href="account.html" class="action-icon-btn" aria-label="Account">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </a>
+
+          <a href="account.html#wishlist" class="action-icon-btn" aria-label="Wishlist">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+          </a>
+
+          <a href="cart.html" class="action-icon-btn" aria-label="Bag">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span class="badge-count">2</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header Banner (matches 02-Desktop-Shop-Category.png) -->
+  <section class="page-header-banner">
+    <div class="container">
+      <nav class="breadcrumbs">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <a href="shop.html">Shop</a>
+        <span>/</span>
+        <span>Skincare</span>
+      </nav>
+
+      <div class="page-header-row">
+        <div>
+          <h1 class="page-title">Skin<em>care</em></h1>
+          <p class="page-subtitle">Cleansers, serums and moisturisers for every skin type — build a simple routine that actually sticks.</p>
+        </div>
+
+        <div class="filter-pills-row">
+          <a href="shop.html" class="filter-pill active">All skincare</a>
+          <a href="shop.html" class="filter-pill">Cleansers</a>
+          <a href="shop.html" class="filter-pill">Serums</a>
+          <a href="shop.html" class="filter-pill">Moisturisers</a>
+          <a href="shop.html" class="filter-pill">Masks</a>
+          <a href="shop.html" class="filter-pill">Sunscreen</a>
+          <a href="shop.html" class="filter-pill">Toners</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catalog Main Layout -->
+  <main class="container">
+    <div class="catalog-layout">
+      <!-- Left Filters Sidebar (matches 02-Desktop-Shop-Category.png) -->
+      <aside class="filters-sidebar">
+        <div class="filter-header">
+          <h2 class="filter-title">Filters</h2>
+          <a href="shop.html" class="clear-all-link">Clear all</a>
+        </div>
+
+        <!-- Active Filter Tags -->
+        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+          <span class="filter-chip-remove">Serums <span>&times;</span></span>
+          <span class="filter-chip-remove">Dryness <span>&times;</span></span>
+        </div>
+
+        <!-- Filter: Product type -->
+        <div class="filter-group">
+          <h3 class="filter-group-title">Product type</h3>
+          <div class="filter-options">
+            <label class="custom-checkbox">
+              <input type="checkbox">
+              <span>Cleansers</span>
+            </label>
+            <label class="custom-checkbox">
+              <input type="checkbox" checked>
+              <span>Serums</span>
+            </label>
+            <label class="custom-checkbox">
+              <input type="checkbox">
+              <span>Moisturisers</span>
+            </label>
+            <label class="custom-checkbox">
+              <input type="checkbox">
+              <span>Masks &amp; treatments</span>
+            </label>
+            <label class="custom-checkbox">
+              <input type="checkbox">
+              <span>Sunscreen</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Filter: Skin concern -->
+        <div class="filter-group">
+          <h3 class="filter-group-title">Skin concern</h3>
+          <div class="filter-options">
+            <label class="custom-checkbox">
+              <input type="checkbox" checked>
+              <span>Dryness</span>
+            </label>
+            <label class="custom-checkbox">
+              <input type="checkbox">
+              <span>Dullness</span>
+            </label>
+            <label class="custom-checkbox">
+              <input type="checkbox">
+              <span>Breakouts</span>
+            </label>
+            <label class="custom-checkbox">
+              <input type="checkbox">
+              <span>Fine lines</span>
+            </label>
+            <label class="custom-checkbox">
+              <input type="checkbox">
+              <span>Sensitivity</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Filter: Price -->
+        <div class="filter-group">
+          <h3 class="filter-group-title">Price</h3>
+          <div style="margin: 8px 0;">
+            <input type="range" min="10" max="100" value="60" style="width: 100%; accent-color: var(--color-accent);">
+          </div>
+          <div class="price-range-inputs">
+            <div class="price-input-box">
+              <span>$</span>
+              <input type="number" value="10">
+            </div>
+            <span>&mdash;</span>
+            <div class="price-input-box">
+              <span>$</span>
+              <input type="number" value="60">
+            </div>
+          </div>
+        </div>
+
+        <!-- Filter: Rating -->
+        <div class="filter-group">
+          <h3 class="filter-group-title">Rating</h3>
+          <div class="filter-options">
+            <label class="custom-radio">
+              <input type="radio" name="rating_filter">
+              <span><span style="color: var(--color-accent);">&#9733;&#9733;&#9733;&#9733;&#9733;</span> &amp; up</span>
+            </label>
+            <label class="custom-radio">
+              <input type="radio" name="rating_filter" checked>
+              <span><span style="color: var(--color-accent);">&#9733;&#9733;&#9733;&#9733;&#9734;</span> 4 &amp; up</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Filter: Availability -->
+        <div class="filter-group">
+          <h3 class="filter-group-title">Availability</h3>
+          <div class="filter-options">
+            <label class="custom-checkbox">
+              <input type="checkbox" checked>
+              <span>In stock</span>
+            </label>
+            <label class="custom-checkbox">
+              <input type="checkbox">
+              <span>On sale</span>
+            </label>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Right Products Content -->
+      <section class="catalog-main">
+        <div class="catalog-top-bar">
+          <div style="font-size: 0.92rem; color: var(--color-text-muted);">
+            Showing <strong>1&ndash;9</strong> of 48 products
+          </div>
+          <div class="sort-select-wrap">
+            <label for="sort-select">Sort by</label>
+            <select id="sort-select" class="sort-select">
+              <option selected>Most popular</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+              <option>Newest</option>
+              <option>Top Rated</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- 3x3 Grid of 9 Skincare Products matching 02-Desktop-Shop-Category.png -->
+        <div class="product-grid-3">
+          <!-- 1. Rose Dew Hydrating Serum -->
+          <article class="product-card">
+            <div class="product-card-visual" style="background-color: var(--pastel-pink);">
+              <div class="product-badge-top">
+                <span class="pill-badge pill-badge-white">Bestseller</span>
+              </div>
+              <a href="account.html#wishlist" class="wishlist-btn" title="Add to wishlist">&hearts;</a>
+              <img src="assets/images/product-bottle.svg" alt="Rose Dew Hydrating Serum" style="width: 44px;">
+              <span class="product-photo-label">PRODUCT PHOTO</span>
+              <a href="cart.html" class="quick-add-btn" title="Quick Add">+</a>
+            </div>
+            <span class="product-category-name">Serum</span>
+            <h3 class="product-title"><a href="product.html">Rose Dew Hydrating Serum</a></h3>
+            <div class="product-meta-row">
+              <span class="product-price">$28</span>
+              <span class="product-rating"><span class="star-icon">&#9733;</span> 4.9</span>
+            </div>
+          </article>
+
+          <!-- 2. Gentle Amino Foam Cleanser -->
+          <article class="product-card">
+            <div class="product-card-visual" style="background-color: var(--pastel-sage);">
+              <a href="account.html#wishlist" class="wishlist-btn" title="Add to wishlist">&hearts;</a>
+              <img src="assets/images/product-bottle.svg" alt="Gentle Amino Foam Cleanser" style="width: 44px;">
+              <span class="product-photo-label">PRODUCT PHOTO</span>
+              <a href="cart.html" class="quick-add-btn" title="Quick Add">+</a>
+            </div>
+            <span class="product-category-name">Cleanser</span>
+            <h3 class="product-title"><a href="product.html">Gentle Amino Foam Cleanser</a></h3>
+            <div class="product-meta-row">
+              <span class="product-price">$18</span>
+              <span class="product-rating"><span class="star-icon">&#9733;</span> 4.7</span>
+            </div>
+          </article>
+
+          <!-- 3. Barrier Repair Night Cream -->
+          <article class="product-card">
+            <div class="product-card-visual" style="background-color: var(--pastel-lilac);">
+              <div class="product-badge-top">
+                <span class="pill-badge pill-badge-white">New</span>
+              </div>
+              <a href="account.html#wishlist" class="wishlist-btn" title="Add to wishlist">&hearts;</a>
+              <img src="assets/images/product-bottle.svg" alt="Barrier Repair Night Cream" style="width: 44px;">
+              <span class="product-photo-label">PRODUCT PHOTO</span>
+              <a href="cart.html" class="quick-add-btn" title="Quick Add">+</a>
+            </div>
+            <span class="product-category-name">Moisturiser</span>
+            <h3 class="product-title"><a href="product.html">Barrier Repair Night Cream</a></h3>
+            <div class="product-meta-row">
+              <span class="product-price">$32</span>
+              <span class="product-rating"><span class="star-icon">&#9733;</span> 4.8</span>
+            </div>
+          </article>
+
+          <!-- 4. Vitamin C Brightening Drops -->
+          <article class="product-card">
+            <div class="product-card-visual" style="background-color: var(--pastel-peach);">
+              <div class="product-badge-top">
+                <span class="pill-badge pill-badge-sale">Sale</span>
+              </div>
+              <a href="account.html#wishlist" class="wishlist-btn" title="Add to wishlist">&hearts;</a>
+              <img src="assets/images/product-bottle.svg" alt="Vitamin C Brightening Drops" style="width: 44px;">
+              <span class="product-photo-label">PRODUCT PHOTO</span>
+              <a href="cart.html" class="quick-add-btn" title="Quick Add">+</a>
+            </div>
+            <span class="product-category-name">Serum</span>
+            <h3 class="product-title"><a href="product.html">Vitamin C Brightening Drops</a></h3>
+            <div class="product-meta-row">
+              <div class="product-price-wrap">
+                <span class="product-price">$26</span>
+                <span class="product-old-price">$32</span>
+              </div>
+              <span class="product-rating"><span class="star-icon">&#9733;</span> 4.6</span>
+            </div>
+          </article>
+
+          <!-- 5. Hyaluronic Water Gel -->
+          <article class="product-card">
+            <div class="product-card-visual" style="background-color: var(--pastel-blue);">
+              <a href="account.html#wishlist" class="wishlist-btn" title="Add to wishlist">&hearts;</a>
+              <img src="assets/images/product-bottle.svg" alt="Hyaluronic Water Gel" style="width: 44px;">
+              <span class="product-photo-label">PRODUCT PHOTO</span>
+              <a href="cart.html" class="quick-add-btn" title="Quick Add">+</a>
+            </div>
+            <span class="product-category-name">Moisturiser</span>
+            <h3 class="product-title"><a href="product.html">Hyaluronic Water Gel</a></h3>
+            <div class="product-meta-row">
+              <span class="product-price">$24</span>
+              <span class="product-rating"><span class="star-icon">&#9733;</span> 4.7</span>
+            </div>
+          </article>
+
+          <!-- 6. Rice Enzyme Exfoliating Powder -->
+          <article class="product-card">
+            <div class="product-card-visual" style="background-color: var(--pastel-warm);">
+              <a href="account.html#wishlist" class="wishlist-btn" title="Add to wishlist">&hearts;</a>
+              <img src="assets/images/product-bottle.svg" alt="Rice Enzyme Exfoliating Powder" style="width: 44px;">
+              <span class="product-photo-label">PRODUCT PHOTO</span>
+              <a href="cart.html" class="quick-add-btn" title="Quick Add">+</a>
+            </div>
+            <span class="product-category-name">Exfoliator</span>
+            <h3 class="product-title"><a href="product.html">Rice Enzyme Exfoliating Powder</a></h3>
+            <div class="product-meta-row">
+              <span class="product-price">$21</span>
+              <span class="product-rating"><span class="star-icon">&#9733;</span> 4.5</span>
+            </div>
+          </article>
+
+          <!-- 7. Daily Dewy Sunscreen SPF 50 -->
+          <article class="product-card">
+            <div class="product-card-visual" style="background-color: var(--pastel-peach);">
+              <div class="product-badge-top">
+                <span class="pill-badge pill-badge-white">Bestseller</span>
+              </div>
+              <a href="account.html#wishlist" class="wishlist-btn" title="Add to wishlist">&hearts;</a>
+              <img src="assets/images/product-bottle.svg" alt="Daily Dewy Sunscreen SPF 50" style="width: 44px;">
+              <span class="product-photo-label">PRODUCT PHOTO</span>
+              <a href="cart.html" class="quick-add-btn" title="Quick Add">+</a>
+            </div>
+            <span class="product-category-name">Sunscreen</span>
+            <h3 class="product-title"><a href="product.html">Daily Dewy Sunscreen SPF 50</a></h3>
+            <div class="product-meta-row">
+              <span class="product-price">$22</span>
+              <span class="product-rating"><span class="star-icon">&#9733;</span> 4.8</span>
+            </div>
+          </article>
+
+          <!-- 8. Overnight Sleeping Mask -->
+          <article class="product-card">
+            <div class="product-card-visual" style="background-color: var(--pastel-pink);">
+              <div class="product-badge-top">
+                <span class="pill-badge pill-badge-white">New</span>
+              </div>
+              <a href="account.html#wishlist" class="wishlist-btn" title="Add to wishlist">&hearts;</a>
+              <img src="assets/images/product-bottle.svg" alt="Overnight Sleeping Mask" style="width: 44px;">
+              <span class="product-photo-label">PRODUCT PHOTO</span>
+              <a href="cart.html" class="quick-add-btn" title="Quick Add">+</a>
+            </div>
+            <span class="product-category-name">Mask</span>
+            <h3 class="product-title"><a href="product.html">Overnight Sleeping Mask</a></h3>
+            <div class="product-meta-row">
+              <span class="product-price">$27</span>
+              <span class="product-rating"><span class="star-icon">&#9733;</span> 4.7</span>
+            </div>
+          </article>
+
+          <!-- 9. Calming Cica Toner -->
+          <article class="product-card">
+            <div class="product-card-visual" style="background-color: var(--pastel-sage);">
+              <div class="product-badge-top">
+                <span class="pill-badge pill-badge-sale">Sale</span>
+              </div>
+              <a href="account.html#wishlist" class="wishlist-btn" title="Add to wishlist">&hearts;</a>
+              <img src="assets/images/product-bottle.svg" alt="Calming Cica Toner" style="width: 44px;">
+              <span class="product-photo-label">PRODUCT PHOTO</span>
+              <a href="cart.html" class="quick-add-btn" title="Quick Add">+</a>
+            </div>
+            <span class="product-category-name">Toner</span>
+            <h3 class="product-title"><a href="product.html">Calming Cica Toner</a></h3>
+            <div class="product-meta-row">
+              <div class="product-price-wrap">
+                <span class="product-price">$17</span>
+                <span class="product-old-price">$22</span>
+              </div>
+              <span class="product-rating"><span class="star-icon">&#9733;</span> 4.6</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- Pagination -->
+        <nav class="pagination" aria-label="Pagination">
+          <a href="#" class="page-btn">&lsaquo;</a>
+          <a href="#" class="page-btn active">1</a>
+          <a href="#" class="page-btn">2</a>
+          <a href="#" class="page-btn">3</a>
+          <span style="color: var(--color-text-muted);">...</span>
+          <a href="#" class="page-btn">6</a>
+          <a href="#" class="page-btn">&rsaquo;</a>
+        </nav>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo-text">ABeauty <em>&amp;</em> Fashion</div>
+          <p class="footer-tagline">Be smart with beauty and fashion. Curated products, honest guides.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Shop</h4>
+          <ul class="footer-links-list">
+            <li><a href="shop.html" class="footer-link">Skincare</a></li>
+            <li><a href="shop.html" class="footer-link">Makeup</a></li>
+            <li><a href="shop.html" class="footer-link">Hair Care</a></li>
+            <li><a href="shop.html" class="footer-link">Beauty Tools</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Help</h4>
+          <ul class="footer-links-list">
+            <li><a href="account.html" class="footer-link">Track order</a></li>
+            <li><a href="contact.html" class="footer-link">Shipping</a></li>
+            <li><a href="contact.html" class="footer-link">Returns</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Journal</h4>
+          <ul class="footer-links-list">
+            <li><a href="about.html#journal" class="footer-link">Beauty &amp; Fashion</a></li>
+            <li><a href="about.html#journal" class="footer-link">Personal Care</a></li>
+            <li><a href="about.html#journal" class="footer-link">Style</a></li>
+            <li><a href="about.html#journal" class="footer-link">Buying Guides</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Company</h4>
+          <ul class="footer-links-list">
+            <li><a href="about.html" class="footer-link">About us</a></li>
+            <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="terms.html" class="footer-link">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 ABeauty &amp; Fashion. All rights reserved.</div>
+        <div class="payment-methods-text">
+          <span>Secure payments</span> · 
+          <span>Visa</span> · 
+          <span>Mastercard</span> · 
+          <span>PayPal</span> · 
+          <span>Apple Pay</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

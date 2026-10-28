@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" fill="none" stroke="#7A4E5F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width: 100px; height: 120px;">
+  <!-- Head Oval / Minimal Contour -->
+  <ellipse cx="60" cy="46" rx="20" ry="26" />
+  <!-- Shoulders contour -->
+  <path d="M16 128 C24 100 38 88 60 88 C82 88 96 100 104 128" />
+</svg>

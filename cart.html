@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Bag — ABeauty & Fashion</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <span>Free shipping on orders over $50</span>
+    <span class="announcement-sep">·</span>
+    <span>New: The Glow Edit is live — <a href="shop.html">Shop now</a></span>
+    <span class="announcement-sep">·</span>
+    <span>Easy returns</span>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="brand-logo">
+          <img src="assets/images/logo.png" alt="ABeauty & Fashion">
+        </a>
+        <nav class="main-nav">
+          <a href="shop.html" class="nav-link">Shop All</a>
+          <a href="shop.html" class="nav-link">Skincare</a>
+          <a href="shop.html" class="nav-link">Makeup</a>
+          <a href="shop.html" class="nav-link">Hair Care</a>
+          <a href="shop.html" class="nav-link">Beauty Tools</a>
+          <a href="about.html#journal" class="nav-link">Journal</a>
+          <a href="shop.html" class="nav-link sale-link">Sale</a>
+        </nav>
+        <div class="header-actions">
+          <form action="search.html" method="get" class="search-form">
+            <span class="search-icon">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </span>
+            <input type="text" name="q" class="search-input" placeholder="Search serums, dryers...">
+          </form>
+          <a href="account.html" class="action-icon-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></a>
+          <a href="account.html#wishlist" class="action-icon-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></a>
+          <a href="cart.html" class="action-icon-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg><span class="badge-count">2</span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Cart Page Main (matches 04-Desktop-Cart.png) -->
+  <main class="container" style="padding-top: 40px;">
+    <!-- Title & Continue Shopping -->
+    <div style="display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 24px;">
+      <h1 style="font-size: 2.6rem; font-weight: 800; color: var(--color-dark);">Your <em class="accent-serif">bag</em> <span style="font-size: 1.6rem; font-weight: 500; color: var(--color-text-muted);">(2 items)</span></h1>
+      <a href="shop.html" style="font-size: 0.92rem; font-weight: 600; text-decoration: underline; color: var(--color-dark);">Continue shopping</a>
+    </div>
+
+    <div class="cart-layout">
+      <!-- Left Cart Table Area -->
+      <div>
+        <!-- Shipping Goal Progress Bar -->
+        <div class="cart-progress-box">
+          <div class="cart-progress-text">
+            <span>&#128666;</span>
+            <span>You're <strong>$6.00</strong> away from <strong>free shipping</strong></span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" style="width: 88%;"></div>
+          </div>
+        </div>
+
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th style="width: 55%;">Product</th>
+              <th style="width: 25%; text-align: center;">Quantity</th>
+              <th style="width: 20%; text-align: right;">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Item 1 -->
+            <tr>
+              <td>
+                <div class="cart-item-flex">
+                  <div class="cart-item-thumb" style="background-color: var(--pastel-pink);">
+                    <img src="assets/images/product-bottle.svg" alt="Rose Dew Serum" style="width: 32px;">
+                  </div>
+                  <div class="cart-item-info">
+                    <span class="product-category-name">Skincare</span>
+                    <h4><a href="product.html">Rose Dew Hydrating Serum</a></h4>
+                    <div class="cart-item-meta">Size: 30 ml</div>
+                    <div style="font-weight: 700; color: var(--color-dark); margin-bottom: 6px;">$28.00</div>
+                    <a href="account.html#wishlist" class="cart-item-link-action">Move to wishlist</a>
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: center;">
+                <div class="quantity-stepper" style="margin: 0 auto;">
+                  <button type="button" class="stepper-btn">&minus;</button>
+                  <span>1</span>
+                  <button type="button" class="stepper-btn">&plus;</button>
+                </div>
+              </td>
+              <td style="text-align: right;">
+                <div style="display: flex; align-items: center; justify-content: flex-end; gap: 14px;">
+                  <strong style="font-size: 1.1rem; color: var(--color-dark);">$28.00</strong>
+                  <button type="button" title="Remove" style="color: var(--color-text-light); font-size: 1.1rem;">&#128465;</button>
+                </div>
+              </td>
+            </tr>
+
+            <!-- Item 2 -->
+            <tr>
+              <td>
+                <div class="cart-item-flex">
+                  <div class="cart-item-thumb" style="background-color: var(--pastel-pink);">
+                    <img src="assets/images/product-bottle.svg" alt="Velvet Matte Lip Tint" style="width: 32px;">
+                  </div>
+                  <div class="cart-item-info">
+                    <span class="product-category-name">Makeup</span>
+                    <h4><a href="product.html">Velvet Matte Lip Tint</a></h4>
+                    <div class="cart-item-meta">Shade: Rosewood</div>
+                    <div style="font-weight: 700; color: var(--color-dark); margin-bottom: 6px;">$16.00</div>
+                    <a href="account.html#wishlist" class="cart-item-link-action">Move to wishlist</a>
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: center;">
+                <div class="quantity-stepper" style="margin: 0 auto;">
+                  <button type="button" class="stepper-btn">&minus;</button>
+                  <span>1</span>
+                  <button type="button" class="stepper-btn">&plus;</button>
+                </div>
+              </td>
+              <td style="text-align: right;">
+                <div style="display: flex; align-items: center; justify-content: flex-end; gap: 14px;">
+                  <strong style="font-size: 1.1rem; color: var(--color-dark);">$16.00</strong>
+                  <button type="button" title="Remove" style="color: var(--color-text-light); font-size: 1.1rem;">&#128465;</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Gift wrap check -->
+        <div style="margin-top: 24px;">
+          <label class="custom-checkbox">
+            <input type="checkbox">
+            <span style="font-size: 0.92rem;">Add gift wrap and a handwritten note (+$4.00)</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Right Order Summary Sidebar -->
+      <aside>
+        <div class="order-summary-card">
+          <h2 class="summary-title">Order summary</h2>
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <strong style="color: var(--color-dark);">$44.00</strong>
+          </div>
+          <div class="summary-row">
+            <span>Shipping</span>
+            <span>Calculated at checkout</span>
+          </div>
+          <div class="summary-row">
+            <span>Estimated tax</span>
+            <span>&mdash;</span>
+          </div>
+
+          <!-- Coupon Code Input -->
+          <div class="form-group" style="margin: 6px 0;">
+            <label class="form-label">Coupon code</label>
+            <div class="coupon-group">
+              <input type="text" placeholder="Enter code" class="coupon-input">
+              <button type="button" class="btn btn-outline btn-sm">Apply</button>
+            </div>
+          </div>
+
+          <div class="summary-row total-row">
+            <span>Total</span>
+            <span>$44.00</span>
+          </div>
+
+          <a href="checkout.html" class="btn btn-accent btn-lg btn-block">
+            <span>&#128274;</span> Secure checkout
+          </a>
+
+          <div style="text-align: center; font-size: 0.78rem; color: var(--color-text-muted); position: relative; margin: 4px 0;">
+            <span>or pay with</span>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <a href="checkout.html" class="btn btn-block" style="background-color: #FFC439; color: #003087; font-weight: 700;">PayPal</a>
+            <a href="checkout.html" class="btn btn-block" style="background-color: #000; color: #FFF; font-weight: 700;">Apple Pay</a>
+          </div>
+
+          <p style="font-size: 0.78rem; color: var(--color-text-muted); text-align: center; line-height: 1.4; margin-top: 8px;">
+            Free shipping over $50 · Easy returns on unopened items
+          </p>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Upsell Recommendation Bar: Add $6 more for free shipping -->
+    <section style="margin: 50px 0 80px;">
+      <div class="section-header" style="margin-bottom: 24px;">
+        <div>
+          <h2 class="section-title">Add $6 more for <em class="accent-serif">free shipping</em></h2>
+          <p class="text-muted" style="margin-top: 4px;">Small picks that pair well with your bag</p>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">
+        <!-- Upsell 1 -->
+        <div style="border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 16px; display: flex; align-items: center; gap: 14px;">
+          <div style="width: 64px; height: 72px; background-color: var(--pastel-sage); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <img src="assets/images/product-bottle.svg" alt="Brush" style="width: 24px;">
+          </div>
+          <div style="flex: 1;">
+            <span class="product-category-name" style="font-size: 0.7rem;">Hair Care</span>
+            <h4 style="font-size: 0.88rem; font-weight: 700; color: var(--color-dark); margin-bottom: 4px;">Bamboo Detangling Brush</h4>
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+              <strong style="font-size: 0.95rem;">$14</strong>
+              <button type="button" class="btn btn-primary btn-sm" style="padding: 4px 12px; font-size: 0.78rem;">Add</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Upsell 2 -->
+        <div style="border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 16px; display: flex; align-items: center; gap: 14px;">
+          <div style="width: 64px; height: 72px; background-color: var(--pastel-blue); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <img src="assets/images/product-bottle.svg" alt="Toner" style="width: 24px;">
+          </div>
+          <div style="flex: 1;">
+            <span class="product-category-name" style="font-size: 0.7rem;">Skincare</span>
+            <h4 style="font-size: 0.88rem; font-weight: 700; color: var(--color-dark); margin-bottom: 4px;">Calming Cica Toner</h4>
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+              <strong style="font-size: 0.95rem;">$17</strong>
+              <button type="button" class="btn btn-primary btn-sm" style="padding: 4px 12px; font-size: 0.78rem;">Add</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Upsell 3 -->
+        <div style="border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 16px; display: flex; align-items: center; gap: 14px;">
+          <div style="width: 64px; height: 72px; background-color: var(--pastel-peach); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <img src="assets/images/product-bottle.svg" alt="Blush" style="width: 24px;">
+          </div>
+          <div style="flex: 1;">
+            <span class="product-category-name" style="font-size: 0.7rem;">Makeup</span>
+            <h4 style="font-size: 0.88rem; font-weight: 700; color: var(--color-dark); margin-bottom: 4px;">Petal Blush Stick</h4>
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+              <strong style="font-size: 0.95rem;">$19</strong>
+              <button type="button" class="btn btn-primary btn-sm" style="padding: 4px 12px; font-size: 0.78rem;">Add</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Upsell 4 -->
+        <div style="border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 16px; display: flex; align-items: center; gap: 14px;">
+          <div style="width: 64px; height: 72px; background-color: var(--pastel-lilac); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <img src="assets/images/product-bottle.svg" alt="Scrunchie" style="width: 24px;">
+          </div>
+          <div style="flex: 1;">
+            <span class="product-category-name" style="font-size: 0.7rem;">Personal Care</span>
+            <h4 style="font-size: 0.88rem; font-weight: 700; color: var(--color-dark); margin-bottom: 4px;">Silk Scrunchie Set</h4>
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+              <strong style="font-size: 0.95rem;">$12</strong>
+              <button type="button" class="btn btn-primary btn-sm" style="padding: 4px 12px; font-size: 0.78rem;">Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 24px; flex-wrap: wrap; gap: 16px;">
+        <div class="footer-logo-text">ABeauty <em>&amp;</em> Fashion</div>
+        <div style="display: flex; gap: 24px; font-size: 0.88rem;">
+          <a href="contact.html">Shipping</a>
+          <a href="contact.html">Returns</a>
+          <a href="contact.html">Contact</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+        </div>
+      </div>
+      <div style="text-align: right; font-size: 0.8rem; color: rgba(255,255,255,0.5);">
+        &copy; 2026 ABeauty &amp; Fashion
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

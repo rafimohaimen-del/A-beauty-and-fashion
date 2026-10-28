@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABeauty & Fashion — Curated Skincare, Makeup & Honest Guides</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <span>Free shipping on orders over $50</span>
+    <span class="announcement-sep">·</span>
+    <span>New: The Glow Edit is live — <a href="shop.html">Shop now</a></span>
+    <span class="announcement-sep">·</span>
+    <span>Easy returns</span>
+  </div>
+
+  <!-- Pure CSS Drawer Toggle Checkbox -->
+  <input type="checkbox" id="mobile-drawer-toggle" class="drawer-checkbox">
+
+  <!-- Mobile Drawer Overlay -->
+  <label for="mobile-drawer-toggle" class="drawer-overlay"></label>
+
+  <!-- Mobile Menu Drawer (matches 11-Mobile-Menu-drawer.png) -->
+  <aside class="mobile-drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/images/logo.png" alt="ABeauty & Fashion Logo">
+      </a>
+      <label for="mobile-drawer-toggle" class="drawer-close-btn">&times;</label>
+    </div>
+    <div class="drawer-body">
+      <a href="account.html" class="drawer-user-card">
+        <div class="drawer-avatar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </div>
+        <div class="drawer-user-info">
+          <h4>Sign in or register</h4>
+          <p>Track orders, save favourites</p>
+        </div>
+      </a>
+
+      <ul class="drawer-nav-list">
+        <li class="drawer-nav-item">
+          <a href="shop.html" class="drawer-nav-link">Shop All <span>&rsaquo;</span></a>
+        </li>
+        <li class="drawer-nav-item">
+          <details class="drawer-accordion" open>
+            <summary>
+              <span class="text-accent">Skincare</span>
+              <span class="chevron-icon">&#9662;</span>
+            </summary>
+            <div class="drawer-subnav">
+              <a href="shop.html">Cleansers</a>
+              <a href="shop.html">Serums</a>
+              <a href="shop.html">Moisturisers</a>
+              <a href="shop.html">Masks & sunscreen</a>
+            </div>
+          </details>
+        </li>
+        <li class="drawer-nav-item">
+          <details class="drawer-accordion">
+            <summary>
+              <span>Makeup</span>
+              <span class="chevron-icon">&#9662;</span>
+            </summary>
+            <div class="drawer-subnav">
+              <a href="shop.html">Complexion</a>
+              <a href="shop.html">Lip Tints</a>
+              <a href="shop.html">Eye Care</a>
+            </div>
+          </details>
+        </li>
+        <li class="drawer-nav-item">
+          <details class="drawer-accordion">
+            <summary>
+              <span>Hair Care</span>
+              <span class="chevron-icon">&#9662;</span>
+            </summary>
+            <div class="drawer-subnav">
+              <a href="shop.html">Treatments</a>
+              <a href="shop.html">Brushes</a>
+              <a href="shop.html">Silk Accessories</a>
+            </div>
+          </details>
+        </li>
+        <li class="drawer-nav-item">
+          <details class="drawer-accordion">
+            <summary>
+              <span>Personal Care</span>
+              <span class="chevron-icon">&#9662;</span>
+            </summary>
+            <div class="drawer-subnav">
+              <a href="shop.html">Body Care</a>
+              <a href="shop.html">Sleep Essentials</a>
+            </div>
+          </details>
+        </li>
+        <li class="drawer-nav-item">
+          <details class="drawer-accordion">
+            <summary>
+              <span>Beauty Tools</span>
+              <span class="chevron-icon">&#9662;</span>
+            </summary>
+            <div class="drawer-subnav">
+              <a href="shop.html">Facial Steamers</a>
+              <a href="shop.html">Hair Dryers</a>
+              <a href="shop.html">Rollers</a>
+            </div>
+          </details>
+        </li>
+        <li class="drawer-nav-item">
+          <a href="shop.html" class="drawer-nav-link text-accent">Sale <span>&rsaquo;</span></a>
+        </li>
+      </ul>
+
+      <div class="drawer-promo-card">
+        <span class="drawer-promo-badge">NEW</span>
+        <h3 class="drawer-promo-title">The <em>Glow</em> Edit</h3>
+        <a href="shop.html" class="drawer-promo-link">Shop the collection &rarr;</a>
+      </div>
+
+      <div class="drawer-subnav" style="padding-left: 0; margin-top: 10px;">
+        <a href="about.html#journal" style="font-weight: 600; color: var(--color-dark);">Beauty Journal</a>
+        <a href="account.html" style="font-weight: 600; color: var(--color-dark);">Track my order</a>
+        <a href="contact.html" style="font-weight: 600; color: var(--color-dark);">Help & contact</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Site Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <!-- Mobile Hamburger Toggle -->
+        <label for="mobile-drawer-toggle" class="mobile-nav-toggle" aria-label="Open Navigation">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </label>
+
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-logo">
+          <img src="assets/images/logo.png" alt="ABeauty & Fashion">
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="main-nav">
+          <a href="shop.html" class="nav-link">Shop All</a>
+          <a href="shop.html" class="nav-link">Skincare</a>
+          <a href="shop.html" class="nav-link">Makeup</a>
+          <a href="shop.html" class="nav-link">Hair Care</a>
+          <a href="shop.html" class="nav-link">Beauty Tools</a>
+          <a href="about.html#journal" class="nav-link">Journal</a>
+          <a href="shop.html" class="nav-link sale-link">Sale</a>
+        </nav>
+
+        <!-- Search Bar, Language Switcher, Action Icons -->
+        <div class="header-actions">
+          <form action="search.html" method="get" class="search-form">
+            <span class="search-icon">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </span>
+            <input type="text" name="q" class="search-input" placeholder="Search serums, dryers...">
+          </form>
+
+          <div class="lang-switch">
+            <a href="index.html" class="lang-btn active">EN</a>
+            <a href="index-bn.html" class="lang-btn">বাং</a>
+          </div>
+
+          <a href="account.html" class="action-icon-btn" aria-label="Account">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </a>
+
+          <a href="account.html#wishlist" class="action-icon-btn" aria-label="Wishlist">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+          </a>
+
+          <a href="cart.html" class="action-icon-btn" aria-label="Bag">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span class="badge-count">2</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section (matches 01-Desktop-Home.png) -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Hero Text & CTAs -->
+        <div class="hero-content">
+          <span class="eyebrow">NEW SEASON · THE GLOW EDIT</span>
+          <h1 class="hero-title">Be smart with <em>beauty</em> &amp; fashion.</h1>
+          <p class="hero-desc">
+            Curated skincare, makeup, hair care and beauty tools — picked with the same care as our buying guides, so you only buy what actually works.
+          </p>
+          <div class="hero-buttons">
+            <a href="shop.html" class="btn btn-primary btn-lg">Shop the Glow Edit &rarr;</a>
+            <a href="#routine-finder" class="btn btn-outline btn-lg">Find my routine</a>
+          </div>
+          <div class="hero-trust-bar">
+            <div class="trust-item">
+              <span class="trust-icon">&#9678;</span>
+              <span>100% authentic</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon">&#128666;</span>
+              <span>Free shipping $50+</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon">&#8635;</span>
+              <span>Easy returns</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Composition -->
+        <div class="hero-visual">
+          <div class="hero-main-card">
+            <img src="assets/images/hero-model.svg" alt="Campaign Model Dewy Skin" style="width: 130px; height: auto;">
+            <span class="hero-label-caption">CAMPAIGN PHOTO &mdash; MODEL, DEWY SKIN</span>
+          </div>
+
+          <div class="hero-glow-badge">
+            <span>New</span>
+            <em>GLOW EDIT</em>
+          </div>
+
+          <div class="hero-inset-texture">
+            <img src="assets/images/product-bottle.svg" alt="Texture Shot Bottle" style="width: 38px;">
+            <span class="hero-label-caption" style="bottom: 12px;">TEXTURE SHOT</span>
+          </div>
+
+          <div class="hero-product-toast">
+            <div class="toast-thumb">
+              <img src="assets/images/product-bottle.svg" alt="Rose Dew Bottle" style="width: 24px;">
+            </div>
+            <div class="toast-info">
+              <h5>Bestseller · Skincare</h5>
+              <h4>Rose Dew Hydrating Serum</h4>
+              <div class="toast-price">$28</div>
+            </div>
+            <a href="#added-to-bag-modal" class="btn btn-accent btn-sm" style="padding: 6px 14px; border-radius: var(--radius-full);">Add</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop by Category (matches 01-Desktop-Home.png) -->
+  <section class="category-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Shop by <em>category</em></h2>
+        <a href="shop.html" class="section-link">All categories &rarr;</a>
+      </div>
+      <div class="category-grid">
+        <a href="shop.html" class="category-card">
+          <div class="category-circle" style="background-color: var(--pastel-pink);">
+            <img src="assets/images/product-bottle.svg" alt="Skincare" style="width: 32px;">
+          </div>
+          <span class="category-name">Skincare</span>
+        </a>
+        <a href="shop.html" class="category-card">
+          <div class="category-circle" style="background-color: var(--pastel-peach);">
+            <img src="assets/images/product-bottle.svg" alt="Makeup" style="width: 32px;">
+          </div>
+          <span class="category-name">Makeup</span>
+        </a>
+        <a href="shop.html" class="category-card">
+          <div class="category-circle" style="background-color: #FFF3D6;">
+            <img src="assets/images/product-bottle.svg" alt="Hair Care" style="width: 32px;">
+          </div>
+          <span class="category-name">Hair Care</span>
+        </a>
+        <a href="shop.html" class="category-card">
+          <div class="category-circle" style="background-color: var(--pastel-sage);">
+            <img src="assets/images/product-bottle.svg" alt="Personal Care" style="width: 32px;">
+          </div>
+          <span class="category-name">Personal Care</span>
+        </a>
+        <a href="shop.html" class="category-card">
+          <div class="category-circle" style="background-color: var(--pastel-lilac);">
+            <img src="assets/images/product-bottle.svg" alt="Fragrance" style="width: 32px;">
+          </div>
+          <span class="category-name">Fragrance</span>
+        </a>
+        <a href="shop.html" class="category-card">
+          <div class="category-circle" style="background-color: var(--pastel-blue);">
+            <img src="assets/images/product-bottle.svg" alt="Beauty Tools" style="width: 32px;">
+          </div>
+          <span class="category-name">Beauty Tools</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bestsellers This Week (matches 01-Desktop-Home.png) -->
+  <section class="products-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Bestsellers <em>this week</em></h2>
+        <div class="product-filter-tabs">
+          <button class="filter-pill active">Bestsellers</button>
+          <button class="filter-pill">New in</button>
+          <button class="filter-pill">Skincare</button>
+          <button class="filter-pill">Tools</button>
+          <button class="filter-pill">On sale</button>
+        </div>
+      </div>
+
+      <div class="product-grid">
+        <!-- Product 1 -->
+        <article class="product-card">
+          <div class="product-card-visual" style="background-color: var(--pastel-pink);">
+            <div class="product-badge-top">
+              <span class="pill-badge pill-badge-white">Bestseller</span>
+            </div>
+            <a href="account.html#wishlist" class="wishlist-btn" title="Add to wishlist">&hearts;</a>
+            <img src="assets/images/product-bottle.svg" alt="Rose Dew Hydrating Serum" style="width: 42px;">
+            <span class="product-photo-label">PRODUCT PHOTO</span>
+            <a href="#added-to-bag-modal" class="quick-add-btn" title="Quick Add">+</a>
+          </div>
+          <span class="product-category-name">Skincare</span>
+          <h3 class="product-title"><a href="product.html">Rose Dew Hydrating Serum</a></h3>
+          <div class="product-meta-row">
+            <span class="product-price">$28</span>
+            <span class="product-rating"><span class="star-icon">&#9733;</span> 4.9</span>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product-card">
+          <div class="product-card-visual" style="background-color: var(--pastel-blue);">
+            <div class="product-badge-top">
+              <span class="pill-badge pill-badge-sale">Sale</span>
+            </div>
+            <a href="account.html#wishlist" class="wishlist-btn" title="Add to wishlist">&hearts;</a>
+            <img src="assets/images/product-bottle.svg" alt="Nano Ionic Facial Steamer" style="width: 42px;">
+            <span class="product-photo-label">PRODUCT PHOTO</span>
+            <a href="#added-to-bag-modal" class="quick-add-btn" title="Quick Add">+</a>
+          </div>
+          <span class="product-category-name">Beauty Tools</span>
+          <h3 class="product-title"><a href="product.html">Nano Ionic Facial Steamer</a></h3>
+          <div class="product-meta-row">
+            <div class="product-price-wrap">
+              <span class="product-price">$49</span>
+              <span class="product-old-price">$65</span>
+            </div>
+            <span class="product-rating"><span class="star-icon">&#9733;</span> 4.8</span>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product-card">
+          <div class="product-card-visual" style="background-color: var(--pastel-lilac);">
+            <a href="account.html#wishlist" class="wishlist-btn" title="Add to wishlist">&hearts;</a>
+            <img src="assets/images/product-bottle.svg" alt="Mulberry Silk Pillowcase" style="width: 42px;">
+            <span class="product-photo-label">PRODUCT PHOTO</span>
+            <a href="#added-to-bag-modal" class="quick-add-btn" title="Quick Add">+</a>
+          </div>
+          <span class="product-category-name">Personal Care</span>
+          <h3 class="product-title"><a href="product.html">Mulberry Silk Pillowcase</a></h3>
+          <div class="product-meta-row">
+            <span class="product-price">$39</span>
+            <span class="product-rating"><span class="star-icon">&#9733;</span> 4.9</span>
+          </div>
+        </article>
+
+        <!-- Product 4 -->
+        <article class="product-card">
+          <div class="product-card-visual" style="background-color: var(--pastel-pink);">
+            <div class="product-badge-top">
+              <span class="pill-badge pill-badge-white">New</span>
+            </div>
+            <a href="account.html#wishlist" class="wishlist-btn" title="Add to wishlist">&hearts;</a>
+            <img src="assets/images/product-bottle.svg" alt="Velvet Matte Lip Tint" style="width: 42px;">
+            <span class="product-photo-label">PRODUCT PHOTO</span>
+            <a href="#added-to-bag-modal" class="quick-add-btn" title="Quick Add">+</a>
+          </div>
+          <span class="product-category-name">Makeup</span>
+          <h3 class="product-title"><a href="product.html">Velvet Matte Lip Tint</a></h3>
+          <div class="product-meta-row">
+            <span class="product-price">$16</span>
+            <span class="product-rating"><span class="star-icon">&#9733;</span> 4.8</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Split Promo Feature Banners (matches 01-Desktop-Home.png) -->
+  <section class="feature-split-section">
+    <div class="container">
+      <div class="feature-split-grid">
+        <!-- Lavender Card: Night Shift -->
+        <div class="feature-card feature-card-lavender">
+          <div class="feature-card-content">
+            <span class="feature-eyebrow">NIGHT RITUALS</span>
+            <h3 class="feature-title">The <em>Night</em> Shift</h3>
+            <p class="feature-desc">Wake up to better hair and skin — silk pillowcases, sleeping masks and repair oils.</p>
+            <a href="shop.html" class="btn btn-primary btn-sm">Shop night care</a>
+          </div>
+          <div class="feature-visual-box feature-visual-lavender">
+            <img src="assets/images/icon-moon.svg" alt="Night rituals crescent moon">
+            <span class="product-photo-label" style="bottom: 12px; left: 16px;">LIFESTYLE PHOTO</span>
+          </div>
+        </div>
+
+        <!-- Plum Card: Tools that do the work -->
+        <div class="feature-card feature-card-plum">
+          <div class="feature-card-content">
+            <span class="feature-eyebrow" style="color: #F8C0D0;">UP TO 25% OFF</span>
+            <h3 class="feature-title">Tools that <em>do the work</em></h3>
+            <p class="feature-desc">Facial steamers, ionic dryers and rollers — the ones that won our buying guides.</p>
+            <a href="shop.html" class="btn btn-outline-white btn-sm" style="background-color: #FFF; color: var(--color-dark); border-color: #FFF;">Shop beauty tools</a>
+          </div>
+          <div class="feature-visual-box feature-visual-dark">
+            <img src="assets/images/product-steamer.svg" alt="Ionic Tools">
+            <span class="product-photo-label" style="bottom: 12px; left: 16px; color: rgba(255,255,255,0.4);">PRODUCT PHOTO</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Routine Finder Dark Section (matches 01-Desktop-Home.png) -->
+  <section class="routine-section" id="routine-finder">
+    <div class="container">
+      <div class="routine-grid">
+        <div class="routine-left">
+          <span class="eyebrow" style="color: #F8C0D0;">ROUTINE FINDER</span>
+          <h2 class="routine-title">What's your skin <em>saying</em> today?</h2>
+          <p class="routine-desc">Pick a concern or take the quiz — we'll build a three-step routine from products that suit you.</p>
+          <a href="#quick-view-modal" class="btn btn-accent btn-lg">Take the 60-second quiz</a>
+        </div>
+        <div class="routine-options-grid">
+          <a href="shop.html" class="routine-option-card">
+            <span>Dryness &amp; dehydration</span>
+            <span>&rarr;</span>
+          </a>
+          <a href="shop.html" class="routine-option-card">
+            <span>Dullness</span>
+            <span>&rarr;</span>
+          </a>
+          <a href="shop.html" class="routine-option-card">
+            <span>Breakouts</span>
+            <span>&rarr;</span>
+          </a>
+          <a href="shop.html" class="routine-option-card">
+            <span>Frizz &amp; breakage</span>
+            <span>&rarr;</span>
+          </a>
+          <a href="shop.html" class="routine-option-card">
+            <span>Fine lines</span>
+            <span>&rarr;</span>
+          </a>
+          <a href="shop.html" class="routine-option-card">
+            <span>Sensitive skin</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Just Landed Section (matches 01-Desktop-Home.png) -->
+  <section class="products-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Just <em>landed</em></h2>
+        <a href="shop.html" class="section-link">Shop new in &rarr;</a>
+      </div>
+
+      <div class="product-grid">
+        <!-- New Product 1 -->
+        <article class="product-card">
+          <div class="product-card-visual" style="background-color: var(--pastel-peach);">
+            <div class="product-badge-top">
+              <span class="pill-badge pill-badge-white">New</span>
+            </div>
+            <a href="account.html#wishlist" class="wishlist-btn" title="Add to wishlist">&hearts;</a>
+            <img src="assets/images/product-bottle.svg" alt="Soft Glow Cushion Foundation" style="width: 42px;">
+            <span class="product-photo-label">PRODUCT PHOTO</span>
+            <a href="#added-to-bag-modal" class="quick-add-btn" title="Quick Add">+</a>
+          </div>
+          <span class="product-category-name">Makeup</span>
+          <h3 class="product-title"><a href="product.html">Soft Glow Cushion Foundation</a></h3>
+          <div class="product-meta-row">
+            <span class="product-price">$34</span>
+            <span class="product-rating"><span class="star-icon">&#9733;</span> 4.6</span>
+          </div>
+        </article>
+
+        <!-- New Product 2 -->
+        <article class="product-card">
+          <div class="product-card-visual" style="background-color: var(--pastel-warm);">
+            <div class="product-badge-top">
+              <span class="pill-badge pill-badge-sale">Sale</span>
+            </div>
+            <a href="account.html#wishlist" class="wishlist-btn" title="Add to wishlist">&hearts;</a>
+            <img src="assets/images/product-bottle.svg" alt="Pro Ionic Hair Dryer 1800W" style="width: 42px;">
+            <span class="product-photo-label">PRODUCT PHOTO</span>
+            <a href="#added-to-bag-modal" class="quick-add-btn" title="Quick Add">+</a>
+          </div>
+          <span class="product-category-name">Beauty Tools</span>
+          <h3 class="product-title"><a href="product.html">Pro Ionic Hair Dryer 1800W</a></h3>
+          <div class="product-meta-row">
+            <div class="product-price-wrap">
+              <span class="product-price">$79</span>
+              <span class="product-old-price">$99</span>
+            </div>
+            <span class="product-rating"><span class="star-icon">&#9733;</span> 4.8</span>
+          </div>
+        </article>
+
+        <!-- New Product 3 -->
+        <article class="product-card">
+          <div class="product-card-visual" style="background-color: var(--pastel-sage);">
+            <a href="account.html#wishlist" class="wishlist-btn" title="Add to wishlist">&hearts;</a>
+            <img src="assets/images/product-bottle.svg" alt="Gentle Amino Foam Cleanser" style="width: 42px;">
+            <span class="product-photo-label">PRODUCT PHOTO</span>
+            <a href="#added-to-bag-modal" class="quick-add-btn" title="Quick Add">+</a>
+          </div>
+          <span class="product-category-name">Skincare</span>
+          <h3 class="product-title"><a href="product.html">Gentle Amino Foam Cleanser</a></h3>
+          <div class="product-meta-row">
+            <span class="product-price">$18</span>
+            <span class="product-rating"><span class="star-icon">&#9733;</span> 4.7</span>
+          </div>
+        </article>
+
+        <!-- New Product 4 -->
+        <article class="product-card">
+          <div class="product-card-visual" style="background-color: var(--pastel-peach);">
+            <a href="account.html#wishlist" class="wishlist-btn" title="Add to wishlist">&hearts;</a>
+            <img src="assets/images/product-bottle.svg" alt="Overnight Repair Hair Mask" style="width: 42px;">
+            <span class="product-photo-label">PRODUCT PHOTO</span>
+            <a href="#added-to-bag-modal" class="quick-add-btn" title="Quick Add">+</a>
+          </div>
+          <span class="product-category-name">Hair Care</span>
+          <h3 class="product-title"><a href="product.html">Overnight Repair Hair Mask</a></h3>
+          <div class="product-meta-row">
+            <span class="product-price">$22</span>
+            <span class="product-rating"><span class="star-icon">&#9733;</span> 4.7</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- From the Beauty Journal (matches 01-Desktop-Home.png) -->
+  <section class="journal-section" id="journal">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">From the <em>Beauty Journal</em></h2>
+          <p class="text-muted" style="margin-top: 6px;">Honest how-tos and buying guides &mdash; with the products to match.</p>
+        </div>
+        <a href="about.html#journal" class="btn btn-outline btn-sm">Read the journal</a>
+      </div>
+
+      <div class="journal-grid">
+        <article class="journal-card">
+          <div class="journal-visual" style="background-color: var(--pastel-blue);">
+            <img src="assets/images/article-placeholder.svg" alt="Article graphic">
+            <span class="product-photo-label" style="bottom: 12px; left: 16px;">ARTICLE IMAGE</span>
+          </div>
+          <span class="eyebrow" style="margin-bottom: 6px;">BUYING GUIDE</span>
+          <h3 class="journal-card-title">How to Choose the Best Facial Steamer</h3>
+          <div class="journal-links">
+            <a href="about.html" class="journal-link-read">Read guide</a>
+            <a href="shop.html" class="journal-link-shop">Shop the products &rarr;</a>
+          </div>
+        </article>
+
+        <article class="journal-card">
+          <div class="journal-visual" style="background-color: var(--pastel-lilac);">
+            <img src="assets/images/article-placeholder.svg" alt="Article graphic">
+            <span class="product-photo-label" style="bottom: 12px; left: 16px;">ARTICLE IMAGE</span>
+          </div>
+          <span class="eyebrow" style="margin-bottom: 6px;">HAIR CARE</span>
+          <h3 class="journal-card-title">How to Get Beautiful Hair While Sleeping</h3>
+          <div class="journal-links">
+            <a href="about.html" class="journal-link-read">Read guide</a>
+            <a href="shop.html" class="journal-link-shop">Shop the products &rarr;</a>
+          </div>
+        </article>
+
+        <article class="journal-card">
+          <div class="journal-visual" style="background-color: var(--pastel-sage);">
+            <img src="assets/images/article-placeholder.svg" alt="Article graphic">
+            <span class="product-photo-label" style="bottom: 12px; left: 16px;">ARTICLE IMAGE</span>
+          </div>
+          <span class="eyebrow" style="margin-bottom: 6px;">SKINCARE</span>
+          <h3 class="journal-card-title">How to Wash Your Face Properly</h3>
+          <div class="journal-links">
+            <a href="about.html" class="journal-link-read">Read guide</a>
+            <a href="shop.html" class="journal-link-shop">Shop the products &rarr;</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Props Bar (matches 01-Desktop-Home.png) -->
+  <section class="trust-props-section">
+    <div class="container">
+      <div class="trust-props-grid">
+        <div class="trust-prop-card">
+          <div class="trust-prop-icon">&#10003;</div>
+          <div class="trust-prop-content">
+            <h4>100% authentic</h4>
+            <p>Sourced from brands and authorised distributors only.</p>
+          </div>
+        </div>
+        <div class="trust-prop-card">
+          <div class="trust-prop-icon">&#128666;</div>
+          <div class="trust-prop-content">
+            <h4>Fast delivery</h4>
+            <p>Free shipping on orders over $50.</p>
+          </div>
+        </div>
+        <div class="trust-prop-card">
+          <div class="trust-prop-icon">&#8635;</div>
+          <div class="trust-prop-content">
+            <h4>Easy returns</h4>
+            <p>Changed your mind? Return unopened items easily.</p>
+          </div>
+        </div>
+        <div class="trust-prop-card">
+          <div class="trust-prop-icon">&#128274;</div>
+          <div class="trust-prop-content">
+            <h4>Secure checkout</h4>
+            <p>Cards, PayPal and Apple Pay, fully encrypted.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section (matches 01-Desktop-Home.png) -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-card">
+        <div>
+          <h2 class="newsletter-title">Join the <em>Glow List</em></h2>
+          <p class="newsletter-desc">Early access to drops, routine tips from the journal and members-only offers. No spam, unsubscribe anytime.</p>
+        </div>
+        <form action="#subscribed-modal" method="get" class="newsletter-form">
+          <div class="newsletter-input-group">
+            <input type="email" class="newsletter-input" placeholder="you@example.com" required>
+            <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+          </div>
+          <p class="newsletter-disclaimer">By subscribing you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (matches 01-Desktop-Home.png & 10-Mobile-Home.png) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo-text">ABeauty <em>&amp;</em> Fashion</div>
+          <p class="footer-tagline">Be smart with beauty and fashion. Curated products, honest guides.</p>
+          <div class="social-links">
+            <a href="https://instagram.com" class="social-icon-btn" title="Instagram" target="_blank" rel="noopener">ig</a>
+            <a href="https://tiktok.com" class="social-icon-btn" title="TikTok" target="_blank" rel="noopener">tk</a>
+            <a href="https://spotify.com" class="social-icon-btn" title="Podcast" target="_blank" rel="noopener">pd</a>
+            <a href="https://youtube.com" class="social-icon-btn" title="YouTube" target="_blank" rel="noopener">yt</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Shop</h4>
+          <ul class="footer-links-list">
+            <li><a href="shop.html" class="footer-link">Skincare</a></li>
+            <li><a href="shop.html" class="footer-link">Makeup</a></li>
+            <li><a href="shop.html" class="footer-link">Hair Care</a></li>
+            <li><a href="shop.html" class="footer-link">Personal Care</a></li>
+            <li><a href="shop.html" class="footer-link">Beauty Tools</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Help</h4>
+          <ul class="footer-links-list">
+            <li><a href="account.html" class="footer-link">Track order</a></li>
+            <li><a href="contact.html" class="footer-link">Shipping</a></li>
+            <li><a href="contact.html" class="footer-link">Returns</a></li>
+            <li><a href="contact.html#faq" class="footer-link">FAQ</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Journal</h4>
+          <ul class="footer-links-list">
+            <li><a href="about.html#journal" class="footer-link">Beauty &amp; Fashion</a></li>
+            <li><a href="about.html#journal" class="footer-link">Personal Care</a></li>
+            <li><a href="about.html#journal" class="footer-link">Health &amp; Fitness</a></li>
+            <li><a href="about.html#journal" class="footer-link">Style</a></li>
+            <li><a href="about.html#journal" class="footer-link">Buying Guides</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Company</h4>
+          <ul class="footer-links-list">
+            <li><a href="about.html" class="footer-link">About us</a></li>
+            <li><a href="about.html" class="footer-link">Affiliate program</a></li>
+            <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="terms.html" class="footer-link">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 ABeauty &amp; Fashion. All rights reserved.</div>
+        <div class="payment-methods-text">
+          <span>Secure payments</span> · 
+          <span>Visa</span> · 
+          <span>Mastercard</span> · 
+          <span>PayPal</span> · 
+          <span>Apple Pay</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Pure CSS Modals & Overlays (matches 20-Desktop-Modals-popups.png)
+       ========================================================================== -->
+
+  <!-- Modal 1: Added to Bag -->
+  <div id="added-to-bag-modal" class="modal-backdrop">
+    <div class="modal-dialog">
+      <a href="#" class="modal-close-icon">&times;</a>
+      <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 20px;">
+        <span style="color: #166534; font-size: 1.2rem;">&#10003;</span>
+        <h3 style="font-size: 1.15rem; font-weight: 700;">Added to your bag</h3>
+      </div>
+      <div style="display: flex; gap: 16px; margin-bottom: 20px;">
+        <div style="width: 64px; height: 76px; background: var(--pastel-pink); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center;">
+          <img src="assets/images/product-bottle.svg" alt="Serum" style="width: 24px;">
+        </div>
+        <div>
+          <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--color-dark);">Rose Dew Hydrating Serum</h4>
+          <p style="font-size: 0.8rem; color: var(--color-text-muted); margin: 3px 0 6px;">30 ml · Qty 1</p>
+          <strong style="font-size: 0.95rem; color: var(--color-dark);">$28.00</strong>
+        </div>
+      </div>
+      <div class="cart-progress-box" style="margin-bottom: 24px;">
+        <span class="cart-progress-text">Add $6.00 more for free shipping</span>
+        <div class="progress-track">
+          <div class="progress-fill" style="width: 82%;"></div>
+        </div>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px;">
+        <a href="cart.html" class="btn btn-outline btn-sm">View bag (2)</a>
+        <a href="checkout.html" class="btn btn-accent btn-sm">Checkout</a>
+      </div>
+      <div style="text-align: center;">
+        <a href="#" style="font-size: 0.82rem; color: var(--color-text-muted); text-decoration: underline;">Continue shopping</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Subscribed -->
+  <div id="subscribed-modal" class="modal-backdrop">
+    <div class="modal-dialog" style="text-align: center;">
+      <a href="#" class="modal-close-icon">&times;</a>
+      <div style="background-color: var(--pastel-pink); border-radius: var(--radius-lg); padding: 30px 20px; margin-bottom: 24px;">
+        <h2 style="font-family: var(--font-accent); font-style: italic; font-size: 2.8rem; color: var(--color-accent);">Glow</h2>
+      </div>
+      <h3 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 8px;">You're on the <em class="accent-serif">Glow List</em></h3>
+      <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 24px;">Check your inbox to confirm your email. Your first routine tips are on the way.</p>
+      <a href="shop.html" class="btn btn-primary btn-block">Start shopping</a>
+    </div>
+  </div>
+
+  <!-- Modal 3: Quick View -->
+  <div id="quick-view-modal" class="modal-backdrop">
+    <div class="modal-dialog" style="max-width: 680px;">
+      <a href="#" class="modal-close-icon">&times;</a>
+      <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 24px; align-items: center;">
+        <div style="background-color: var(--pastel-blue); border-radius: var(--radius-lg); aspect-ratio: 1/1.1; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative;">
+          <img src="assets/images/product-steamer.svg" alt="Nano Ionic Facial Steamer" style="width: 60px;">
+          <span class="product-photo-label" style="bottom: 12px; left: 16px;">PRODUCT PHOTO</span>
+        </div>
+        <div>
+          <span class="eyebrow">BEAUTY TOOLS</span>
+          <h3 style="font-size: 1.35rem; font-weight: 800; color: var(--color-dark); margin-bottom: 8px;">Nano Ionic Facial Steamer</h3>
+          <div style="display: flex; align-items: baseline; gap: 10px; margin-bottom: 14px;">
+            <span style="font-size: 1.4rem; font-weight: 800; color: var(--color-dark);">$49.00</span>
+            <span style="font-size: 0.9rem; color: var(--color-text-light); text-decoration: line-through;">$65.00</span>
+          </div>
+          <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.5; margin-bottom: 20px;">
+            Warm nano-mist opens pores before cleansing. Featured in our facial steamer buying guide.
+          </p>
+          <div style="display: flex; gap: 10px; margin-bottom: 14px;">
+            <a href="cart.html" class="btn btn-accent btn-sm" style="flex: 1;">Add to bag</a>
+            <a href="account.html#wishlist" class="wishlist-btn" style="position: static; width: 42px; height: 42px;">&hearts;</a>
+          </div>
+          <a href="product.html" style="font-size: 0.82rem; font-weight: 600; text-decoration: underline; color: var(--color-dark);">View full details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cookie Consent Banner (Dismissible by linking to #close) -->
+  <aside class="cookie-banner" id="cookie-banner">
+    <div>
+      <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--color-dark); margin-bottom: 4px;">We use cookies</h4>
+      <p style="font-size: 0.82rem; color: var(--color-text-muted);">
+        Essential cookies keep your bag and checkout working. With your OK we also use analytics and marketing cookies. 
+        <a href="privacy.html" style="text-decoration: underline;">Privacy Policy</a>
+      </p>
+    </div>
+    <div style="display: flex; align-items: center; gap: 10px; flex-shrink: 0;">
+      <a href="privacy.html" class="btn btn-outline btn-sm">Settings</a>
+      <a href="#cookie-banner" class="btn btn-outline btn-sm">Reject optional</a>
+      <a href="#cookie-banner" class="btn btn-primary btn-sm">Accept all</a>
+    </div>
+  </aside>
+
+</body>
+</html>

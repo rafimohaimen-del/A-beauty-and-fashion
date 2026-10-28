@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — This page went for a facial — ABeauty & Fashion</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .error-hero {
+      position: relative;
+      text-align: center;
+      padding: 90px 20px 80px;
+      overflow: hidden;
+      background-color: var(--color-bg-blush-subtle);
+    }
+    .watermark-404 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: clamp(14rem, 26vw, 24rem);
+      font-weight: 900;
+      color: rgba(220, 150, 175, 0.15);
+      line-height: 1;
+      user-select: none;
+      z-index: 1;
+      letter-spacing: -0.05em;
+    }
+    .error-content-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="brand-logo">
+          <img src="assets/images/logo.png" alt="ABeauty & Fashion">
+        </a>
+        <nav class="main-nav">
+          <a href="shop.html" class="nav-link">Shop All</a>
+          <a href="shop.html" class="nav-link">Skincare</a>
+          <a href="shop.html" class="nav-link">Makeup</a>
+          <a href="shop.html" class="nav-link">Hair Care</a>
+          <a href="shop.html" class="nav-link">Beauty Tools</a>
+          <a href="about.html#journal" class="nav-link">Journal</a>
+          <a href="shop.html" class="nav-link sale-link">Sale</a>
+        </nav>
+        <div class="header-actions">
+          <a href="account.html" class="action-icon-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></a>
+          <a href="cart.html" class="action-icon-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg><span class="badge-count">2</span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 404 Hero Section (matches 21-Desktop-404-not-found.png) -->
+  <main>
+    <section class="error-hero">
+      <div class="watermark-404">404</div>
+      <div class="error-content-inner">
+        <span class="accent-serif" style="font-size: 2.2rem; color: var(--color-accent); display: block; margin-bottom: 8px;">Oops &mdash;</span>
+        <h1 style="font-size: clamp(2.4rem, 4.5vw, 3.6rem); font-weight: 800; color: var(--color-dark); line-height: 1.15; margin-bottom: 18px;">
+          This page went for a facial.
+        </h1>
+        <p style="font-size: 1.05rem; color: var(--color-text-muted); line-height: 1.5; margin-bottom: 30px;">
+          The link may be old or the page has moved. Try a search, or pick up where most people go next.
+        </p>
+
+        <!-- Search Input -->
+        <form action="search.html" method="get" style="display: flex; background: #FFF; border-radius: var(--radius-full); padding: 6px 8px 6px 20px; box-shadow: var(--shadow-md); border: 1px solid var(--color-border); margin-bottom: 24px;">
+          <input type="text" name="q" placeholder="Search products or guides..." style="flex: 1; font-size: 0.95rem;">
+          <button type="submit" class="btn btn-primary btn-sm">Search</button>
+        </form>
+
+        <!-- Quick navigation pills -->
+        <div style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-bottom: 30px;">
+          <a href="shop.html" class="filter-pill">Skincare</a>
+          <a href="shop.html" class="filter-pill">Makeup</a>
+          <a href="shop.html" class="filter-pill">Hair Care</a>
+          <a href="shop.html" class="filter-pill">Beauty Tools</a>
+          <a href="about.html#journal" class="filter-pill">Beauty Journal</a>
+          <a href="contact.html" class="filter-pill">Contact us</a>
+        </div>
+
+        <a href="index.html" class="btn btn-outline btn-lg">Back to home</a>
+      </div>
+    </section>
+
+    <!-- Loved by our customers section (matches 21-Desktop-404-not-found.png) -->
+    <section style="padding: 70px 0;">
+      <div class="container">
+        <h2 style="font-size: 2.2rem; font-weight: 800; color: var(--color-dark); margin-bottom: 32px;">
+          Loved by our <em class="accent-serif">customers</em>
+        </h2>
+
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">
+          <div style="border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 16px; display: flex; align-items: center; gap: 16px;">
+            <div style="width: 70px; height: 80px; background-color: var(--pastel-pink); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <img src="assets/images/product-bottle.svg" alt="Serum" style="width: 24px;">
+            </div>
+            <div>
+              <span class="product-category-name" style="font-size: 0.72rem;">Skincare</span>
+              <h4 style="font-size: 0.92rem; font-weight: 700; margin-bottom: 4px;"><a href="product.html">Rose Dew Hydrating Serum</a></h4>
+              <strong style="font-size: 0.95rem;">$28</strong>
+            </div>
+          </div>
+
+          <div style="border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 16px; display: flex; align-items: center; gap: 16px;">
+            <div style="width: 70px; height: 80px; background-color: var(--pastel-blue); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <img src="assets/images/product-steamer.svg" alt="Steamer" style="width: 24px;">
+            </div>
+            <div>
+              <span class="product-category-name" style="font-size: 0.72rem;">Beauty Tools</span>
+              <h4 style="font-size: 0.92rem; font-weight: 700; margin-bottom: 4px;"><a href="product.html">Nano Ionic Facial Steamer</a></h4>
+              <strong style="font-size: 0.95rem;">$49</strong>
+            </div>
+          </div>
+
+          <div style="border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 16px; display: flex; align-items: center; gap: 16px;">
+            <div style="width: 70px; height: 80px; background-color: var(--pastel-lilac); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <img src="assets/images/product-bottle.svg" alt="Pillowcase" style="width: 24px;">
+            </div>
+            <div>
+              <span class="product-category-name" style="font-size: 0.72rem;">Personal Care</span>
+              <h4 style="font-size: 0.92rem; font-weight: 700; margin-bottom: 4px;"><a href="product.html">Mulberry Silk Pillowcase</a></h4>
+              <strong style="font-size: 0.95rem;">$39</strong>
+            </div>
+          </div>
+
+          <div style="border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 16px; display: flex; align-items: center; gap: 16px;">
+            <div style="width: 70px; height: 80px; background-color: var(--pastel-pink); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <img src="assets/images/product-bottle.svg" alt="Lip Tint" style="width: 24px;">
+            </div>
+            <div>
+              <span class="product-category-name" style="font-size: 0.72rem;">Makeup</span>
+              <h4 style="font-size: 0.92rem; font-weight: 700; margin-bottom: 4px;"><a href="product.html">Velvet Matte Lip Tint</a></h4>
+              <strong style="font-size: 0.95rem;">$16</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 24px; flex-wrap: wrap; gap: 16px;">
+        <div class="footer-logo-text">ABeauty <em>&amp;</em> Fashion</div>
+        <div style="display: flex; gap: 24px; font-size: 0.88rem;">
+          <a href="about.html">About us</a>
+          <a href="contact.html">Contact</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+        </div>
+      </div>
+      <div style="text-align: right; font-size: 0.8rem; color: rgba(255,255,255,0.5);">
+        &copy; 2026 ABeauty &amp; Fashion
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

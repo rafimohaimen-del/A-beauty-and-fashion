@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>চেকআউট — ABeauty & Fashion</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="lang-bn" style="background-color: #FAF8F8;">
+
+  <!-- Minimal Header (matches 34-Bangla-Mobile-Checkout-COD-bKash-Nagad.png) -->
+  <header style="background: #FFF; border-bottom: 1px solid var(--color-border); padding: 16px 0;">
+    <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
+      <a href="cart.html" style="font-size: 1.1rem; color: var(--color-dark); font-weight: 700;">&lsaquo;</a>
+      <h1 style="font-size: 1.25rem; font-weight: 800; color: var(--color-dark);">চেকআউট</h1>
+      <span style="font-size: 1.1rem; color: #166534;">&#128274;</span>
+    </div>
+  </header>
+
+  <!-- Checkout Container -->
+  <main class="container-narrow" style="padding-top: 20px; padding-bottom: 80px;">
+    <!-- Guest Order Notice -->
+    <div style="background-color: #ECFDF5; border: 1px solid #A7F3D0; border-radius: var(--radius-md); padding: 14px 18px; display: flex; align-items: center; gap: 10px; margin-bottom: 24px; color: #065F46; font-size: 0.92rem; font-weight: 600;">
+      <span style="font-size: 1.2rem;">&#10003;</span>
+      <span>অ্যাকাউন্ট ছাড়াই অর্ডার করুন &mdash; শুধু মোবাইল নম্বর দিন</span>
+    </div>
+
+    <!-- Step 1: Delivery Information -->
+    <div class="checkout-section-card" style="background: #FFF;">
+      <div class="checkout-section-head">
+        <span class="checkout-badge-num">১</span>
+        <h2 style="font-size: 1.2rem; font-weight: 800; color: var(--color-dark);">ডেলিভারি তথ্য</h2>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <div class="form-group">
+          <label class="form-label">আপনার নাম</label>
+          <input type="text" class="form-control" placeholder="পূর্ণ নাম" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">মোবাইল নম্বর</label>
+          <div style="display: flex; gap: 8px;">
+            <div style="width: 80px; background: #F6F3F2; border: 1px solid var(--color-border); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; font-weight: 700; color: var(--color-dark);">+৮৮০</div>
+            <input type="tel" class="form-control" placeholder="01XXXXXXXXX" required style="flex: 1;">
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+          <div class="form-group">
+            <label class="form-label">জেলা</label>
+            <select class="form-control">
+              <option selected>ঢাকা</option>
+              <option>চট্টগ্রাম</option>
+              <option>সিলেট</option>
+              <option>রাজশাহী</option>
+              <option>খুলনা</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">থানা / এলাকা</label>
+            <select class="form-control">
+              <option selected>ধানমন্ডি</option>
+              <option>গুলশান</option>
+              <option>বনানী</option>
+              <option>মিরপুর</option>
+              <option>উত্তরা</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">পূর্ণ ঠিকানা</label>
+          <textarea class="form-control" rows="3" placeholder="বাসা/ফ্ল্যাট নম্বর, রোড, এলাকা" style="height: auto; padding: 12px;"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">ইমেইল (ঐচ্ছিক)</label>
+          <input type="email" class="form-control">
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 2: Delivery Area -->
+    <div class="checkout-section-card" style="background: #FFF;">
+      <div class="checkout-section-head">
+        <span class="checkout-badge-num">২</span>
+        <h2 style="font-size: 1.2rem; font-weight: 800; color: var(--color-dark);">ডেলিভারি এলাকা</h2>
+      </div>
+
+      <label class="delivery-method-option selected">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <input type="radio" name="delivery_zone" checked style="accent-color: var(--color-accent);">
+          <div>
+            <strong style="font-size: 0.95rem;">ঢাকার ভিতরে</strong>
+            <div style="font-size: 0.8rem; color: var(--color-text-muted);">[১&ndash;২] কর্মদিবস</div>
+          </div>
+        </div>
+        <strong style="font-size: 1.05rem;">৳৬০</strong>
+      </label>
+
+      <label class="delivery-method-option">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <input type="radio" name="delivery_zone" style="accent-color: var(--color-accent);">
+          <div>
+            <strong style="font-size: 0.95rem;">ঢাকার বাইরে</strong>
+            <div style="font-size: 0.8rem; color: var(--color-text-muted);">[৩&ndash;৫] কর্মদিবস</div>
+          </div>
+        </div>
+        <strong style="font-size: 1.05rem;">৳১২০</strong>
+      </label>
+    </div>
+
+    <!-- Step 3: Payment Method (matches 34-Bangla-Mobile-Checkout-COD-bKash-Nagad.png) -->
+    <div class="checkout-section-card" style="background: #FFF;">
+      <div class="checkout-section-head">
+        <span class="checkout-badge-num">৩</span>
+        <h2 style="font-size: 1.2rem; font-weight: 800; color: var(--color-dark);">পেমেন্ট পদ্ধতি</h2>
+      </div>
+
+      <label class="delivery-method-option selected" style="margin-bottom: 12px;">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <input type="radio" name="bn_payment" checked style="accent-color: var(--color-accent);">
+          <div>
+            <strong style="font-size: 0.95rem;">ক্যাশ অন ডেলিভারি</strong>
+            <div style="font-size: 0.8rem; color: var(--color-text-muted);">পণ্য হাতে পেয়ে টাকা দিন</div>
+          </div>
+        </div>
+      </label>
+
+      <label class="delivery-method-option" style="margin-bottom: 12px;">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <input type="radio" name="bn_payment" style="accent-color: var(--color-accent);">
+          <strong style="font-size: 0.95rem;">বিকাশ</strong>
+        </div>
+        <span style="font-size: 0.75rem; font-weight: 700; background: #E2136E; color: #FFF; padding: 3px 8px; border-radius: 4px;">bKash</span>
+      </label>
+
+      <label class="delivery-method-option" style="margin-bottom: 12px;">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <input type="radio" name="bn_payment" style="accent-color: var(--color-accent);">
+          <strong style="font-size: 0.95rem;">নগদ</strong>
+        </div>
+        <span style="font-size: 0.75rem; font-weight: 700; background: #F7931E; color: #FFF; padding: 3px 8px; border-radius: 4px;">Nagad</span>
+      </label>
+
+      <label class="delivery-method-option">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <input type="radio" name="bn_payment" style="accent-color: var(--color-accent);">
+          <strong style="font-size: 0.95rem;">কার্ড / অন্যান্য</strong>
+        </div>
+        <span style="font-size: 0.75rem; font-weight: 700; color: var(--color-text-muted);">VISA · MC</span>
+      </label>
+    </div>
+
+    <!-- Summary Box -->
+    <div class="order-summary-card" style="background: #FFF;">
+      <div style="display: flex; align-items: center; justify-content: space-between;">
+        <div style="display: flex; gap: 8px;">
+          <div style="width: 44px; height: 50px; background: var(--pastel-pink); border-radius: 6px;"></div>
+          <div style="width: 44px; height: 50px; background: var(--pastel-pink); border-radius: 6px;"></div>
+        </div>
+        <span style="font-size: 0.9rem; font-weight: 600;">২টি পণ্য</span>
+        <a href="cart.html" style="font-size: 0.85rem; font-weight: 700; color: var(--color-dark); text-decoration: underline;">পরিবর্তন</a>
+      </div>
+
+      <div class="coupon-group">
+        <input type="text" placeholder="কুপন কোড" class="coupon-input">
+        <button type="button" class="btn btn-outline btn-sm">প্রয়োগ</button>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 8px; border-top: 1px solid var(--color-border); padding-top: 14px;">
+        <div class="summary-row"><span>সাবটোটাল</span><strong>৳৪,৯০০</strong></div>
+        <div class="summary-row"><span>ডেলিভারি চার্জ</span><strong>৳৬০</strong></div>
+        <div class="summary-row total-row"><span>সর্বমোট</span><span style="color: var(--color-dark); font-size: 1.8rem;">৳৪,৯৬০</span></div>
+      </div>
+
+      <div style="color: var(--color-accent); font-size: 0.85rem; font-weight: 700; text-align: center;">
+        আর মাত্র ৳৫০০ যোগ করলে ডেলিভারি ফ্রি!
+      </div>
+
+      <label class="custom-checkbox" style="margin-top: 8px;">
+        <input type="checkbox" checked>
+        <span style="font-size: 0.85rem;">আমি <a href="terms.html" style="text-decoration: underline; font-weight: 600;">শর্তাবলি</a> ও <a href="privacy.html" style="text-decoration: underline; font-weight: 600;">প্রাইভেসি পলিসি</a> পড়েছি এবং সম্মত।</span>
+      </label>
+
+      <a href="checkout.html#order-confirmed-modal" class="btn btn-accent btn-lg btn-block" style="padding: 16px; font-size: 1.15rem;">
+        অর্ডার কনফার্ম করুন · ৳৪,৯৬০
+      </a>
+    </div>
+  </main>
+
+  <footer style="text-align: center; padding: 24px 0; font-size: 0.82rem; color: var(--color-text-muted);">
+    &copy; ২০২৬ ABeauty &amp; Fashion
+  </footer>
+
+</body>
+</html>
