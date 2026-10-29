@@ -142,10 +142,12 @@ ul, ol {
 .accent-serif,
 h1 em, h2 em, h3 em, h4 em,
 .hero-title em,
-.section-title em {
+.section-title em,
+.newsletter-title em,
+.brand-logo em {
   font-family: var(--font-accent);
   font-style: italic;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--color-accent);
 }
 
@@ -246,6 +248,20 @@ h1 em, h2 em, h3 em, h4 em,
   display: flex;
   align-items: center;
   flex-shrink: 0;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--color-dark);
+  letter-spacing: -0.02em;
+  text-decoration: none;
+}
+
+.brand-logo em {
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-weight: 600;
+  color: var(--color-accent);
+  margin: 0 4px;
 }
 
 .brand-logo img {
@@ -832,8 +848,8 @@ h1 em, h2 em, h3 em, h4 em,
   position: absolute;
   top: -16px;
   right: -15px;
-  width: 111px;
-  height: 111px;
+  width: 112px;
+  height: 112px;
   background-color: var(--color-dark-alt, #1F1219);
   color: #FFF;
   border-radius: 50%;
@@ -842,19 +858,28 @@ h1 em, h2 em, h3 em, h4 em,
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 0.75rem;
-  font-weight: 700;
-  line-height: 1.15;
   box-shadow: var(--shadow-md);
   z-index: 5;
 }
 
-.hero-glow-badge em {
+.hero-glow-badge span {
   font-family: var(--font-accent);
-  font-size: 1.05rem;
+  font-size: 1.45rem;
   font-style: italic;
   font-weight: 500;
+  color: #FFF;
+  line-height: 1.1;
+  margin-bottom: 2px;
+}
+
+.hero-glow-badge em {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.12em;
   color: var(--pastel-pink);
+  line-height: 1;
 }
 
 .hero-inset-texture {
@@ -998,8 +1023,9 @@ h1 em, h2 em, h3 em, h4 em,
 }
 
 .category-circle img {
-  width: 44px;
-  height: 68px;
+  width: 54px;
+  height: auto;
+  max-height: 62px;
   object-fit: contain;
   transition: transform 0.25s ease;
 }
@@ -1069,8 +1095,9 @@ h1 em, h2 em, h3 em, h4 em,
 }
 
 .product-card-visual img {
-  width: 54px;
-  height: 85px;
+  width: 88px;
+  height: auto;
+  max-height: 104px;
   object-fit: contain;
   transition: transform 0.25s ease;
 }
@@ -1268,6 +1295,16 @@ h1 em, h2 em, h3 em, h4 em,
   margin-bottom: 12px;
 }
 
+.feature-title em {
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-weight: 600;
+}
+
+.feature-card-lavender .feature-title em {
+  color: var(--color-dark);
+}
+
 .feature-card-plum .feature-title em {
   color: #F8C0D0;
 }
@@ -1292,8 +1329,9 @@ h1 em, h2 em, h3 em, h4 em,
 }
 
 .feature-visual-box img {
-  width: 68px;
-  height: 68px;
+  width: 88px;
+  height: auto;
+  max-height: 88px;
   object-fit: contain;
 }
 
@@ -1338,7 +1376,7 @@ h1 em, h2 em, h3 em, h4 em,
   font-family: var(--font-accent);
   font-style: italic;
   font-weight: 500;
-  color: #F8C0D0;
+  color: #FFFFFF;
 }
 
 .routine-desc {
@@ -1412,9 +1450,10 @@ h1 em, h2 em, h3 em, h4 em,
 }
 
 .journal-visual img {
-  width: 56px;
+  width: 78px;
   height: auto;
-  opacity: 0.75;
+  max-height: 75px;
+  object-fit: contain;
 }
 
 .journal-card-title {
