@@ -6,7 +6,7 @@
 
 ## 🌟 Live Demo & Portfolio Preview
 
-- **Live URL**: `https://<your-github-username>.github.io/<your-repo-name>/`
+- **Live URL**: `https://github.com/rafimohaimen-del/A-beauty-and-fashion`
 - **Primary Pages**:
   - [🏠 Home (English)](index.html)
   - [🇧🇩 Home (বাংলা / Bengali)](index-bn.html)

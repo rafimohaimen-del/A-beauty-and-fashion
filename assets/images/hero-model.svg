@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" fill="none" stroke="#7A4E5F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-  <!-- Head: inverted U arc matching 01-Desktop-Home.png -->
-  <path d="M 42 66 C 42 40, 78 40, 78 66" />
-  <!-- Shoulders: gentle sloping curve -->
-  <path d="M 18 126 C 26 94, 44 82, 60 82 C 76 82, 94 94, 102 126" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 76" fill="none" stroke="#8C6676" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Model Head: Perfect circle matching 01-Desktop-Home.png -->
+  <circle cx="34" cy="18.5" r="15.5" />
+  <!-- Model Shoulders: Concentric smooth arc matching 01-Desktop-Home.png -->
+  <path d="M 2.5 74 C 2.5 50, 16.5 42, 34 42 C 51.5 42, 65.5 50, 65.5 74" />
 </svg>
