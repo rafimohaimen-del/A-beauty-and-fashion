@@ -1540,6 +1540,11 @@ h4.toast-info {
   width: 100%;
 }
 
+.routine-left {
+  width: 100%;
+  min-width: 0;
+}
+
 .routine-title {
   font-size: clamp(2.88rem, 4.61vw, 3.74rem);
   font-weight: 800;
@@ -1566,13 +1571,18 @@ h4.toast-info {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
+  width: 100%;
+  min-width: 0;
 }
 
 .routine-option-card {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 58px;
+  width: calc(100% - 2rem);
+  min-height: calc(48.72px + 1.2rem);
+  height: calc(48.72px + 1.2rem);
+  /* calibrated: width: calc(100% - 2rem) (further -1rem, total -2rem); height: calc(48.72px + 1.2rem) = 67.92px (further +0.6rem, total +1.2rem from 48.72px); */
   padding: 16px 22px;
   background-color: #39222F;
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -3048,8 +3058,8 @@ h4.toast-info {
   }
 
   .routine-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 32px;
   }
 
   .newsletter-card {
