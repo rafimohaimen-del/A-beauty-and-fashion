@@ -273,8 +273,8 @@
         <!-- Hero Visual Composition -->
         <div class="hero-visual">
           <div class="hero-main-card">
-            <img src="assets/images/hero-model.svg" alt="Campaign Model Dewy Skin" class="hero-model-img">
-            <span class="hero-label-caption">CAMPAIGN PHOTO &mdash; MODEL, DEWY SKIN</span>
+            <img src="assets/images/hero-model.svg" alt="Campaign Model Dewy Skin" class="hero-model-img" style="width: 52px; margin: auto; display: block;">
+            <span class="hero-label-caption" style="transform: translateX(-1rem);">CAMPAIGN PHOTO &mdash; MODEL, DEWY SKIN</span>
           </div>
 
           <div class="hero-glow-badge">
@@ -284,20 +284,22 @@
 
           <div class="hero-inset-texture">
             <img src="assets/images/images remade/product-bottle.svg" alt="Texture Shot Bottle" style="width: 69px; height: auto;">
-            <span class="hero-label-caption" style="bottom: 12px;">TEXTURE SHOT</span>
+            <span class="hero-label-caption" style="bottom: 12px; transform: translateX(-1rem);">TEXTURE SHOT</span>
           </div>
 
           <div class="hero-product-toast">
             <div class="toast-thumb">
               <img src="assets/images/images remade/product-bottle.svg" alt="Rose Dew Bottle" style="width: 40px; height: auto;">
             </div>
-            <div class="toast-info">
+            <div class="toast-info" style="flex: 1; width: 100%;">
               <h5>Bestseller · Skincare</h5>
-              <h4>Rose Dew Hydrating Serum</h4>
-              <div class="toast-price">$28</div>
+              <h4 class="toast-info" style="width: 100%;">Rose Dew Hydrating Serum</h4>
+              <div class="toast-price-row" style="display: flex; align-items: center; justify-content: space-between; gap: 8px; width: 100%; margin-top: 4px;">
+                <div class="toast-price">$28</div>
+                <a href="#added-to-bag-modal" class="btn btn-accent btn-sm"
+                  style="padding: 6px 14px; border-radius: var(--radius-full);">Add</a>
+              </div>
             </div>
-            <a href="#added-to-bag-modal" class="btn btn-accent btn-sm"
-              style="padding: 6px 14px; border-radius: var(--radius-full);">Add</a>
           </div>
         </div>
       </div>
@@ -380,7 +382,7 @@
                 </path>
               </svg>
             </a>
-            <img src="assets/images/images remade/product-bottle.svg" alt="Rose Dew Hydrating Serum">
+            <img src="assets/images/images remade/product-bottle.svg" alt="Rose Dew Hydrating Serum" style="width: 37.8px; height: auto;">
             <span class="product-photo-label">PRODUCT PHOTO</span>
             <a href="#added-to-bag-modal" class="quick-add-btn" title="Quick Add">+</a>
           </div>
@@ -405,7 +407,7 @@
                 </path>
               </svg>
             </a>
-            <img src="assets/images/images remade/product-bottle.svg" alt="Nano Ionic Facial Steamer">
+            <img src="assets/images/images remade/product-bottle.svg" alt="Nano Ionic Facial Steamer" style="width: 37.8px; height: auto;">
             <span class="product-photo-label">PRODUCT PHOTO</span>
             <a href="#added-to-bag-modal" class="quick-add-btn" title="Quick Add">+</a>
           </div>
@@ -430,7 +432,7 @@
                 </path>
               </svg>
             </a>
-            <img src="assets/images/images remade/product-bottle.svg" alt="Mulberry Silk Pillowcase">
+            <img src="assets/images/images remade/product-bottle.svg" alt="Mulberry Silk Pillowcase" style="width: 37.8px; height: auto;">
             <span class="product-photo-label">PRODUCT PHOTO</span>
             <a href="#added-to-bag-modal" class="quick-add-btn" title="Quick Add">+</a>
           </div>
@@ -455,7 +457,7 @@
                 </path>
               </svg>
             </a>
-            <img src="assets/images/images remade/product-bottle.svg" alt="Velvet Matte Lip Tint">
+            <img src="assets/images/images remade/product-bottle.svg" alt="Velvet Matte Lip Tint" style="width: 37.8px; height: auto;">
             <span class="product-photo-label">PRODUCT PHOTO</span>
             <a href="#added-to-bag-modal" class="quick-add-btn" title="Quick Add">+</a>
           </div>
@@ -476,14 +478,14 @@
       <div class="feature-split-grid">
         <!-- Lavender Card: Night Shift -->
         <div class="feature-card feature-card-lavender">
-          <div class="feature-card-content">
+          <div class="feature-card-content" style="width: calc(100% + 2rem); align-self: flex-start; justify-content: flex-start;">
             <span class="feature-eyebrow">NIGHT RITUALS</span>
             <h3 class="feature-title">The <em>Night</em> Shift</h3>
             <p class="feature-desc">Wake up to better hair and skin — silk pillowcases, sleeping masks and repair oils.
             </p>
             <a href="shop.html" class="btn btn-primary btn-sm">Shop night care</a>
           </div>
-          <div class="feature-visual-box feature-visual-lavender">
+          <div class="feature-visual-box feature-visual-lavender" style="width: calc(100% - 2rem); margin-left: auto;">
             <img src="assets/images/images remade/icon-moon.svg" alt="Night rituals crescent moon">
             <span class="product-photo-label" style="bottom: 12px; left: 16px;">LIFESTYLE PHOTO</span>
           </div>
@@ -491,14 +493,14 @@
 
         <!-- Plum Card: Tools that do the work -->
         <div class="feature-card feature-card-plum">
-          <div class="feature-card-content">
+          <div class="feature-card-content" style="width: calc(100% + 2rem); align-self: flex-start; justify-content: flex-start;">
             <span class="feature-eyebrow" style="color: #F8C0D0;">UP TO 25% OFF</span>
             <h3 class="feature-title">Tools that <em>do the</em><br><em>work</em></h3>
             <p class="feature-desc">Facial steamers, ionic dryers and rollers — the ones that won our buying guides.</p>
             <a href="shop.html" class="btn btn-outline-white btn-sm"
               style="background-color: #FFF; color: var(--color-dark); border-color: #FFF;">Shop beauty tools</a>
           </div>
-          <div class="feature-visual-box feature-visual-dark">
+          <div class="feature-visual-box feature-visual-dark" style="width: calc(100% - 2rem); margin-left: auto;">
             <img src="assets/images/images remade/product-steamer.svg" alt="Ionic Hair Dryer">
             <span class="product-photo-label" style="bottom: 12px; left: 16px; color: rgba(255,255,255,0.4);">PRODUCT
               PHOTO</span>
@@ -571,7 +573,7 @@
                 </path>
               </svg>
             </a>
-            <img src="assets/images/images remade/product-bottle.svg" alt="Soft Glow Cushion Foundation">
+            <img src="assets/images/images remade/product-bottle.svg" alt="Soft Glow Cushion Foundation" style="width: 37.8px; height: auto;">
             <span class="product-photo-label">PRODUCT PHOTO</span>
             <a href="#added-to-bag-modal" class="quick-add-btn" title="Quick Add">+</a>
           </div>
@@ -596,7 +598,7 @@
                 </path>
               </svg>
             </a>
-            <img src="assets/images/images remade/product-bottle.svg" alt="Pro Ionic Hair Dryer 1800W">
+            <img src="assets/images/images remade/product-bottle.svg" alt="Pro Ionic Hair Dryer 1800W" style="width: 37.8px; height: auto;">
             <span class="product-photo-label">PRODUCT PHOTO</span>
             <a href="#added-to-bag-modal" class="quick-add-btn" title="Quick Add">+</a>
           </div>
@@ -621,7 +623,7 @@
                 </path>
               </svg>
             </a>
-            <img src="assets/images/images remade/product-bottle.svg" alt="Gentle Amino Foam Cleanser">
+            <img src="assets/images/images remade/product-bottle.svg" alt="Gentle Amino Foam Cleanser" style="width: 37.8px; height: auto;">
             <span class="product-photo-label">PRODUCT PHOTO</span>
             <a href="#added-to-bag-modal" class="quick-add-btn" title="Quick Add">+</a>
           </div>
@@ -643,7 +645,7 @@
                 </path>
               </svg>
             </a>
-            <img src="assets/images/images remade/product-bottle.svg" alt="Overnight Repair Hair Mask">
+            <img src="assets/images/images remade/product-bottle.svg" alt="Overnight Repair Hair Mask" style="width: 37.8px; height: auto;">
             <span class="product-photo-label">PRODUCT PHOTO</span>
             <a href="#added-to-bag-modal" class="quick-add-btn" title="Quick Add">+</a>
           </div>
