@@ -858,12 +858,14 @@ h1 em,
 
 .hero-model-img {
   position: absolute;
+  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
-  top: 120px;
   margin: auto;
   display: block;
-  width: 52px;
+  width: 62.92px;
+  /* calibrated: width: 62.92px (+ further 10% from 57.2px, 62.4px at +20%); previous: width: 52px; */
   height: auto;
   object-fit: contain;
 }
@@ -871,8 +873,9 @@ h1 em,
 .hero-main-card .hero-label-caption {
   position: absolute;
   bottom: 18px;
-  right: 28px;
-  left: auto;
+  left: 28px;
+  right: auto;
+  text-align: left;
   font-size: 0.65rem;
   letter-spacing: 0.08em;
   color: var(--color-text-light);
@@ -1053,6 +1056,7 @@ h4.toast-info {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 12px;
   width: 100%;
   text-align: center;
 }
@@ -1061,7 +1065,7 @@ h4.toast-info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 192px;
+  width: 211.2px;
   transition: var(--transition);
 }
 
@@ -1070,8 +1074,9 @@ h4.toast-info {
 }
 
 .category-circle {
-  width: 192px;
-  height: 192px;
+  width: 211.2px;
+  height: 211.2px;
+  /* calibrated: width: 211.2px; height: 211.2px; (+10% from 192px); previous: width: 192px; height: 192px; */
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1155,8 +1160,8 @@ h4.toast-info {
 }
 
 .product-card-visual img {
-  width: 83.16px;
-  /* calibrated: 83.16px (+120% from 37.8px; 45.36px at 120% scale); previous: 37.8px */
+  width: 91.476px;
+  /* calibrated: 91.476px (+10% from 83.16px); previous: 83.16px; original: 37.8px */
   height: auto;
   max-height: 138px;
   object-fit: contain;
@@ -1222,6 +1227,8 @@ h4.toast-info {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 1.5rem;
+  line-height: 1;
   z-index: 2;
   transition: var(--transition);
 }
@@ -1477,9 +1484,10 @@ h4.toast-info {
 }
 
 .feature-visual-box img {
-  width: 46px;
+  width: 115px;
+  /* calibrated: 115px (+150% from 46px: 46px * 2.5 = 115px; or 69px at 150% scale); previous: 46px */
   height: auto;
-  max-height: 46px;
+  max-height: 115px;
   object-fit: contain;
   background-color: transparent;
 }
