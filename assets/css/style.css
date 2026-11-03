@@ -198,7 +198,7 @@ h1 em,
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--color-accent);
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
 }
 
 /* ==========================================================================
@@ -1548,19 +1548,20 @@ h4.toast-info {
 .routine-title {
   font-size: 3.5rem;
   font-weight: 700;
-  line-height: 1.15;
-  margin-bottom: 16px;
+  line-height: 0.9;
+  margin-bottom: 34px;
 }
 
 .routine-title em {
   font-family: var(--font-accent);
   font-style: italic;
   font-weight: 500;
-  color: #FFFFFF;
+  color: #efa5bb;
+  letter-spacing: 0.005rem;
 }
 
 .routine-desc {
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.55;
   color: rgba(255, 255, 255, 0.75);
   margin-bottom: 28px;
@@ -1570,7 +1571,10 @@ h4.toast-info {
 .routine-options-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  row-gap: 16px;
+  column-gap: 8px;
+  gap: 16px 8px;
+  /* calibrated: reduced gap between columns from 16px to 8px (column-gap: 8px); row-gap preserved at 16px; */
   width: 100%;
   min-width: 0;
 }
