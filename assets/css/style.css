@@ -1609,7 +1609,7 @@ h4.toast-info {
 
 .journal-section {
   background-color: var(--color-bg-journal, #FFF7F8);
-  padding: 75px 0 120px;
+  padding: 75px 0 90px;
 }
 
 .journal-grid {
@@ -1680,7 +1680,7 @@ h4.toast-info {
    ========================================================================== */
 
 .trust-props-section {
-  padding: 64px 0;
+  padding: 61px 0;
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
   background-color: #FFFFFF;
@@ -1729,7 +1729,7 @@ h4.toast-info {
    ========================================================================== */
 
 .newsletter-section {
-  padding: 60px 0 88px;
+  padding: 80px 0 88px;
 }
 
 .newsletter-card {
@@ -1741,6 +1741,12 @@ h4.toast-info {
   grid-template-columns: 1.15fr 0.85fr;
   align-items: center;
   gap: 48px;
+}
+
+.newsletter-content,
+.newsletter-card > div:first-child {
+  width: calc(100% - 3rem);
+  /* calibrated: left section width reduced by 3rem */
 }
 
 .newsletter-title {
@@ -1760,6 +1766,8 @@ h4.toast-info {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  transform: translateX(-2rem);
+  /* calibrated: moved right section 2rem to the left */
 }
 
 .newsletter-field-label {
@@ -3234,6 +3242,15 @@ h4.toast-info {
     padding: 36px 20px;
     min-height: auto;
     gap: 24px;
+  }
+
+  .newsletter-content,
+  .newsletter-card > div:first-child {
+    width: 100% !important;
+  }
+
+  .newsletter-form {
+    transform: none !important;
   }
 
   .newsletter-input-group {
