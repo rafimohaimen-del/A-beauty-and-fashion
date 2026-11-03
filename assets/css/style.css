@@ -1243,7 +1243,7 @@ h4.toast-info {
   bottom: 14px;
   left: 14px;
   font-size: 0.65rem;
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: rgba(24, 13, 20, 0.45);
@@ -1359,7 +1359,7 @@ h4.toast-info {
   align-items: start;
   align-self: flex-start;
   justify-content: space-between;
-  padding: 23px 0 20px 0;
+  padding: 15px 0 20px 0;
   box-sizing: border-box;
 }
 
@@ -1387,9 +1387,9 @@ h4.toast-info {
 }
 
 .feature-title {
-  font-size: 2.125rem;
-  font-weight: 800;
-  line-height: 1.15;
+  font-size: 2.535rem;
+  font-weight: 700;
+  line-height: 1;
   margin-bottom: 12px;
   letter-spacing: -0.02em;
 }
@@ -1511,7 +1511,7 @@ h4.toast-info {
 }
 
 .feature-visual-lavender .product-photo-label {
-  color: rgba(42, 18, 32, 0.45);
+  color: #735f8d;
 }
 
 .feature-visual-dark .product-photo-label {
@@ -1546,8 +1546,8 @@ h4.toast-info {
 }
 
 .routine-title {
-  font-size: clamp(2.88rem, 4.61vw, 3.74rem);
-  font-weight: 800;
+  font-size: 3.5rem;
+  font-weight: 700;
   line-height: 1.15;
   margin-bottom: 16px;
 }
