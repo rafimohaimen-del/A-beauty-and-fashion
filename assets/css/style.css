@@ -3014,22 +3014,66 @@ h4.toast-info {
   font-weight: 600;
 }
 
-/* Mobile Payment & Wallet Promo (Bangla Home - 33-Bangla-Mobile-Home.png & 32-Bangla-Desktop-Home.png) */
+/* ==========================================================================
+   Mobile Payment & Split Promo Feature Section (matches 32-Bangla-Desktop-Home.svg)
+   ========================================================================== */
+.mobile-payment-section {
+  padding: 30px 0 49px;
+}
+
+.mobile-payment-banner {
+  width: 100%;
+  display: block;
+}
+
+.mobile-payment-banner-link {
+  display: block;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border-radius: 32px;
+  overflow: hidden;
+}
+
+.mobile-payment-banner-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.mobile-payment-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 32px;
+}
+
+.mobile-payment-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  width: 100%;
+}
+
 .wallet-promo-card {
   background-color: var(--color-bg-blush, #F6D7E0) !important;
   border-radius: 32px;
   padding: 48px 44px;
+  height: 360px;
+  min-height: 360px;
   display: flex !important;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
-  min-height: 280px;
   box-sizing: border-box;
 }
 
 .wallet-promo-card .wallet-card-content {
   width: 100%;
   max-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .wallet-promo-card .wallet-eyebrow {
@@ -3037,7 +3081,7 @@ h4.toast-info {
   font-weight: 700;
   letter-spacing: 0.08em;
   font-size: 0.95rem;
-  margin-bottom: 12px;
+  margin: 0 0 12px 0;
   display: block;
   text-transform: uppercase;
 }
@@ -3047,8 +3091,8 @@ h4.toast-info {
   font-size: 2.25rem;
   line-height: 1.25;
   font-weight: 700;
-  color: var(--color-dark);
-  margin-bottom: 14px;
+  color: #2C1824;
+  margin: 0 0 8px 0;
 }
 
 .wallet-promo-card .wallet-title em {
@@ -3057,10 +3101,85 @@ h4.toast-info {
 }
 
 .wallet-promo-card .wallet-desc {
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   line-height: 1.6;
   color: var(--color-text-muted);
   margin: 0;
+}
+
+.tools-promo-card {
+  background-color: var(--color-announcement, #3A1830) !important;
+  border-radius: 32px;
+  height: 360px;
+  min-height: 360px;
+  padding: 48px 44px !important;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.tools-promo-card .tools-card-content {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.tools-promo-card .tools-eyebrow {
+  color: #F8C0D0;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  font-size: 0.95rem;
+  margin: 0 0 12px 0;
+  display: block;
+  text-transform: uppercase;
+}
+
+.tools-promo-card .tools-title {
+  font-family: var(--font-serif);
+  font-size: 2.25rem;
+  line-height: 1.25;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0 0 10px 0;
+}
+
+.tools-promo-card .tools-title em {
+  font-style: normal;
+  color: #F8C0D0;
+}
+
+.tools-promo-card .tools-desc {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: #E6D3DA;
+  margin: 0;
+}
+
+.tools-promo-card .tools-btn {
+  background-color: #FFFFFF;
+  color: var(--color-dark, #2C1824);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 14px 28px;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.tools-promo-card .tools-btn:hover {
+  background-color: #F8C0D0;
+  transform: translateY(-2px);
 }
 
 /* ==========================================================================
@@ -3298,23 +3417,29 @@ h4.toast-info {
     gap: 20px;
   }
 
-  .tools-promo-card {
-    display: none !important;
+  .mobile-payment-section {
+    padding: 20px 0 32px;
+  }
+
+  .mobile-payment-img,
+  .mobile-payment-banner-link {
+    border-radius: 20px;
   }
 
   .mobile-payment-grid {
     grid-template-columns: 1fr !important;
   }
 
-  .wallet-promo-card {
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    padding: 40px 28px !important;
+  .wallet-promo-card,
+  .tools-promo-card {
+    padding: 36px 24px !important;
     min-height: auto !important;
+    height: auto !important;
+    border-radius: 20px !important;
   }
 
-  .wallet-promo-card .wallet-title {
+  .wallet-promo-card .wallet-title,
+  .tools-promo-card .tools-title {
     font-size: 1.75rem !important;
   }
 
