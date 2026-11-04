@@ -108,6 +108,27 @@ body.lang-bn {
   font-family: var(--font-bn);
 }
 
+body.lang-bn h1,
+body.lang-bn h2,
+body.lang-bn h3,
+body.lang-bn h4,
+body.lang-bn h5,
+body.lang-bn h6,
+body.lang-bn input,
+body.lang-bn button,
+body.lang-bn select,
+body.lang-bn textarea,
+body.lang-bn .hero-title,
+body.lang-bn .section-title,
+body.lang-bn .feature-title,
+body.lang-bn .product-title,
+body.lang-bn .journal-card-title,
+body.lang-bn em,
+body.lang-bn .font-accent {
+  font-family: var(--font-bn);
+  letter-spacing: normal;
+}
+
 img,
 svg {
   display: block;
@@ -1781,8 +1802,8 @@ h4.toast-info {
   align-items: center;
   background-color: #FFF;
   border-radius: var(--radius-full);
-  width: calc(100% + 3.8rem);
-  height: calc(52px + 1rem);
+  width: calc(100% + 1.8rem);
+  height: calc(52px + 0.6rem);
   /* calibrated: width: calc(100% + 1.8rem); height: calc(52px + 0.6rem) = 61.6px; (+1.3rem width on right side, +0.1rem height; baseline: 52px); */
   padding: 5px 6px 5px 22px;
   box-shadow: var(--shadow-sm);
@@ -2953,9 +2974,9 @@ h4.toast-info {
 .flash-sale-bn-bar {
   background: linear-gradient(90deg, #D62758 0%, #A21841 100%);
   color: #FFF;
-  border-radius: var(--radius-lg);
-  padding: 20px 30px;
-  margin: 30px 0;
+  border-radius: var(--radius-xl);
+  padding: 24px 36px;
+  margin: 40px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
