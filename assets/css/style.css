@@ -3183,6 +3183,74 @@ h4.toast-info {
 }
 
 /* ==========================================================================
+   Bangla Desktop Component Calibration (matches 32-Bangla-Desktop-Home.png)
+   ========================================================================== */
+body.lang-bn .section-header {
+  margin-bottom: 48px;
+}
+
+body.lang-bn .hero-title {
+  margin-bottom: 42px;
+}
+
+body.lang-bn .hero-desc {
+  margin-bottom: 35px;
+}
+
+body.lang-bn .hero-buttons {
+  margin-bottom: 28px;
+}
+
+body.lang-bn .category-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 18px;
+}
+
+body.lang-bn .product-card-visual {
+  margin-bottom: 20px;
+}
+
+body.lang-bn .product-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 6px;
+}
+
+body.lang-bn .product-category-name {
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+body.lang-bn .journal-section {
+  padding: 96px 0 90px;
+}
+
+body.lang-bn .journal-section .section-header {
+  margin-bottom: 56px;
+}
+
+body.lang-bn .journal-card-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 10px 0 8px;
+}
+
+body.lang-bn .journal-card-snippet {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+body.lang-bn .trust-props-section {
+  padding: 48px 0;
+}
+
+
+/* ==========================================================================
    Responsive Breakpoints (Desktop 1440px, Tablet 834px, Mobile 780px/390px)
    ========================================================================== */
 
