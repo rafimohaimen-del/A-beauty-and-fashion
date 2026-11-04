@@ -272,10 +272,10 @@
 
         <!-- Hero Visual Composition -->
         <div class="hero-visual">
-          <div class="hero-main-card">
+          <div class="hero-main-card" style="display: flex; align-items: center; justify-content: center;">
             <img src="assets/images/hero-model.svg" alt="ক্যাম্পেইন মডেল" class="hero-model-img"
-              style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; width: 62.92px; display: block;"
-              data-calibrated="52px + 10% = 57.2px, + further 10% = 62.92px (62.4px)">
+              style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); margin: auto; width: 62.92px; display: block;"
+              data-calibrated="52px + 10% = 57.2px, + further 10% = 62.92px (62.4px); centered: top: 50%; left: 50%; transform: translate(-50%, -50%);">
             <span class="hero-label-caption"
               style="left: 28px; right: auto; text-align: left; transform: translateX(-1rem);">ক্যাম্পেইন ছবি &mdash; জামদানি শাড়িতে মডেল, ঈদ গ্লো লুক</span>
           </div>
@@ -314,7 +314,9 @@
 
   <!-- Flash Sale 80% Bar (matches 32-Bangla-Desktop-Home.png) -->
   <section class="container" style="margin-bottom: 24px;">
-    <div class="flash-sale-bn-bar">
+    <div class="flash-sale-bn-bar"
+      style="width: calc(100% - 0.5rem); min-height: calc(96px + 1.2rem); padding-top: calc(24px + 0.6rem); padding-bottom: calc(24px + 0.6rem); margin-left: auto; margin-right: auto;"
+      data-calibrated="height: +1.2rem; width: -0.5rem;">
       <div>
         <h2 class="flash-sale-title">ফ্ল্যাশ সেল &mdash; ৮০% পর্যন্ত ছাড়</h2>
         <p style="font-size: 0.88rem; opacity: 0.9; margin-top: 4px;">সীমিত স্টক · শেষ হওয়ার আগেই সংগ্রহ করুন</p>
@@ -523,30 +525,23 @@
     </div>
   </section>
 
-  <!-- Split Promo Feature Banners (matches 32-Bangla-Desktop-Home.png) -->
-  <section class="feature-split-section">
+  <!-- Mobile Payment & Split Promo Feature Section (matches 33-Bangla-Mobile-Home.png & 32-Bangla-Desktop-Home.png) -->
+  <section class="feature-split-section mobile-payment-section">
     <div class="container">
-      <div class="feature-split-grid">
-        <!-- Blush Card: Mobile Wallet Offer -->
-        <div class="feature-card feature-card-lavender" style="background-color: var(--color-bg-blush);">
-          <div class="feature-card-content" style="align-self: flex-start;"
-            data-dimension="width: calc(100% + 2rem); align-self: flex-start;">
+      <div class="feature-split-grid mobile-payment-grid">
+        <!-- Blush Card: Mobile Wallet Offer (remade per reference image: 33-Bangla-Mobile-Home.png) -->
+        <div class="feature-card feature-card-lavender wallet-promo-card" style="background-color: var(--color-bg-blush);">
+          <div class="feature-card-content wallet-card-content" style="width: 100%; max-width: 100%;">
             <div class="feature-card-copy">
-              <span class="feature-eyebrow">মোবাইল ওয়ালেট অফার</span>
-              <h3 class="feature-title">বিকাশ / নগদে পেমেন্টে<br><em>১০% ক্যাশব্যাক</em></h3>
-              <p class="feature-desc">ন্যূনতম অর্ডার ৳১,৫০০ · সর্বোচ্চ ৳২০০ পর্যন্ত ক্যাশব্যাক · অফারটি সীমিত সময়ের জন্য।</p>
+              <span class="feature-eyebrow wallet-eyebrow">মোবাইল ওয়ালেট অফার</span>
+              <h3 class="feature-title wallet-title">বিকাশ / নগদে পেমেন্টে<br><em>১০% ক্যাশব্যাক</em></h3>
+              <p class="feature-desc wallet-desc">ন্যূনতম অর্ডার ৳১,৫০০ · সর্বোচ্চ ৳২০০ পর্যন্ত ক্যাশব্যাক · অফারটি সীমিত সময়ের জন্য।</p>
             </div>
-            <a href="shop.html" class="btn btn-primary btn-feature">অফার উপভোগ করুন</a>
-          </div>
-          <div class="feature-visual-box feature-visual-lavender" style="background-color: #F8DDE5;" data-dimension="width: calc(100% - 2rem);">
-            <img src="assets/images/images remade/icon-moon.svg" alt="মোবাইল ওয়ালেট অফার"
-              style="width: 115px; max-height: 115px; height: auto;">
-            <span class="product-photo-label" style="bottom: 16px; left: 20px;">লাইফস্টাইল ছবি</span>
           </div>
         </div>
 
-        <!-- Dark Card: Beauty Tools Promo -->
-        <div class="feature-card feature-card-plum">
+        <!-- Dark Card: Beauty Tools Promo (matches 32-Bangla-Desktop-Home.png; hidden on mobile per 33-Bangla-Mobile-Home.png) -->
+        <div class="feature-card feature-card-plum tools-promo-card">
           <div class="feature-card-content" style="align-self: flex-start;"
             data-dimension="width: calc(100% + 2rem); align-self: flex-start;">
             <div class="feature-card-copy">
