@@ -771,7 +771,7 @@ h1 em,
 .filter-chip-remove {
   background-color: var(--pastel-pink);
   color: var(--color-accent);
-  padding: 4px 12px;
+  padding: 7px 14px;
   border-radius: var(--radius-full);
   font-size: 0.8rem;
   font-weight: 500;
@@ -2098,7 +2098,7 @@ body.lang-bn .page-header-banner h1 {
 .filter-options {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 13px;
 }
 
 .custom-checkbox,
@@ -2107,6 +2107,7 @@ body.lang-bn .page-header-banner h1 {
   align-items: center;
   gap: 10px;
   font-size: 0.88rem;
+  font-weight: 500;
   color: var(--color-text-body);
   cursor: pointer;
 }
