@@ -700,8 +700,8 @@ h1 em,
 }
 
 .btn-sm {
-  padding: 8px 18px;
-  font-size: 0.84rem;
+  padding: 14px 28px;
+  font-size: 0.89rem;
 }
 
 .btn-lg {
@@ -1996,6 +1996,20 @@ body.lang-bn .hero-title,
 body.lang-bn .page-title,
 body.lang-bn .page-header-banner h1 {
   font-family: "Bricolage Grotesque", var(--font-bn);
+}
+
+/* 404 Error Page Custom Dimensions */
+.error-hero h1 {
+  font-size: clamp(3.84rem, 7.2vw, 5.76rem);
+}
+
+body.page-404 .container {
+  width: calc(100% + 5rem);
+  max-width: calc(1400px + 5rem);
+}
+
+body.page-404 .error-content-inner {
+  max-width: calc(650px + 25rem);
 }
 
 .breadcrumbs {
