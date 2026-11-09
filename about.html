@@ -4,20 +4,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us — ABeauty & Fashion</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    @media (max-width: 1024px) {
+      .about-hero-grid {
+        grid-template-columns: 1fr !important;
+        gap: 40px !important;
+      }
+      .about-hero-visual {
+        max-width: 631px;
+        margin: 0 auto;
+      }
+      .about-story-grid {
+        grid-template-columns: 1fr !important;
+        gap: 32px !important;
+      }
+      .about-stand-grid {
+        grid-template-columns: 1fr !important;
+      }
+      .about-choose-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+      .about-journal-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+      }
+    }
+    @media (max-width: 640px) {
+      .about-choose-grid {
+        grid-template-columns: 1fr !important;
+      }
+      .about-journal-grid {
+        grid-template-columns: 1fr !important;
+      }
+      .about-hero-visual {
+        grid-template-columns: 1fr !important;
+        height: auto !important;
+      }
+      .about-cta-card {
+        height: auto !important;
+        padding: 40px 24px !important;
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Top Announcement Bar -->
+  <!-- Top Announcement Bar (matches 17-Desktop-About-us.png) -->
   <div class="announcement-bar">
     <span>Free shipping on orders over $50</span>
     <span class="announcement-sep">·</span>
-    <span>New: The Glow Edit is live — <a href="shop.html">Shop now</a></span>
+    <span>New: The Glow Edit is live</span>
     <span class="announcement-sep">·</span>
     <span>Easy returns</span>
   </div>
@@ -53,37 +94,42 @@
     </div>
   </header>
 
-  <!-- Hero Section: Beauty, without the guesswork (matches 17-Desktop-About-us.png) -->
-  <section class="page-header-banner" style="background-color: var(--color-bg-blush); padding: 70px 0 80px;">
+  <!-- Hero Section: Beauty, without the guesswork (matches 17-Desktop-About-us.png y=125..844) -->
+  <section class="page-header-banner" style="background-color: var(--color-bg-blush); padding: 88px 0 96px;">
     <div class="container">
-      <div style="display: grid; grid-template-columns: 1.1fr 1fr; gap: 50px; align-items: center;">
-        <div>
-          <span class="eyebrow">ABOUT US</span>
-          <h1 class="page-title" style="font-family: 'Bricolage Grotesque', var(--font-body); font-size: clamp(2.4rem, 4.5vw, 3.8rem); margin-bottom: 20px;">
-            Beauty, without the <em class="accent-serif">guesswork.</em>
+      <div class="about-hero-grid" style="display: grid; grid-template-columns: 1fr 631px; gap: 80px; align-items: center;">
+        <div style="max-width: 580px;">
+          <span class="eyebrow" style="color: var(--color-accent); font-weight: 700; letter-spacing: 0.1em; margin-bottom: 24px; display: inline-block;">ABOUT US</span>
+          <h1 class="page-title" style="font-family: 'Bricolage Grotesque', var(--font-body); font-size: clamp(3.2rem, 5.2vw, 4.2rem); font-weight: 800; line-height: 1.05; color: var(--color-dark); margin-bottom: 24px;">
+            Beauty,<br>without the<br><em class="accent-serif" style="color: var(--color-accent); font-style: italic;">guesswork.</em>
           </h1>
-          <p class="page-subtitle" style="margin-bottom: 32px; font-size: 1.15rem;">
+          <p class="page-subtitle" style="margin-bottom: 36px; font-size: 1.125rem; line-height: 1.6; color: var(--color-text-muted); max-width: 500px;">
             ABeauty &amp; Fashion started as a place for honest how-tos and buying guides. Now we stock the products we'd actually recommend &mdash; so you can learn, choose and shop in one place.
           </p>
           <div style="display: flex; gap: 16px;">
-            <a href="shop.html" class="btn btn-primary btn-lg">Shop the edit</a>
-            <a href="#journal" class="btn btn-outline btn-lg">Read the journal</a>
+            <a href="shop.html" class="btn btn-primary btn-lg" style="padding: 16px 36px; font-size: 0.95rem; font-weight: 700;">Shop the edit</a>
+            <a href="#journal" class="btn btn-outline btn-lg" style="padding: 16px 36px; font-size: 0.95rem; font-weight: 700;">Read the journal</a>
           </div>
         </div>
 
-        <!-- 3-box visual composition -->
-        <div style="display: grid; grid-template-columns: 1.3fr 1fr; gap: 16px;">
-          <div style="background-color: var(--pastel-pink); border-radius: var(--radius-xl); height: 380px; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative;">
-            <img src="assets/images/hero-model.svg" alt="Founder silhouette" style="width: 80px;">
-            <span class="product-photo-label" style="bottom: 14px; left: 16px;">FOUNDER / TEAM PHOTO</span>
+        <!-- 3-box visual composition (matches 17-Desktop-About-us.png y=213..748, height: 536px) -->
+        <div class="about-hero-visual" style="display: grid; grid-template-columns: 298px 317px; gap: 16px; height: 536px;">
+          <!-- Founder / Team Photo Card -->
+          <div style="background-color: var(--pastel-pink); border-radius: var(--radius-xl); height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative;">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(42, 18, 32, 0.6)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="8" r="4.5"></circle>
+              <path d="M4 21c0-4.5 3.5-7.5 8-7.5s8 3 8 7.5"></path>
+            </svg>
+            <span class="product-photo-label" style="position: absolute; bottom: 20px; left: 20px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; color: rgba(42, 18, 32, 0.55);">FOUNDER / TEAM PHOTO</span>
           </div>
 
-          <div style="display: flex; flex-direction: column; gap: 16px;">
-            <div style="flex: 1; background-color: var(--pastel-peach); border-radius: var(--radius-lg); display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; min-height: 180px;">
-              <span class="product-photo-label" style="bottom: 12px; left: 14px;">STUDIO / FLAT-LAY</span>
+          <!-- Right Column: Studio / Flat-lay and Product Testing -->
+          <div style="display: flex; flex-direction: column; gap: 16px; height: 100%;">
+            <div style="flex: 1; background-color: var(--pastel-peach); border-radius: var(--radius-xl); position: relative;">
+              <span class="product-photo-label" style="position: absolute; bottom: 20px; left: 20px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; color: rgba(42, 18, 32, 0.55);">STUDIO / FLAT-LAY</span>
             </div>
-            <div style="flex: 1; background-color: var(--pastel-lilac); border-radius: var(--radius-lg); display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; min-height: 180px;">
-              <span class="product-photo-label" style="bottom: 12px; left: 14px;">PRODUCT TESTING</span>
+            <div style="flex: 1; background-color: var(--pastel-lilac); border-radius: var(--radius-xl); position: relative;">
+              <span class="product-photo-label" style="position: absolute; bottom: 20px; left: 20px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; color: rgba(42, 18, 32, 0.55);">PRODUCT TESTING</span>
             </div>
           </div>
         </div>
@@ -91,23 +137,23 @@
     </div>
   </section>
 
-  <!-- Our Story Section (matches 17-Desktop-About-us.png) -->
-  <section style="padding: 80px 0;">
+  <!-- Our Story Section (matches 17-Desktop-About-us.png y=845..1354) -->
+  <section style="padding: 110px 0 115px;">
     <div class="container">
-      <div style="display: grid; grid-template-columns: 1fr 1.6fr; gap: 60px;">
+      <div class="about-story-grid" style="display: grid; grid-template-columns: 358px 1fr; gap: 98px; align-items: start;">
         <div>
-          <span class="eyebrow">OUR STORY</span>
-          <h2 style="font-size: 2.5rem; font-weight: 800; line-height: 1.2; color: var(--color-dark);">
-            From guides to a <em class="accent-serif">store</em>
+          <span class="eyebrow" style="color: var(--color-accent); font-weight: 700; letter-spacing: 0.1em; margin-bottom: 16px; display: inline-block;">OUR STORY</span>
+          <h2 style="font-size: clamp(2.4rem, 3.8vw, 3rem); font-weight: 800; line-height: 1.15; color: var(--color-dark); margin: 0;">
+            From guides to<br>a <em class="accent-serif" style="color: var(--color-accent); font-style: italic;">store</em>
           </h2>
         </div>
 
-        <div style="font-size: 1.1rem; line-height: 1.7; color: var(--color-text-body); display: flex; flex-direction: column; gap: 20px;">
+        <div style="font-size: 1.05rem; line-height: 1.75; color: var(--color-text-body); display: flex; flex-direction: column; gap: 24px; max-width: 756px;">
           <p>
             Since [year], we've published guides on skincare, hair care, personal care and style &mdash; from <em>how to wash your face properly</em> to <em>how to choose the best facial steamer</em>.
           </p>
           <p>
-            Readers kept asking the same question: "Which one should I actually buy?" So we built a shop around that answer &mdash; a small, curated range of products we've researched, compared and would happily use ourselves.
+            Readers kept asking the same question: &ldquo;Which one should I actually buy?&rdquo; So we built a shop around that answer &mdash; a small, curated range of products we've researched, compared and would happily use ourselves.
           </p>
           <p style="color: var(--color-text-muted);">
             [Founder name] leads the team from [city, country]. [One or two lines about the founder and why they started ABeauty &amp; Fashion.]
@@ -117,38 +163,38 @@
     </div>
   </section>
 
-  <!-- What We Stand For (matches 17-Desktop-About-us.png) -->
-  <section style="background-color: var(--color-dark); color: #FFF; padding: 80px 0;">
+  <!-- What We Stand For (matches 17-Desktop-About-us.png y=1355..1949) -->
+  <section style="background-color: var(--color-dark); color: #FFF; padding: 108px 0;">
     <div class="container">
-      <div style="display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 50px; flex-wrap: wrap; gap: 20px;">
-        <h2 style="font-size: 2.8rem; font-weight: 800;">What we <em class="accent-serif" style="color: #F8C0D0;">stand for</em></h2>
-        <p style="color: rgba(255,255,255,0.7); font-size: 1rem; max-width: 320px;">Three promises behind every product on our shelves.</p>
+      <div style="display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 56px; flex-wrap: wrap; gap: 20px;">
+        <h2 style="font-size: clamp(2.4rem, 4vw, 3.2rem); font-weight: 800; color: #FFF; line-height: 1.15; margin: 0;">What we <em class="accent-serif" style="color: #F8C0D0; font-style: italic;">stand for</em></h2>
+        <p style="color: rgba(255,255,255,0.72); font-size: 1.05rem; max-width: 340px; line-height: 1.5; margin: 0;">Three promises behind every product on our shelves.</p>
       </div>
 
-      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+      <div class="about-stand-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
         <!-- Card 01 -->
-        <div style="background-color: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: var(--radius-xl); padding: 36px 30px;">
-          <div style="font-family: var(--font-accent); font-style: italic; font-size: 2.5rem; color: #F8C0D0; margin-bottom: 12px;">01</div>
-          <h3 style="font-size: 1.3rem; font-weight: 700; color: #FFF; margin-bottom: 12px;">Curated, not cluttered</h3>
-          <p style="font-size: 0.92rem; color: rgba(255,255,255,0.75); line-height: 1.6;">
+        <div style="background-color: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); border-radius: var(--radius-xl); padding: 38px 36px 34px; height: 280px; box-sizing: border-box;">
+          <div style="font-family: var(--font-accent); font-style: italic; font-size: 2.8rem; line-height: 1; color: #F8C0D0; margin-bottom: 16px;">01</div>
+          <h3 style="font-size: 1.35rem; font-weight: 700; color: #FFF; margin-bottom: 14px;">Curated, not cluttered</h3>
+          <p style="font-size: 0.95rem; color: rgba(255,255,255,0.72); line-height: 1.6; margin: 0;">
             A small range chosen on purpose &mdash; fewer products, each one with a clear reason to be here.
           </p>
         </div>
 
         <!-- Card 02 -->
-        <div style="background-color: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: var(--radius-xl); padding: 36px 30px;">
-          <div style="font-family: var(--font-accent); font-style: italic; font-size: 2.5rem; color: #F8C0D0; margin-bottom: 12px;">02</div>
-          <h3 style="font-size: 1.3rem; font-weight: 700; color: #FFF; margin-bottom: 12px;">Honest guidance</h3>
-          <p style="font-size: 0.92rem; color: rgba(255,255,255,0.75); line-height: 1.6;">
+        <div style="background-color: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); border-radius: var(--radius-xl); padding: 38px 36px 34px; height: 280px; box-sizing: border-box;">
+          <div style="font-family: var(--font-accent); font-style: italic; font-size: 2.8rem; line-height: 1; color: #F8C0D0; margin-bottom: 16px;">02</div>
+          <h3 style="font-size: 1.35rem; font-weight: 700; color: #FFF; margin-bottom: 14px;">Honest guidance</h3>
+          <p style="font-size: 0.95rem; color: rgba(255,255,255,0.72); line-height: 1.6; margin: 0;">
             Our journal explains what works, for whom and why &mdash; including when you don't need to buy anything.
           </p>
         </div>
 
         <!-- Card 03 -->
-        <div style="background-color: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: var(--radius-xl); padding: 36px 30px;">
-          <div style="font-family: var(--font-accent); font-style: italic; font-size: 2.5rem; color: #F8C0D0; margin-bottom: 12px;">03</div>
-          <h3 style="font-size: 1.3rem; font-weight: 700; color: #FFF; margin-bottom: 12px;">Authentic only</h3>
-          <p style="font-size: 0.92rem; color: rgba(255,255,255,0.75); line-height: 1.6;">
+        <div style="background-color: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); border-radius: var(--radius-xl); padding: 38px 36px 34px; height: 280px; box-sizing: border-box;">
+          <div style="font-family: var(--font-accent); font-style: italic; font-size: 2.8rem; line-height: 1; color: #F8C0D0; margin-bottom: 16px;">03</div>
+          <h3 style="font-size: 1.35rem; font-weight: 700; color: #FFF; margin-bottom: 14px;">Authentic only</h3>
+          <p style="font-size: 0.95rem; color: rgba(255,255,255,0.72); line-height: 1.6; margin: 0;">
             Sourced from brands and authorised distributors. No grey-market stock, ever.
           </p>
         </div>
@@ -156,95 +202,95 @@
     </div>
   </section>
 
-  <!-- How We Choose: 4-step process (matches 17-Desktop-About-us.png) -->
-  <section style="padding: 80px 0; text-align: center;">
+  <!-- How We Choose: 4-step process (matches 17-Desktop-About-us.png y=1950..2450) -->
+  <section style="padding: 96px 0 90px; text-align: center;">
     <div class="container">
-      <span class="eyebrow">HOW WE CHOOSE</span>
-      <h2 style="font-size: 2.5rem; font-weight: 800; color: var(--color-dark); margin-bottom: 50px;">
-        Every product earns its <em class="accent-serif">place</em>
+      <span class="eyebrow" style="color: var(--color-accent); font-weight: 700; letter-spacing: 0.1em; margin-bottom: 12px; display: inline-block;">HOW WE CHOOSE</span>
+      <h2 style="font-size: clamp(2.4rem, 4vw, 3rem); font-weight: 800; color: var(--color-dark); margin-bottom: 48px;">
+        Every product earns its <em class="accent-serif" style="color: var(--color-accent); font-style: italic;">place</em>
       </h2>
 
-      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; text-align: left;">
-        <div style="border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 30px 24px; background: #FFF;">
-          <div class="checkout-badge-num" style="margin-bottom: 16px;">1</div>
+      <div class="about-choose-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; text-align: left;">
+        <div style="background-color: #FFF7F8; border-radius: var(--radius-xl); padding: 28px 24px; height: 196px; box-sizing: border-box;">
+          <div style="width: 32px; height: 32px; border-radius: 50%; background-color: var(--color-dark); color: #FFF; display: flex; align-items: center; justify-content: center; font-size: 0.95rem; font-weight: 700; margin-bottom: 18px;">1</div>
           <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--color-dark); margin-bottom: 8px;">Research</h3>
-          <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.5;">We read the ingredient lists, specs and real customer feedback.</p>
+          <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.55; margin: 0;">We read the ingredient lists, specs and real customer feedback.</p>
         </div>
 
-        <div style="border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 30px 24px; background: #FFF;">
-          <div class="checkout-badge-num" style="margin-bottom: 16px;">2</div>
+        <div style="background-color: #FFF7F8; border-radius: var(--radius-xl); padding: 28px 24px; height: 196px; box-sizing: border-box;">
+          <div style="width: 32px; height: 32px; border-radius: 50%; background-color: var(--color-dark); color: #FFF; display: flex; align-items: center; justify-content: center; font-size: 0.95rem; font-weight: 700; margin-bottom: 18px;">2</div>
           <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--color-dark); margin-bottom: 8px;">Compare</h3>
-          <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.5;">Each product is weighed against alternatives at the same price.</p>
+          <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.55; margin: 0;">Each product is weighed against alternatives at the same price.</p>
         </div>
 
-        <div style="border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 30px 24px; background: #FFF;">
-          <div class="checkout-badge-num" style="margin-bottom: 16px;">3</div>
+        <div style="background-color: #FFF7F8; border-radius: var(--radius-xl); padding: 28px 24px; height: 196px; box-sizing: border-box;">
+          <div style="width: 32px; height: 32px; border-radius: 50%; background-color: var(--color-dark); color: #FFF; display: flex; align-items: center; justify-content: center; font-size: 0.95rem; font-weight: 700; margin-bottom: 18px;">3</div>
           <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--color-dark); margin-bottom: 8px;">Try</h3>
-          <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.5;">Our team uses it in a real routine before recommending it.</p>
+          <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.55; margin: 0;">Our team uses it in a real routine before recommending it.</p>
         </div>
 
-        <div style="border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 30px 24px; background: #FFF;">
-          <div class="checkout-badge-num" style="margin-bottom: 16px;">4</div>
+        <div style="background-color: #FFF7F8; border-radius: var(--radius-xl); padding: 28px 24px; height: 196px; box-sizing: border-box;">
+          <div style="width: 32px; height: 32px; border-radius: 50%; background-color: var(--color-dark); color: #FFF; display: flex; align-items: center; justify-content: center; font-size: 0.95rem; font-weight: 700; margin-bottom: 18px;">4</div>
           <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--color-dark); margin-bottom: 8px;">Stock</h3>
-          <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.5;">Only the ones that pass make it into the shop and our guides.</p>
+          <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.55; margin: 0;">Only the ones that pass make it into the shop and our guides.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Explore the Journal (matches 17-Desktop-About-us.png) -->
-  <section id="journal" style="padding: 20px 0 80px;">
+  <!-- Explore the Journal (matches 17-Desktop-About-us.png y=2532..2749) -->
+  <section id="journal" style="padding: 20px 0 60px;">
     <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Explore the <em class="accent-serif">Journal</em></h2>
-        <a href="#journal" class="section-link">All articles &rarr;</a>
+      <div class="section-header" style="display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 32px;">
+        <h2 class="section-title" style="font-size: clamp(2rem, 3.5vw, 2.6rem); font-weight: 800; color: var(--color-dark); margin: 0;">Explore the <em class="accent-serif" style="color: var(--color-accent); font-style: italic;">Journal</em></h2>
+        <a href="#journal" style="font-size: 0.95rem; font-weight: 600; color: var(--color-dark); text-decoration: underline;">All articles</a>
       </div>
 
-      <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px;">
-        <div style="background-color: var(--pastel-pink); border-radius: var(--radius-lg); padding: 24px 20px; min-height: 180px; display: flex; flex-direction: column; justify-content: space-between;">
-          <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--color-dark);">Beauty &amp; Fashion</h4>
-          <a href="shop.html" style="font-size: 0.85rem; font-weight: 600; color: var(--color-dark);">Read &rarr;</a>
+      <div class="about-journal-grid" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px;">
+        <div style="background-color: var(--pastel-pink); border-radius: var(--radius-xl); padding: 28px 22px; height: 218px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between;">
+          <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--color-dark); margin: 0;">Beauty &amp; Fashion</h4>
+          <a href="shop.html" style="font-size: 0.88rem; font-weight: 600; color: var(--color-dark); text-decoration: none;">Read &rarr;</a>
         </div>
 
-        <div style="background-color: var(--pastel-sage); border-radius: var(--radius-lg); padding: 24px 20px; min-height: 180px; display: flex; flex-direction: column; justify-content: space-between;">
-          <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--color-dark);">Personal Care</h4>
-          <a href="shop.html" style="font-size: 0.85rem; font-weight: 600; color: var(--color-dark);">Read &rarr;</a>
+        <div style="background-color: var(--pastel-sage); border-radius: var(--radius-xl); padding: 28px 22px; height: 218px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between;">
+          <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--color-dark); margin: 0;">Personal Care</h4>
+          <a href="shop.html" style="font-size: 0.88rem; font-weight: 600; color: var(--color-dark); text-decoration: none;">Read &rarr;</a>
         </div>
 
-        <div style="background-color: var(--pastel-peach); border-radius: var(--radius-lg); padding: 24px 20px; min-height: 180px; display: flex; flex-direction: column; justify-content: space-between;">
-          <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--color-dark);">Health &amp; Fitness</h4>
-          <a href="shop.html" style="font-size: 0.85rem; font-weight: 600; color: var(--color-dark);">Read &rarr;</a>
+        <div style="background-color: var(--pastel-warm); border-radius: var(--radius-xl); padding: 28px 22px; height: 218px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between;">
+          <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--color-dark); margin: 0;">Health &amp; Fitness</h4>
+          <a href="shop.html" style="font-size: 0.88rem; font-weight: 600; color: var(--color-dark); text-decoration: none;">Read &rarr;</a>
         </div>
 
-        <div style="background-color: var(--pastel-lilac); border-radius: var(--radius-lg); padding: 24px 20px; min-height: 180px; display: flex; flex-direction: column; justify-content: space-between;">
-          <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--color-dark);">Style</h4>
-          <a href="shop.html" style="font-size: 0.85rem; font-weight: 600; color: var(--color-dark);">Read &rarr;</a>
+        <div style="background-color: var(--pastel-lilac); border-radius: var(--radius-xl); padding: 28px 22px; height: 218px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between;">
+          <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--color-dark); margin: 0;">Style</h4>
+          <a href="shop.html" style="font-size: 0.88rem; font-weight: 600; color: var(--color-dark); text-decoration: none;">Read &rarr;</a>
         </div>
 
-        <div style="background-color: var(--pastel-blue); border-radius: var(--radius-lg); padding: 24px 20px; min-height: 180px; display: flex; flex-direction: column; justify-content: space-between;">
-          <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--color-dark);">Buying Guides</h4>
-          <a href="shop.html" style="font-size: 0.85rem; font-weight: 600; color: var(--color-dark);">Read &rarr;</a>
+        <div style="background-color: var(--pastel-blue); border-radius: var(--radius-xl); padding: 28px 22px; height: 218px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between;">
+          <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--color-dark); margin: 0;">Buying Guides</h4>
+          <a href="shop.html" style="font-size: 0.88rem; font-weight: 600; color: var(--color-dark); text-decoration: none;">Read &rarr;</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Big Red/Berry Call to Action Banner (matches 17-Desktop-About-us.png) -->
-  <section class="container" style="margin-bottom: 80px;">
-    <div style="background-color: var(--color-accent); border-radius: var(--radius-xl); padding: 60px; color: #FFF; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 30px;">
+  <!-- Big Red/Berry Call to Action Banner (matches 17-Desktop-About-us.png y=2941..3198, height: 258px) -->
+  <section class="container" style="margin: 100px auto 117px;">
+    <div class="about-cta-card" style="background-color: var(--color-accent); border-radius: var(--radius-xl); height: 258px; padding: 0 64px; color: #FFF; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 30px; box-sizing: border-box;">
       <div>
-        <h2 style="font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 800; line-height: 1.15;">
-          Ready to find what <em class="accent-serif" style="color: #FFF;">actually works?</em>
+        <h2 style="font-size: clamp(2.4rem, 4vw, 3.4rem); font-weight: 800; line-height: 1.15; color: #FFF; margin: 0;">
+          Ready to find what <em class="accent-serif" style="color: #FFF; font-style: italic;">actually<br>works?</em>
         </h2>
       </div>
       <div style="display: flex; gap: 16px;">
-        <a href="shop.html" class="btn btn-outline-white" style="background: #FFF; color: var(--color-accent); border-color: #FFF; padding: 14px 32px;">Shop now</a>
-        <a href="contact.html" class="btn btn-outline-white" style="padding: 14px 32px;">Contact us</a>
+        <a href="shop.html" class="btn" style="background: #FFF; color: var(--color-accent); border: 1px solid #FFF; border-radius: var(--radius-full); padding: 14px 34px; font-weight: 700; font-size: 0.95rem; text-decoration: none;">Shop now</a>
+        <a href="contact.html" class="btn" style="background: transparent; color: #FFF; border: 1px solid rgba(255, 255, 255, 0.85); border-radius: var(--radius-full); padding: 14px 34px; font-weight: 700; font-size: 0.95rem; text-decoration: none;">Contact us</a>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Footer (Common Footer Style) -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-top">
@@ -267,7 +313,7 @@
             <li><a href="account.html" class="footer-link">Track order</a></li>
             <li><a href="contact.html" class="footer-link">Shipping</a></li>
             <li><a href="contact.html" class="footer-link">Returns</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -299,4 +345,3 @@
 
 </body>
 </html>
-
