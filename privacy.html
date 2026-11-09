@@ -1,23 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy — ABeauty & Fashion</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .legal-sidebar-link {
+      display: flex;
+      align-items: center;
+      height: 36px;
+      padding: 0 16px;
+      border-radius: var(--radius-full);
+      color: #665C62;
+      text-decoration: none;
+      font-size: 0.88rem;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+    .legal-sidebar-link:hover {
+      color: var(--color-dark);
+      background-color: rgba(252, 238, 241, 0.5);
+    }
+    .legal-sidebar-link.active {
+      background-color: #FCEEF1;
+      color: var(--color-dark);
+      font-weight: 700;
+    }
+    .legal-section {
+      scroll-margin-top: 100px;
+    }
+    @media (max-width: 900px) {
+      .legal-layout-grid {
+        grid-template-columns: 1fr !important;
+        gap: 36px !important;
+      }
+      .legal-sidebar {
+        position: static !important;
+      }
+    }
+    @media print {
+      .site-header, .announcement-bar, .page-header-banner, .legal-sidebar, .site-footer {
+        display: none !important;
+      }
+      main.container {
+        padding: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+      .legal-layout-grid {
+        display: block !important;
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Top Announcement Bar -->
+  <!-- Top Announcement Bar (matches 18-Desktop-Privacy-Policy.png y=0..39) -->
   <div class="announcement-bar">
     <span>Free shipping on orders over $50</span>
     <span class="announcement-sep">·</span>
-    <span>New: The Glow Edit is live — <a href="shop.html">Shop now</a></span>
+    <span>New: The Glow Edit is live</span>
     <span class="announcement-sep">·</span>
     <span>Easy returns</span>
   </div>
@@ -45,170 +92,193 @@
             </span>
             <input type="text" name="q" class="search-input" placeholder="Search serums, dryers...">
           </form>
-          <a href="account.html" class="action-icon-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></a>
-          <a href="cart.html" class="action-icon-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg><span class="badge-count">2</span></a>
+          <a href="account.html" class="action-icon-btn" title="Account"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></a>
+          <a href="account.html#wishlist" class="action-icon-btn" title="Wishlist"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></a>
+          <a href="cart.html" class="action-icon-btn" title="Cart"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg><span class="badge-count">2</span></a>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Legal Banner (matches 18-Desktop-Privacy-Policy.png) -->
-  <section class="page-header-banner">
+  <!-- Legal Banner (matches 18-Desktop-Privacy-Policy.png y=125..389, height: 265px) -->
+  <section class="page-header-banner" style="background-color: var(--color-bg-blush); padding: 67px 0 58px;">
     <div class="container">
-      <div style="display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+      <div style="display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 24px;">
         <div>
-          <span class="eyebrow">LEGAL</span>
-          <h1 class="page-title" style="font-family: 'Bricolage Grotesque', var(--font-body);">Privacy <em class="accent-serif">Policy</em></h1>
-          <p style="font-size: 0.88rem; color: var(--color-text-muted);">Last updated: [Effective date] · Reading time ~6 min</p>
+          <span class="eyebrow" style="color: var(--color-accent); font-weight: 700; letter-spacing: 0.1em; margin-bottom: 12px; display: inline-block;">LEGAL</span>
+          <h1 class="page-title" style="font-family: 'Bricolage Grotesque', var(--font-body); font-size: clamp(2.4rem, 4.5vw, 3.8rem); font-weight: 800; color: var(--color-dark); margin-bottom: 12px; line-height: 1.1;">
+            Privacy <em class="accent-serif" style="color: var(--color-accent); font-style: italic;">Policy</em>
+          </h1>
+          <p style="font-size: 0.88rem; color: var(--color-text-muted); margin: 0;">Last updated: [Effective date] · Reading time ~6 min</p>
         </div>
-        <div style="display: flex; gap: 10px;">
-          <a href="privacy.html" class="btn btn-primary btn-sm">Privacy Policy</a>
-          <a href="terms.html" class="btn btn-outline btn-sm">Terms &amp; Conditions</a>
+        <div style="display: flex; gap: 12px; align-items: center;">
+          <a href="privacy.html" class="btn" style="background: var(--color-dark); color: #FFF; border-radius: var(--radius-full); padding: 10px 24px; font-weight: 600; font-size: 0.88rem; text-decoration: none;">Privacy Policy</a>
+          <a href="terms.html" class="btn" style="background: #FFF; color: var(--color-dark); border: 1px solid var(--color-border); border-radius: var(--radius-full); padding: 10px 24px; font-weight: 500; font-size: 0.88rem; text-decoration: none;">Terms &amp; Conditions</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Legal Content with Sticky Sidebar -->
-  <main class="container" style="padding: 50px 0 80px;">
-    <div style="display: grid; grid-template-columns: 240px 1fr; gap: 50px;">
+  <!-- Legal Content with Sticky Sidebar (matches 18-Desktop-Privacy-Policy.png y=390..2784) -->
+  <main class="container" style="padding: 70px 0 90px;">
+    <div class="legal-layout-grid" style="display: grid; grid-template-columns: 300px 1fr; gap: 80px; align-items: start;">
       <!-- Sticky Sidebar -->
-      <aside style="position: sticky; top: 100px; height: fit-content;">
-        <span style="font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; color: var(--color-text-muted); display: block; margin-bottom: 14px;">ON THIS PAGE</span>
-        <ul style="display: flex; flex-direction: column; gap: 6px; font-size: 0.85rem;">
-          <li><a href="#sec-1" style="display: block; padding: 6px 12px; border-radius: var(--radius-full); background: var(--pastel-pink); color: var(--color-dark); font-weight: 600;">01. Who we are</a></li>
-          <li><a href="#sec-2" style="display: block; padding: 6px 12px; color: var(--color-text-muted);">02. Information we collect</a></li>
-          <li><a href="#sec-3" style="display: block; padding: 6px 12px; color: var(--color-text-muted);">03. How we use your information</a></li>
-          <li><a href="#sec-4" style="display: block; padding: 6px 12px; color: var(--color-text-muted);">04. Cookies</a></li>
-          <li><a href="#sec-5" style="display: block; padding: 6px 12px; color: var(--color-text-muted);">05. Payments</a></li>
-          <li><a href="#sec-6" style="display: block; padding: 6px 12px; color: var(--color-text-muted);">06. Sharing your information</a></li>
-          <li><a href="#sec-7" style="display: block; padding: 6px 12px; color: var(--color-text-muted);">07. How long we keep it</a></li>
-          <li><a href="#sec-8" style="display: block; padding: 6px 12px; color: var(--color-text-muted);">08. Your rights</a></li>
-          <li><a href="#sec-9" style="display: block; padding: 6px 12px; color: var(--color-text-muted);">09. Security</a></li>
-          <li><a href="#sec-10" style="display: block; padding: 6px 12px; color: var(--color-text-muted);">10. Children</a></li>
-          <li><a href="#sec-11" style="display: block; padding: 6px 12px; color: var(--color-text-muted);">11. Changes to this policy</a></li>
+      <aside class="legal-sidebar" style="position: sticky; top: 100px; height: fit-content; width: 300px;">
+        <span style="font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; color: var(--color-text-muted); display: block; margin-bottom: 16px; padding-left: 16px;">ON THIS PAGE</span>
+        <ul style="display: flex; flex-direction: column; gap: 2px; list-style: none; padding: 0; margin: 0;">
+          <li><a href="#sec-1" class="legal-sidebar-link active">01. Who we are</a></li>
+          <li><a href="#sec-2" class="legal-sidebar-link">02. Information we collect</a></li>
+          <li><a href="#sec-3" class="legal-sidebar-link">03. How we use your information</a></li>
+          <li><a href="#sec-4" class="legal-sidebar-link">04. Cookies</a></li>
+          <li><a href="#sec-5" class="legal-sidebar-link">05. Payments</a></li>
+          <li><a href="#sec-6" class="legal-sidebar-link">06. Sharing your information</a></li>
+          <li><a href="#sec-7" class="legal-sidebar-link">07. How long we keep it</a></li>
+          <li><a href="#sec-8" class="legal-sidebar-link">08. Your rights</a></li>
+          <li><a href="#sec-9" class="legal-sidebar-link">09. Security</a></li>
+          <li><a href="#sec-10" class="legal-sidebar-link">10. Children</a></li>
+          <li><a href="#sec-11" class="legal-sidebar-link">11. Changes to this policy</a></li>
         </ul>
-        <button type="button" class="btn btn-outline btn-sm" style="margin-top: 24px; width: 100%;">
-          &#128424; Print
-        </button>
+        <div style="padding-left: 16px; margin-top: 33px;">
+          <button type="button" class="btn" style="width: 76px; height: 48px; border-radius: 8px; border: 1px solid var(--color-border); background: #FFF; color: var(--color-dark); font-size: 0.88rem; font-weight: 600; display: inline-flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 6 2 18 2 18 9"></polyline>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+              <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            <span>Print</span>
+          </button>
+        </div>
       </aside>
 
-      <!-- Content Body -->
-      <article style="display: flex; flex-direction: column; gap: 36px; line-height: 1.7; font-size: 0.98rem; color: var(--color-text-body);">
-        <p style="font-size: 1.05rem;">
+      <!-- Content Body (max-width: 760px) -->
+      <article style="display: flex; flex-direction: column; gap: 40px; line-height: 1.7; font-size: 0.98rem; color: var(--color-text-body); max-width: 760px;">
+        <p style="font-size: 1.05rem; line-height: 1.75; margin: 0 0 10px 0; color: #2A1220;">
           This Privacy Policy explains how [Company legal name] (&ldquo;ABeauty &amp; Fashion&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;) collects, uses and protects your personal information when you visit abeautynfashion.com, read our journal or shop with us.
         </p>
 
-        <section id="sec-1">
-          <h2 style="font-size: 1.4rem; font-weight: 800; color: var(--color-dark); margin-bottom: 8px;">
-            <em class="accent-serif" style="font-size: 1.6rem; color: var(--color-accent); margin-right: 6px;">01</em> Who we are
+        <!-- 01 -->
+        <section id="sec-1" class="legal-section">
+          <h2 style="font-size: 1.35rem; font-weight: 800; color: var(--color-dark); margin-bottom: 12px; display: flex; align-items: baseline;">
+            <em class="accent-serif" style="font-size: 1.75rem; color: var(--color-accent); font-style: italic; margin-right: 15px; font-weight: 400;">01</em> Who we are
           </h2>
-          <p>[Company legal name] operates abeautynfashion.com. Our registered address is [business address]. For data questions you can reach us at [privacy@abeautynfashion.com].</p>
+          <p style="margin: 0; color: #4A3E45; line-height: 1.7;">[Company legal name] operates abeautynfashion.com. Our registered address is [business address]. For data questions you can reach us at [privacy@abeautynfashion.com].</p>
         </section>
 
-        <section id="sec-2">
-          <h2 style="font-size: 1.4rem; font-weight: 800; color: var(--color-dark); margin-bottom: 8px;">
-            <em class="accent-serif" style="font-size: 1.6rem; color: var(--color-accent); margin-right: 6px;">02</em> Information we collect
+        <!-- 02 -->
+        <section id="sec-2" class="legal-section">
+          <h2 style="font-size: 1.35rem; font-weight: 800; color: var(--color-dark); margin-bottom: 12px; display: flex; align-items: baseline;">
+            <em class="accent-serif" style="font-size: 1.75rem; color: var(--color-accent); font-style: italic; margin-right: 15px; font-weight: 400;">02</em> Information we collect
           </h2>
-          <p>Information you give us: your name, email, phone, shipping and billing address, order details, reviews and messages you send us.</p>
-          <p>Information collected automatically: device and browser type, IP address, pages viewed and how you arrived on our site, collected through cookies and similar technologies.</p>
-        </section>
-
-        <section id="sec-3">
-          <h2 style="font-size: 1.4rem; font-weight: 800; color: var(--color-dark); margin-bottom: 8px;">
-            <em class="accent-serif" style="font-size: 1.6rem; color: var(--color-accent); margin-right: 6px;">03</em> How we use your information
-          </h2>
-          <p>To process and deliver your orders, provide customer support, send order and shipping updates, prevent fraud, improve our store and journal, and &mdash; only with your consent &mdash; send marketing emails.</p>
-        </section>
-
-        <section id="sec-4">
-          <h2 style="font-size: 1.4rem; font-weight: 800; color: var(--color-dark); margin-bottom: 8px;">
-            <em class="accent-serif" style="font-size: 1.6rem; color: var(--color-accent); margin-right: 6px;">04</em> Cookies
-          </h2>
-          <p>We use essential cookies to run the cart and checkout, and optional analytics and marketing cookies only if you accept them in our cookie banner. You can change your choice at any time from the &ldquo;Cookie settings&rdquo; link in the footer.</p>
-        </section>
-
-        <section id="sec-5">
-          <h2 style="font-size: 1.4rem; font-weight: 800; color: var(--color-dark); margin-bottom: 8px;">
-            <em class="accent-serif" style="font-size: 1.6rem; color: var(--color-accent); margin-right: 6px;">05</em> Payments
-          </h2>
-          <p>Payments are handled by our payment providers ([e.g. Stripe, PayPal]). We never see or store your full card number.</p>
-        </section>
-
-        <section id="sec-6">
-          <h2 style="font-size: 1.4rem; font-weight: 800; color: var(--color-dark); margin-bottom: 8px;">
-            <em class="accent-serif" style="font-size: 1.6rem; color: var(--color-accent); margin-right: 6px;">06</em> Sharing your information
-          </h2>
-          <p>We share only what is needed with service providers that help us run the store &mdash; payment processors, delivery carriers, email and analytics tools. We do not sell your personal information.</p>
-          <p>Some journal articles contain affiliate links. If you click one, the retailer may set its own cookies under its own privacy policy.</p>
-        </section>
-
-        <section id="sec-7">
-          <h2 style="font-size: 1.4rem; font-weight: 800; color: var(--color-dark); margin-bottom: 8px;">
-            <em class="accent-serif" style="font-size: 1.6rem; color: var(--color-accent); margin-right: 6px;">07</em> How long we keep it
-          </h2>
-          <p>We keep order records for as long as required for tax and accounting purposes ([retention period]) and delete or anonymise other data when it is no longer needed.</p>
-        </section>
-
-        <section id="sec-8">
-          <h2 style="font-size: 1.4rem; font-weight: 800; color: var(--color-dark); margin-bottom: 8px;">
-            <em class="accent-serif" style="font-size: 1.6rem; color: var(--color-accent); margin-right: 6px;">08</em> Your rights
-          </h2>
-          <p>Depending on where you live, you may have the right to access, correct, delete or export your data, and to opt out of marketing at any time. To make a request, contact us at the address below.</p>
-        </section>
-
-        <section id="sec-9">
-          <h2 style="font-size: 1.4rem; font-weight: 800; color: var(--color-dark); margin-bottom: 8px;">
-            <em class="accent-serif" style="font-size: 1.6rem; color: var(--color-accent); margin-right: 6px;">09</em> Security
-          </h2>
-          <p>We use encryption (HTTPS), secure payment gateways and access controls to protect your data. No method of transmission is 100% secure, but we work to protect your information.</p>
-        </section>
-
-        <section id="sec-10">
-          <h2 style="font-size: 1.4rem; font-weight: 800; color: var(--color-dark); margin-bottom: 8px;">
-            <em class="accent-serif" style="font-size: 1.6rem; color: var(--color-accent); margin-right: 6px;">10</em> Children
-          </h2>
-          <p>Our store is not directed at children under [13/16], and we do not knowingly collect their personal information.</p>
-        </section>
-
-        <section id="sec-11">
-          <h2 style="font-size: 1.4rem; font-weight: 800; color: var(--color-dark); margin-bottom: 8px;">
-            <em class="accent-serif" style="font-size: 1.6rem; color: var(--color-accent); margin-right: 6px;">11</em> Changes to this policy
-          </h2>
-          <p>We may update this policy from time to time. The &ldquo;Last updated&rdquo; date at the top shows when it last changed.</p>
-        </section>
-
-        <!-- Questions Card -->
-        <div style="background-color: var(--color-bg-blush); border-radius: var(--radius-lg); padding: 24px 30px; display: flex; align-items: center; justify-content: space-between; margin-top: 20px;">
-          <div>
-            <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--color-dark);">Questions about your data?</h4>
-            <p style="font-size: 0.88rem; color: var(--color-text-muted);">Email [privacy@abeautynfashion.com] or use our contact form.</p>
+          <div style="display: flex; flex-direction: column; gap: 14px; color: #4A3E45; line-height: 1.7;">
+            <p style="margin: 0;">Information you give us: your name, email, phone, shipping and billing address, order details, reviews and messages you send us.</p>
+            <p style="margin: 0;">Information collected automatically: device and browser type, IP address, pages viewed and how you arrived on our site, collected through cookies and similar technologies.</p>
           </div>
-          <a href="contact.html" class="btn btn-primary btn-sm">Contact us</a>
+        </section>
+
+        <!-- 03 -->
+        <section id="sec-3" class="legal-section">
+          <h2 style="font-size: 1.35rem; font-weight: 800; color: var(--color-dark); margin-bottom: 12px; display: flex; align-items: baseline;">
+            <em class="accent-serif" style="font-size: 1.75rem; color: var(--color-accent); font-style: italic; margin-right: 15px; font-weight: 400;">03</em> How we use your information
+          </h2>
+          <p style="margin: 0; color: #4A3E45; line-height: 1.7;">To process and deliver your orders, provide customer support, send order and shipping updates, prevent fraud, improve our store and journal, and &mdash; only with your consent &mdash; send marketing emails.</p>
+        </section>
+
+        <!-- 04 -->
+        <section id="sec-4" class="legal-section">
+          <h2 style="font-size: 1.35rem; font-weight: 800; color: var(--color-dark); margin-bottom: 12px; display: flex; align-items: baseline;">
+            <em class="accent-serif" style="font-size: 1.75rem; color: var(--color-accent); font-style: italic; margin-right: 15px; font-weight: 400;">04</em> Cookies
+          </h2>
+          <p style="margin: 0; color: #4A3E45; line-height: 1.7;">We use essential cookies to run the cart and checkout, and optional analytics and marketing cookies only if you accept them in our cookie banner. You can change your choice at any time from the &ldquo;Cookie settings&rdquo; link in the footer.</p>
+        </section>
+
+        <!-- 05 -->
+        <section id="sec-5" class="legal-section">
+          <h2 style="font-size: 1.35rem; font-weight: 800; color: var(--color-dark); margin-bottom: 12px; display: flex; align-items: baseline;">
+            <em class="accent-serif" style="font-size: 1.75rem; color: var(--color-accent); font-style: italic; margin-right: 15px; font-weight: 400;">05</em> Payments
+          </h2>
+          <p style="margin: 0; color: #4A3E45; line-height: 1.7;">Payments are handled by our payment providers ([e.g. Stripe, PayPal]). We never see or store your full card number.</p>
+        </section>
+
+        <!-- 06 -->
+        <section id="sec-6" class="legal-section">
+          <h2 style="font-size: 1.35rem; font-weight: 800; color: var(--color-dark); margin-bottom: 12px; display: flex; align-items: baseline;">
+            <em class="accent-serif" style="font-size: 1.75rem; color: var(--color-accent); font-style: italic; margin-right: 15px; font-weight: 400;">06</em> Sharing your information
+          </h2>
+          <div style="display: flex; flex-direction: column; gap: 14px; color: #4A3E45; line-height: 1.7;">
+            <p style="margin: 0;">We share only what is needed with service providers that help us run the store &mdash; payment processors, delivery carriers, email and analytics tools. We do not sell your personal information.</p>
+            <p style="margin: 0;">Some journal articles contain affiliate links. If you click one, the retailer may set its own cookies under its own privacy policy.</p>
+          </div>
+        </section>
+
+        <!-- 07 -->
+        <section id="sec-7" class="legal-section">
+          <h2 style="font-size: 1.35rem; font-weight: 800; color: var(--color-dark); margin-bottom: 12px; display: flex; align-items: baseline;">
+            <em class="accent-serif" style="font-size: 1.75rem; color: var(--color-accent); font-style: italic; margin-right: 15px; font-weight: 400;">07</em> How long we keep it
+          </h2>
+          <p style="margin: 0; color: #4A3E45; line-height: 1.7;">We keep order records for as long as required for tax and accounting purposes ([retention period]) and delete or anonymise other data when it is no longer needed.</p>
+        </section>
+
+        <!-- 08 -->
+        <section id="sec-8" class="legal-section">
+          <h2 style="font-size: 1.35rem; font-weight: 800; color: var(--color-dark); margin-bottom: 12px; display: flex; align-items: baseline;">
+            <em class="accent-serif" style="font-size: 1.75rem; color: var(--color-accent); font-style: italic; margin-right: 15px; font-weight: 400;">08</em> Your rights
+          </h2>
+          <p style="margin: 0; color: #4A3E45; line-height: 1.7;">Depending on where you live, you may have the right to access, correct, delete or export your data, and to opt out of marketing at any time. To make a request, contact us at the address below.</p>
+        </section>
+
+        <!-- 09 -->
+        <section id="sec-9" class="legal-section">
+          <h2 style="font-size: 1.35rem; font-weight: 800; color: var(--color-dark); margin-bottom: 12px; display: flex; align-items: baseline;">
+            <em class="accent-serif" style="font-size: 1.75rem; color: var(--color-accent); font-style: italic; margin-right: 15px; font-weight: 400;">09</em> Security
+          </h2>
+          <p style="margin: 0; color: #4A3E45; line-height: 1.7;">We use encryption (HTTPS), secure payment gateways and access controls to protect your data. No method of transmission is 100% secure, but we work to protect your information.</p>
+        </section>
+
+        <!-- 10 -->
+        <section id="sec-10" class="legal-section">
+          <h2 style="font-size: 1.35rem; font-weight: 800; color: var(--color-dark); margin-bottom: 12px; display: flex; align-items: baseline;">
+            <em class="accent-serif" style="font-size: 1.75rem; color: var(--color-accent); font-style: italic; margin-right: 15px; font-weight: 400;">10</em> Children
+          </h2>
+          <p style="margin: 0; color: #4A3E45; line-height: 1.7;">Our store is not directed at children under [13/16], and we do not knowingly collect their personal information.</p>
+        </section>
+
+        <!-- 11 -->
+        <section id="sec-11" class="legal-section">
+          <h2 style="font-size: 1.35rem; font-weight: 800; color: var(--color-dark); margin-bottom: 12px; display: flex; align-items: baseline;">
+            <em class="accent-serif" style="font-size: 1.75rem; color: var(--color-accent); font-style: italic; margin-right: 15px; font-weight: 400;">11</em> Changes to this policy
+          </h2>
+          <p style="margin: 0; color: #4A3E45; line-height: 1.7;">We may update this policy from time to time. The &ldquo;Last updated&rdquo; date at the top shows when it last changed.</p>
+        </section>
+
+        <!-- Questions about your data? Card (matches 18-Desktop-Privacy-Policy.png y=2573..2686, height: 114px) -->
+        <div style="background-color: #FFF7F8; border-radius: var(--radius-xl); height: 114px; padding: 0 36px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; box-sizing: border-box; margin-top: 20px;">
+          <div>
+            <h4 style="font-size: 1.15rem; font-weight: 700; color: var(--color-dark); margin: 0 0 4px 0;">Questions about your data?</h4>
+            <p style="font-size: 0.92rem; color: var(--color-text-muted); margin: 0;">Email [privacy@abeautynfashion.com] or use our contact form.</p>
+          </div>
+          <a href="contact.html" class="btn" style="background: var(--color-dark); color: #FFF; border-radius: var(--radius-full); width: 124px; height: 48px; display: inline-flex; align-items: center; justify-content: center; font-size: 0.9rem; font-weight: 700; text-decoration: none; box-sizing: border-box;">Contact us</a>
         </div>
       </article>
     </div>
   </main>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 24px; flex-wrap: wrap; gap: 16px;">
-        <div class="footer-logo-text">ABeauty <em>&amp;</em> Fashion</div>
-        <div style="display: flex; gap: 24px; font-size: 0.88rem;">
-          <a href="contact.html">Shipping</a>
-          <a href="contact.html">Returns</a>
-          <a href="contact.html">Contact</a>
-          <a href="privacy.html">Privacy Policy</a>
-          <a href="terms.html">Terms &amp; Conditions</a>
+  <!-- Footer (Single-row Legal Footer matching 18-Desktop-Privacy-Policy.png y=2785..2885, height: 100px) -->
+  <footer class="site-footer" style="padding: 0; background-color: var(--color-dark); height: 100px; display: flex; align-items: center;">
+    <div class="container" style="width: 100%;">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+        <div class="footer-logo-text" style="font-size: 1.35rem; font-weight: 700; color: #FFF;">ABeauty <em>&amp;</em> Fashion</div>
+        <div style="display: flex; gap: 28px; font-size: 0.88rem;">
+          <a href="about.html" class="footer-link">About us</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+          <a href="privacy.html" class="footer-link" style="color: #FFF; font-weight: 600;">Privacy Policy</a>
+          <a href="terms.html" class="footer-link">Terms &amp; Conditions</a>
         </div>
-      </div>
-      <div style="text-align: right; font-size: 0.8rem; color: rgba(255,255,255,0.5);">
-        &copy; 2026 ABeauty &amp; Fashion
+        <div style="font-size: 0.82rem; color: rgba(255, 255, 255, 0.6);">
+          &copy; 2026 ABeauty &amp; Fashion
+        </div>
       </div>
     </div>
   </footer>
 
 </body>
 </html>
-
