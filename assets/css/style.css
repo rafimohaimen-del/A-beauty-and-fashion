@@ -2531,43 +2531,56 @@ body.page-404 span.accent-serif {
   color: var(--color-text-muted);
 }
 
-/* Routine Bundle Card */
+/* Routine Bundle Card (calibrated to Design/bundle-step-item.png) */
 .bundle-routine-banner {
   background-color: var(--color-bg-blush);
   border-radius: var(--radius-xl);
-  padding: 36px 40px;
-  margin: 40px 0 60px;
+  padding: 48px 56px;
+  margin: 48px 0 64px;
   display: grid;
-  grid-template-columns: 1fr 1.8fr 1fr;
+  grid-template-columns: 290px 1fr 200px;
   align-items: center;
-  gap: 30px;
+  gap: 36px;
+  box-sizing: border-box;
 }
 
 .bundle-steps-row {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 20px;
 }
 
 .bundle-step-item {
   background-color: #FFF;
-  border-radius: var(--radius-md);
-  padding: 12px 14px;
+  border-radius: 16px;
+  padding: 14px 12px;
   display: flex;
   align-items: center;
   gap: 12px;
-  box-shadow: var(--shadow-sm);
-  flex: 1;
-  width: calc(100% - 1.5rem);
-  height: calc(100% + 2rem);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  width: 203px;
+  height: 166px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.bundle-step-item:nth-child(2) {
+  height: 148px;
 }
 
 .bundle-step-thumb {
-  width: 44px;
-  height: calc(50px + 1.5rem);
-  border-radius: var(--radius-sm);
+  width: 84px;
+  height: 100px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bundle-step-info {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
