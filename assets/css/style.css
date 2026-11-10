@@ -2590,28 +2590,28 @@ body.page-404 span.accent-serif {
 
 .cart-layout {
   display: grid;
-  grid-template-columns: 1fr 480px;
-  gap: 48px;
-  padding: 48px 0 90px;
+  grid-template-columns: 1fr 440px;
+  gap: 56px;
+  padding: 32px 0 80px;
 }
 
 .cart-progress-box {
   background-color: var(--color-bg-blush);
-  border-radius: var(--radius-md);
-  padding: 16px 20px;
-  margin-bottom: 24px;
+  border-radius: var(--radius-lg);
+  padding: 16px 24px;
+  margin-bottom: 28px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
 .cart-progress-text {
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: 0.92rem;
+  font-weight: 500;
   color: var(--color-dark);
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 
 .progress-track {
@@ -2640,12 +2640,12 @@ body.page-404 span.accent-serif {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--color-text-muted);
-  padding-bottom: 14px;
+  padding-bottom: 16px;
   border-bottom: 1px solid var(--color-border);
 }
 
 .cart-table td {
-  padding: 24px 0;
+  padding: 28px 0;
   border-bottom: 1px solid var(--color-border);
   vertical-align: middle;
 }
@@ -2653,12 +2653,12 @@ body.page-404 span.accent-serif {
 .cart-item-flex {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 20px;
 }
 
 .cart-item-thumb {
   width: 112px;
-  height: 140px;
+  height: 136px;
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
@@ -2667,34 +2667,99 @@ body.page-404 span.accent-serif {
 }
 
 .cart-item-info h4 {
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: var(--color-dark);
   margin-bottom: 4px;
 }
 
+.cart-item-info h4 a {
+  color: var(--color-dark);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.cart-item-info h4 a:hover {
+  color: var(--color-accent);
+}
+
 .cart-item-meta {
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   color: var(--color-text-muted);
   margin-bottom: 8px;
 }
 
 .cart-item-link-action {
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   color: var(--color-text-muted);
   text-decoration: underline;
+  transition: color var(--transition-fast);
+}
+
+.cart-item-link-action:hover {
+  color: var(--color-accent);
+}
+
+.cart-stepper {
+  width: 136px;
+  height: 44px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  background-color: var(--color-white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--color-dark);
+}
+
+.cart-stepper-btn {
+  background: none;
+  border: none;
+  color: var(--color-dark);
+  font-size: 1.15rem;
+  cursor: pointer;
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--transition-fast);
+}
+
+.cart-stepper-btn:hover {
+  color: var(--color-accent);
+}
+
+.cart-remove-btn {
+  background: none;
+  border: none;
+  color: #8C7C83;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  transition: color var(--transition-fast);
+}
+
+.cart-remove-btn:hover {
+  color: var(--color-accent);
 }
 
 .order-summary-card {
   border: 1.5px solid var(--color-border);
-  border-radius: var(--radius-xl);
-  padding: 36px;
+  border-radius: 24px;
+  padding: 32px 33px;
+  background-color: var(--color-white);
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 16px;
 }
 
 .summary-title {
+  font-family: 'Bricolage Grotesque', var(--font-body);
   font-size: 1.35rem;
   font-weight: 800;
   color: var(--color-dark);
@@ -2709,7 +2774,7 @@ body.page-404 span.accent-serif {
 }
 
 .summary-row.total-row {
-  font-size: 1.4rem;
+  font-size: 1.35rem;
   font-weight: 800;
   color: var(--color-dark);
   padding-top: 14px;
@@ -2718,15 +2783,95 @@ body.page-404 span.accent-serif {
 
 .coupon-group {
   display: flex;
-  gap: 8px;
+  gap: 12px;
 }
 
 .coupon-input {
   flex: 1;
+  height: 48px;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-full);
-  padding: 8px 16px;
+  padding: 0 18px;
   font-size: 0.88rem;
+  color: var(--color-dark);
+  background-color: var(--color-white);
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+.coupon-input:focus {
+  border-color: var(--color-accent);
+}
+
+.btn-coupon-apply {
+  height: 48px;
+  padding: 0 24px;
+  border: 1.5px solid var(--color-dark);
+  border-radius: var(--radius-full);
+  background: transparent;
+  color: var(--color-dark);
+  font-weight: 700;
+  font-size: 0.88rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.btn-coupon-apply:hover {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}
+
+.cart-checkout-btn {
+  height: 56px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: background-color var(--transition-fast);
+}
+
+.cart-checkout-btn:hover {
+  background-color: #B52852;
+  color: var(--color-white);
+}
+
+.cart-express-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+}
+
+.cart-express-btn {
+  height: 48px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: opacity var(--transition-fast);
+}
+
+.cart-express-btn:hover {
+  opacity: 0.9;
+}
+
+.cart-express-paypal {
+  background-color: #FFC439;
+  color: #003087;
+}
+
+.cart-express-apple {
+  background-color: #000000;
+  color: #FFFFFF;
 }
 
 /* ==========================================================================
