@@ -1981,7 +1981,7 @@ h4.toast-info {
 .page-header-banner {
   background-color: var(--color-bg-blush);
   padding: 35px 0;
-  min-height: 256px;
+  min-height: 186px;
   border-bottom: 1px solid var(--color-border);
 }
 
