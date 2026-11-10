@@ -2311,6 +2311,13 @@ body.page-404 span.accent-serif {
   overflow: hidden;
 }
 
+.gallery-main-view img {
+  width: 128px;
+  height: 244px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .product-info-panel {
   display: flex;
   flex-direction: column;
@@ -2412,6 +2419,8 @@ body.page-404 span.accent-serif {
   text-align: center;
   cursor: pointer;
   transition: var(--transition);
+  width: calc(100% - 2rem);
+  height: calc(100% - 0.3rem);
 }
 
 .size-option-card.active,
@@ -2549,11 +2558,13 @@ body.page-404 span.accent-serif {
   gap: 12px;
   box-shadow: var(--shadow-sm);
   flex: 1;
+  width: calc(100% - 1.5rem);
+  height: calc(100% + 2rem);
 }
 
 .bundle-step-thumb {
   width: 44px;
-  height: 50px;
+  height: calc(50px + 1.5rem);
   border-radius: var(--radius-sm);
   display: flex;
   align-items: center;

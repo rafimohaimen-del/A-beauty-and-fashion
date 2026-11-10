@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" style="scroll-behavior: smooth;">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
   <!-- Top Announcement Bar (matches 03-Desktop-Product.png y=0..39) -->
@@ -37,10 +39,12 @@
     <div class="drawer-body">
       <ul class="drawer-nav-list">
         <li class="drawer-nav-item"><a href="shop.html" class="drawer-nav-link">Shop All <span>&rsaquo;</span></a></li>
-        <li class="drawer-nav-item"><a href="shop.html" class="drawer-nav-link text-accent">Skincare <span>&rsaquo;</span></a></li>
+        <li class="drawer-nav-item"><a href="shop.html" class="drawer-nav-link text-accent">Skincare
+            <span>&rsaquo;</span></a></li>
         <li class="drawer-nav-item"><a href="shop.html" class="drawer-nav-link">Makeup <span>&rsaquo;</span></a></li>
         <li class="drawer-nav-item"><a href="shop.html" class="drawer-nav-link">Hair Care <span>&rsaquo;</span></a></li>
-        <li class="drawer-nav-item"><a href="cart.html" class="drawer-nav-link">My Bag (2) <span>&rsaquo;</span></a></li>
+        <li class="drawer-nav-item"><a href="cart.html" class="drawer-nav-link">My Bag (2) <span>&rsaquo;</span></a>
+        </li>
       </ul>
     </div>
   </aside>
@@ -91,7 +95,9 @@
 
           <a href="account.html#wishlist" class="action-icon-btn" aria-label="Wishlist">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+              </path>
             </svg>
           </a>
 
@@ -123,36 +129,45 @@
 
   <!-- Main Product Detail Layout (matches 03-Desktop-Product.png) -->
   <main class="container">
-    <div class="product-detail-layout" style="display: grid; grid-template-columns: 727px 1fr; gap: 64px; padding: 20px 0 80px; align-items: start;">
+    <div class="product-detail-layout"
+      style="display: grid; grid-template-columns: 727px 1fr; gap: 64px; padding: 20px 0 80px; align-items: start;">
       <!-- Gallery Left -->
       <div class="product-gallery" style="display: flex; gap: 16px; width: 100%;">
-        <div class="gallery-thumbs" style="display: flex; flex-direction: column; gap: 14px; width: 92px; flex-shrink: 0;">
+        <div class="gallery-thumbs"
+          style="display: flex; flex-direction: column; gap: 14px; width: 92px; flex-shrink: 0;">
           <!-- Thumb 1 (Active) -->
-          <div class="thumb-card active" style="width: 92px; height: 123px; border-radius: 16px; background-color: var(--pastel-pink); border: 1.5px solid var(--color-dark); display: flex; align-items: center; justify-content: center; cursor: pointer;">
+          <div class="thumb-card active"
+            style="width: 92px; height: 123px; border-radius: 16px; background-color: var(--pastel-pink); border: 1.5px solid var(--color-dark); display: flex; align-items: center; justify-content: center; cursor: pointer;">
             <img src="assets/images/product-bottle.svg" alt="Thumb 1" style="width: 24px; height: auto;">
           </div>
           <!-- Thumb 2 -->
-          <div class="thumb-card" style="width: 92px; height: 123px; border-radius: 16px; background-color: var(--pastel-peach); border: 1.5px solid transparent; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+          <div class="thumb-card"
+            style="width: 92px; height: 123px; border-radius: 16px; background-color: var(--pastel-peach); border: 1.5px solid transparent; display: flex; align-items: center; justify-content: center; cursor: pointer;">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A1220" stroke-width="1.5">
               <ellipse cx="12" cy="12" rx="9" ry="9"></ellipse>
               <ellipse cx="12" cy="12" rx="4" ry="4"></ellipse>
             </svg>
           </div>
           <!-- Thumb 3 -->
-          <div class="thumb-card" style="width: 92px; height: 123px; border-radius: 16px; background-color: var(--pastel-lilac); border: 1.5px solid transparent; display: flex; align-items: center; justify-content: center; cursor: pointer;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2A1220" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <div class="thumb-card"
+            style="width: 92px; height: 123px; border-radius: 16px; background-color: var(--pastel-lilac); border: 1.5px solid transparent; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2A1220" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="8" r="4"></circle>
               <path d="M4 20c0-4 4-6 8-6s8 2 8 6"></path>
             </svg>
           </div>
           <!-- Thumb 4 -->
-          <div class="thumb-card" style="width: 92px; height: 123px; border-radius: 16px; background-color: var(--pastel-blue); border: 1.5px solid transparent; display: flex; align-items: center; justify-content: center; cursor: pointer;">
-            <svg width="20" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A1220" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <div class="thumb-card"
+            style="width: 92px; height: 123px; border-radius: 16px; background-color: var(--pastel-blue); border: 1.5px solid transparent; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+            <svg width="20" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A1220" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
             </svg>
           </div>
           <!-- Thumb 5 -->
-          <div class="thumb-card" style="width: 92px; height: 123px; border-radius: 16px; background-color: var(--color-dark); color: #FFF; border: 1.5px solid transparent; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+          <div class="thumb-card"
+            style="width: 92px; height: 123px; border-radius: 16px; background-color: var(--color-dark); color: #FFF; border: 1.5px solid transparent; display: flex; align-items: center; justify-content: center; cursor: pointer;">
             <svg width="14" height="16" viewBox="0 0 24 24" fill="#FFF">
               <polygon points="5 3 19 12 5 21 5 3"></polygon>
             </svg>
@@ -160,22 +175,33 @@
         </div>
 
         <!-- Main Product Photo View -->
-        <div class="gallery-main-view" style="flex: 1; max-width: 619px; height: 765px; background-color: var(--pastel-pink); border-radius: 32px; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+        <div class="gallery-main-view"
+          style="flex: 1; max-width: 619px; height: 765px; background-color: var(--pastel-pink); border-radius: 32px; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; overflow: hidden;">
           <div class="product-badge-top" style="position: absolute; top: 20px; left: 20px;">
-            <span class="pill-badge pill-badge-white" style="background: #FFF; color: var(--color-dark); padding: 6px 14px; border-radius: var(--radius-full); font-size: 0.78rem; font-weight: 700; box-shadow: 0 2px 6px rgba(0,0,0,0.06);">Bestseller</span>
+            <span class="pill-badge pill-badge-white"
+              style="background: #FFF; color: var(--color-dark); padding: 6px 14px; border-radius: var(--radius-full); font-size: 0.78rem; font-weight: 700; box-shadow: 0 2px 6px rgba(0,0,0,0.06);">Bestseller</span>
           </div>
-          <img src="assets/images/product-bottle.svg" alt="Rose Dew Hydrating Serum Main" style="width: 64px; height: 122px; max-width: 100%; object-fit: contain;">
-          <span class="product-photo-label" style="position: absolute; bottom: 20px; left: 24px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; color: var(--color-text-muted);">HERO PRODUCT PHOTO · ZOOM ON HOVER</span>
+          <img src="assets/images/product-bottle.svg" alt="Rose Dew Hydrating Serum Main"
+            style="width: 128px; height: 244px; max-width: 100%; object-fit: contain;">
+          <span class="product-photo-label"
+            style="position: absolute; bottom: 20px; left: 24px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; color: var(--color-text-muted);">HERO
+            PRODUCT PHOTO · ZOOM ON HOVER</span>
         </div>
       </div>
 
       <!-- Product Info Right -->
       <div class="product-info-panel" style="display: flex; flex-direction: column; align-items: flex-start;">
-        <span class="detail-eyebrow" style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-accent); margin-bottom: 8px;">SKINCARE · SERUM</span>
-        <h1 class="detail-title" style="font-family: 'Bricolage Grotesque', var(--font-body); font-size: 2.6rem; font-weight: 800; line-height: 1.15; color: var(--color-dark); margin: 0 0 12px 0;">Rose Dew Hydrating<br>Serum</h1>
+        <span class="detail-eyebrow"
+          style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-accent); margin-bottom: 8px;">SKINCARE
+          · SERUM</span>
+        <h1 class="detail-title"
+          style="font-family: 'Bricolage Grotesque', var(--font-body); font-size: 2.6rem; font-weight: 800; line-height: 1.15; color: var(--color-dark); margin: 0 0 12px 0;">
+          Rose Dew Hydrating<br>Serum</h1>
 
-        <div class="detail-rating-row" style="display: flex; align-items: center; gap: 8px; font-size: 0.88rem; margin-bottom: 18px;">
-          <span class="rating-stars" style="color: var(--color-accent); letter-spacing: 2px;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <div class="detail-rating-row"
+          style="display: flex; align-items: center; gap: 8px; font-size: 0.88rem; margin-bottom: 18px;">
+          <span class="rating-stars"
+            style="color: var(--color-accent); letter-spacing: 2px;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
           <strong style="color: var(--color-dark);">4.9</strong>
           <a href="#reviews" style="color: var(--color-text-muted); text-decoration: underline;">212 reviews</a>
         </div>
@@ -186,77 +212,111 @@
         </div>
 
         <p class="detail-summary" style="font-size: 0.98rem; line-height: 1.6; color: #4A3E45; margin: 0 0 22px 0;">
-          A lightweight, fragrance-free serum with hyaluronic acid and rose water that floods skin with moisture and leaves a soft, dewy finish. Layers easily under makeup.
+          A lightweight, fragrance-free serum with hyaluronic acid and rose water that floods skin with moisture and
+          leaves a soft, dewy finish. Layers easily under makeup.
         </p>
 
-        <div class="tag-pills" style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 26px;">
-          <span class="tag-pill" style="background-color: #F6F3F2; padding: 6px 14px; border-radius: var(--radius-full); font-size: 0.8rem; font-weight: 500; color: var(--color-dark);">Hydrating</span>
-          <span class="tag-pill" style="background-color: #F6F3F2; padding: 6px 14px; border-radius: var(--radius-full); font-size: 0.8rem; font-weight: 500; color: var(--color-dark);">Fragrance-free</span>
-          <span class="tag-pill" style="background-color: #F6F3F2; padding: 6px 14px; border-radius: var(--radius-full); font-size: 0.8rem; font-weight: 500; color: var(--color-dark);">Vegan</span>
-          <span class="tag-pill" style="background-color: #F6F3F2; padding: 6px 14px; border-radius: var(--radius-full); font-size: 0.8rem; font-weight: 500; color: var(--color-dark);">All skin types</span>
+        <div class="tag-pills"
+          style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 26px;">
+          <span class="tag-pill"
+            style="background-color: #F6F3F2; padding: 6px 14px; border-radius: var(--radius-full); font-size: 0.8rem; font-weight: 500; color: var(--color-dark);">Hydrating</span>
+          <span class="tag-pill"
+            style="background-color: #F6F3F2; padding: 6px 14px; border-radius: var(--radius-full); font-size: 0.8rem; font-weight: 500; color: var(--color-dark);">Fragrance-free</span>
+          <span class="tag-pill"
+            style="background-color: #F6F3F2; padding: 6px 14px; border-radius: var(--radius-full); font-size: 0.8rem; font-weight: 500; color: var(--color-dark);">Vegan</span>
+          <span class="tag-pill"
+            style="background-color: #F6F3F2; padding: 6px 14px; border-radius: var(--radius-full); font-size: 0.8rem; font-weight: 500; color: var(--color-dark);">All
+            skin types</span>
         </div>
 
         <!-- Size Variants -->
         <div class="variant-selector-wrap" style="width: 100%; margin-bottom: 28px;">
-          <div class="variant-label" style="font-size: 0.88rem; color: var(--color-dark); margin-bottom: 10px;">Size: <strong>30 ml</strong></div>
+          <div class="variant-label" style="font-size: 0.88rem; color: var(--color-dark); margin-bottom: 10px;">Size:
+            <strong>30 ml</strong>
+          </div>
           <div class="size-options-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;">
-            <div class="size-option-card active" style="border: 2px solid var(--color-dark); border-radius: 12px; padding: 12px 10px; text-align: center; background-color: #FFF; cursor: pointer;">
-              <div class="size-title" style="font-size: 0.9rem; font-weight: 700; color: var(--color-dark); margin-bottom: 2px;">30 ml</div>
+            <div class="size-option-card active"
+              style="width: calc(100% - 2rem); height: calc(100% - 0.3rem); border: 2px solid var(--color-dark); border-radius: 12px; padding: 12px 10px; text-align: center; background-color: #FFF; cursor: pointer; box-sizing: border-box; justify-self: center;">
+              <div class="size-title"
+                style="font-size: 0.9rem; font-weight: 700; color: var(--color-dark); margin-bottom: 2px;">30 ml</div>
               <div class="size-price" style="font-size: 0.82rem; color: var(--color-text-muted);">$28.00</div>
             </div>
-            <div class="size-option-card" style="border: 1.5px solid var(--color-border); border-radius: 12px; padding: 12px 10px; text-align: center; background-color: #FFF; cursor: pointer;">
-              <div class="size-title" style="font-size: 0.9rem; font-weight: 700; color: var(--color-dark); margin-bottom: 2px;">50 ml</div>
+            <div class="size-option-card"
+              style="width: calc(100% - 2rem); height: calc(100% - 0.3rem); border: 1.5px solid var(--color-border); border-radius: 12px; padding: 12px 10px; text-align: center; background-color: #FFF; cursor: pointer; box-sizing: border-box; justify-self: center;">
+              <div class="size-title"
+                style="font-size: 0.9rem; font-weight: 700; color: var(--color-dark); margin-bottom: 2px;">50 ml</div>
               <div class="size-price" style="font-size: 0.82rem; color: var(--color-text-muted);">$42.00</div>
             </div>
-            <div class="size-option-card" style="border: 1.5px solid var(--color-border); border-radius: 12px; padding: 12px 10px; text-align: center; background-color: #FFF; cursor: pointer;">
-              <div class="size-title" style="font-size: 0.9rem; font-weight: 700; color: var(--color-dark); margin-bottom: 2px;">Duo pack</div>
+            <div class="size-option-card"
+              style="width: calc(100% - 2rem); height: calc(100% - 0.3rem); border: 1.5px solid var(--color-border); border-radius: 12px; padding: 12px 10px; text-align: center; background-color: #FFF; cursor: pointer; box-sizing: border-box; justify-self: center;">
+              <div class="size-title"
+                style="font-size: 0.9rem; font-weight: 700; color: var(--color-dark); margin-bottom: 2px;">Duo pack
+              </div>
               <div class="size-price" style="font-size: 0.82rem; color: var(--color-text-muted);">$50.00</div>
             </div>
           </div>
         </div>
 
         <!-- Add to Bag Row -->
-        <div class="purchase-actions-row" style="display: flex; align-items: center; gap: 14px; width: 100%; margin-bottom: 20px;">
-          <div class="quantity-stepper" style="display: inline-flex; align-items: center; justify-content: space-between; border: 1.5px solid var(--color-border); border-radius: var(--radius-full); width: 104px; height: 48px; padding: 0 16px; font-weight: 700; box-sizing: border-box;">
-            <button type="button" class="stepper-btn" style="background: none; border: none; font-size: 1.2rem; cursor: pointer; color: var(--color-dark); line-height: 1; padding: 0;">&minus;</button>
+        <div class="purchase-actions-row"
+          style="display: flex; align-items: center; gap: 14px; width: 100%; margin-bottom: 20px;">
+          <div class="quantity-stepper"
+            style="display: inline-flex; align-items: center; justify-content: space-between; border: 1.5px solid var(--color-border); border-radius: var(--radius-full); width: 104px; height: 48px; padding: 0 16px; font-weight: 700; box-sizing: border-box;">
+            <button type="button" class="stepper-btn"
+              style="background: none; border: none; font-size: 1.2rem; cursor: pointer; color: var(--color-dark); line-height: 1; padding: 0;">&minus;</button>
             <span style="font-size: 0.95rem; color: var(--color-dark);">1</span>
-            <button type="button" class="stepper-btn" style="background: none; border: none; font-size: 1.2rem; cursor: pointer; color: var(--color-dark); line-height: 1; padding: 0;">&plus;</button>
+            <button type="button" class="stepper-btn"
+              style="background: none; border: none; font-size: 1.2rem; cursor: pointer; color: var(--color-dark); line-height: 1; padding: 0;">&plus;</button>
           </div>
-          <a href="cart.html" class="btn" style="flex: 1; height: 48px; background-color: var(--color-accent); color: #FFF; border-radius: var(--radius-full); display: inline-flex; align-items: center; justify-content: center; font-size: 0.95rem; font-weight: 700; text-decoration: none;">Add to bag &mdash; $28.00</a>
-          <a href="account.html#wishlist" class="wishlist-btn" title="Wishlist" style="position: static; width: 48px; height: 48px; border-radius: 50%; border: 1.5px solid var(--color-border); background: #FFF; display: inline-flex; align-items: center; justify-content: center; color: var(--color-dark); text-decoration: none;">
+          <a href="cart.html" class="btn"
+            style="flex: 1; height: 48px; background-color: var(--color-accent); color: #FFF; border-radius: var(--radius-full); display: inline-flex; align-items: center; justify-content: center; font-size: 0.95rem; font-weight: 700; text-decoration: none;">Add
+            to bag &mdash; $28.00</a>
+          <a href="account.html#wishlist" class="wishlist-btn" title="Wishlist"
+            style="position: static; width: 48px; height: 48px; border-radius: 50%; border: 1.5px solid var(--color-border); background: #FFF; display: inline-flex; align-items: center; justify-content: center; color: var(--color-dark); text-decoration: none;">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+              </path>
             </svg>
           </a>
         </div>
 
         <!-- Stock Indicator -->
-        <div class="stock-indicator" style="display: flex; align-items: center; gap: 8px; font-size: 0.85rem; font-weight: 600; color: #166534; margin-bottom: 24px;">
-          <span class="stock-dot" style="width: 8px; height: 8px; border-radius: 50%; background-color: #22C55E;"></span>
+        <div class="stock-indicator"
+          style="display: flex; align-items: center; gap: 8px; font-size: 0.85rem; font-weight: 600; color: #166534; margin-bottom: 24px;">
+          <span class="stock-dot"
+            style="width: 8px; height: 8px; border-radius: 50%; background-color: #22C55E;"></span>
           <span>In stock &mdash; ships within 24 hours</span>
         </div>
 
         <!-- Shipping Perks -->
-        <div class="shipping-perks-box" style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; width: 100%; margin-bottom: 30px;">
-          <div class="perk-item" style="background-color: #FFF7F8; border-radius: var(--radius-md); padding: 14px 18px; display: flex; align-items: center; gap: 14px;">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+        <div class="shipping-perks-box"
+          style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; width: 100%; margin-bottom: 30px;">
+          <div class="perk-item"
+            style="background-color: #FFF7F8; border-radius: var(--radius-md); padding: 14px 18px; display: flex; align-items: center; gap: 14px;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.75"
+              stroke-linecap="round" stroke-linejoin="round">
               <rect x="1" y="3" width="15" height="13"></rect>
               <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
               <circle cx="5.5" cy="18.5" r="2.5"></circle>
               <circle cx="18.5" cy="18.5" r="2.5"></circle>
             </svg>
             <div>
-              <strong style="color: var(--color-dark); font-size: 0.88rem; display: block; margin-bottom: 2px;">Free shipping</strong>
+              <strong style="color: var(--color-dark); font-size: 0.88rem; display: block; margin-bottom: 2px;">Free
+                shipping</strong>
               <span style="color: var(--color-text-muted); font-size: 0.82rem;">on orders over $50</span>
             </div>
           </div>
-          <div class="perk-item" style="background-color: #FFF7F8; border-radius: var(--radius-md); padding: 14px 18px; display: flex; align-items: center; gap: 14px;">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+          <div class="perk-item"
+            style="background-color: #FFF7F8; border-radius: var(--radius-md); padding: 14px 18px; display: flex; align-items: center; gap: 14px;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.75"
+              stroke-linecap="round" stroke-linejoin="round">
               <polyline points="1 4 1 10 7 10"></polyline>
               <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
             </svg>
             <div>
-              <strong style="color: var(--color-dark); font-size: 0.88rem; display: block; margin-bottom: 2px;">Easy returns</strong>
+              <strong style="color: var(--color-dark); font-size: 0.88rem; display: block; margin-bottom: 2px;">Easy
+                returns</strong>
               <span style="color: var(--color-text-muted); font-size: 0.82rem;">on unopened items</span>
             </div>
           </div>
@@ -265,42 +325,54 @@
         <!-- Accordion Information Tabs -->
         <div class="accordion-details" style="width: 100%; border-top: 1px solid var(--color-border);">
           <details class="accordion-item" open style="border-bottom: 1px solid var(--color-border);">
-            <summary class="accordion-summary" style="list-style: none; padding: 18px 0; display: flex; align-items: center; justify-content: space-between; font-size: 0.95rem; font-weight: 700; color: var(--color-dark); cursor: pointer;">
+            <summary class="accordion-summary"
+              style="list-style: none; padding: 18px 0; display: flex; align-items: center; justify-content: space-between; font-size: 0.95rem; font-weight: 700; color: var(--color-dark); cursor: pointer;">
               <span>Details</span>
               <span style="font-size: 1.2rem; color: var(--color-dark);">&minus;</span>
             </summary>
-            <div class="accordion-content" style="padding-bottom: 18px; font-size: 0.9rem; line-height: 1.6; color: var(--color-text-muted);">
-              Glass dropper bottle. Suitable for all skin types, including sensitive. Use morning and night after cleansing.
+            <div class="accordion-content"
+              style="padding-bottom: 18px; font-size: 0.9rem; line-height: 1.6; color: var(--color-text-muted);">
+              Glass dropper bottle. Suitable for all skin types, including sensitive. Use morning and night after
+              cleansing.
             </div>
           </details>
 
           <details class="accordion-item" style="border-bottom: 1px solid var(--color-border);">
-            <summary class="accordion-summary" style="list-style: none; padding: 18px 0; display: flex; align-items: center; justify-content: space-between; font-size: 0.95rem; font-weight: 700; color: var(--color-dark); cursor: pointer;">
+            <summary class="accordion-summary"
+              style="list-style: none; padding: 18px 0; display: flex; align-items: center; justify-content: space-between; font-size: 0.95rem; font-weight: 700; color: var(--color-dark); cursor: pointer;">
               <span>How to use</span>
               <span style="font-size: 1.2rem; color: var(--color-dark);">&plus;</span>
             </summary>
-            <div class="accordion-content" style="padding-bottom: 18px; font-size: 0.9rem; line-height: 1.6; color: var(--color-text-muted);">
-              Dispense 3&ndash;4 drops onto clean fingertips. Gently press and pat into face and neck before applying heavier moisturiser or sunscreen.
+            <div class="accordion-content"
+              style="padding-bottom: 18px; font-size: 0.9rem; line-height: 1.6; color: var(--color-text-muted);">
+              Dispense 3&ndash;4 drops onto clean fingertips. Gently press and pat into face and neck before applying
+              heavier moisturiser or sunscreen.
             </div>
           </details>
 
           <details class="accordion-item" style="border-bottom: 1px solid var(--color-border);">
-            <summary class="accordion-summary" style="list-style: none; padding: 18px 0; display: flex; align-items: center; justify-content: space-between; font-size: 0.95rem; font-weight: 700; color: var(--color-dark); cursor: pointer;">
+            <summary class="accordion-summary"
+              style="list-style: none; padding: 18px 0; display: flex; align-items: center; justify-content: space-between; font-size: 0.95rem; font-weight: 700; color: var(--color-dark); cursor: pointer;">
               <span>Ingredients</span>
               <span style="font-size: 1.2rem; color: var(--color-dark);">&plus;</span>
             </summary>
-            <div class="accordion-content" style="padding-bottom: 18px; font-size: 0.9rem; line-height: 1.6; color: var(--color-text-muted);">
-              Aqua (Water), Rosa Damascena Flower Water, Sodium Hyaluronate (Multi-molecular weight), Glycerin, Panthenol (Vitamin B5), Phenoxyethanol, Ethylhexylglycerin.
+            <div class="accordion-content"
+              style="padding-bottom: 18px; font-size: 0.9rem; line-height: 1.6; color: var(--color-text-muted);">
+              Aqua (Water), Rosa Damascena Flower Water, Sodium Hyaluronate (Multi-molecular weight), Glycerin,
+              Panthenol (Vitamin B5), Phenoxyethanol, Ethylhexylglycerin.
             </div>
           </details>
 
           <details class="accordion-item" style="border-bottom: 1px solid var(--color-border);">
-            <summary class="accordion-summary" style="list-style: none; padding: 18px 0; display: flex; align-items: center; justify-content: space-between; font-size: 0.95rem; font-weight: 700; color: var(--color-dark); cursor: pointer;">
+            <summary class="accordion-summary"
+              style="list-style: none; padding: 18px 0; display: flex; align-items: center; justify-content: space-between; font-size: 0.95rem; font-weight: 700; color: var(--color-dark); cursor: pointer;">
               <span>Shipping &amp; returns</span>
               <span style="font-size: 1.2rem; color: var(--color-dark);">&plus;</span>
             </summary>
-            <div class="accordion-content" style="padding-bottom: 18px; font-size: 0.9rem; line-height: 1.6; color: var(--color-text-muted);">
-              Standard delivery takes 3&ndash;5 business days. Free returns accepted on unopened products within 30 days of arrival.
+            <div class="accordion-content"
+              style="padding-bottom: 18px; font-size: 0.9rem; line-height: 1.6; color: var(--color-text-muted);">
+              Standard delivery takes 3&ndash;5 business days. Free returns accepted on unopened products within 30 days
+              of arrival.
             </div>
           </details>
         </div>
@@ -308,48 +380,67 @@
     </div>
 
     <!-- Bundle & Save 10% (matches 03-Desktop-Product.png y=1316..1584, height: 268px) -->
-    <section class="bundle-routine-banner" style="background-color: #FFF7F8; border-radius: var(--radius-xl); padding: 36px 40px; margin: 40px 0 60px; display: grid; grid-template-columns: 280px 1fr auto; align-items: center; gap: 40px;">
+    <section class="bundle-routine-banner">
       <div>
-        <span class="eyebrow" style="color: var(--color-accent); font-weight: 700; font-size: 0.75rem; letter-spacing: 0.08em; display: block; margin-bottom: 8px;">BUNDLE &amp; SAVE 10%</span>
-        <h3 style="font-family: 'Bricolage Grotesque', var(--font-body); font-size: 1.85rem; font-weight: 800; line-height: 1.15; color: var(--color-dark); margin-bottom: 10px;">
+        <span class="eyebrow"
+          style="color: var(--color-accent); font-weight: 700; font-size: 0.75rem; letter-spacing: 0.08em; display: block; margin-bottom: 8px;">BUNDLE
+          &amp; SAVE 10%</span>
+        <h3
+          style="font-family: 'Bricolage Grotesque', var(--font-body); font-size: 1.85rem; font-weight: 800; line-height: 1.15; color: var(--color-dark); margin-bottom: 10px;">
           Complete the <em class="accent-serif" style="color: var(--color-accent); font-style: italic;">routine</em>
         </h3>
-        <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.5; margin: 0;">Cleanse, hydrate, seal. The three steps our journal recommends for dry skin.</p>
+        <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.5; margin: 0;">Cleanse, hydrate,
+          seal. The three steps our journal recommends for dry skin.</p>
       </div>
 
       <div class="bundle-steps-row" style="display: flex; align-items: center; gap: 16px;">
         <!-- Step 1 -->
-        <div class="bundle-step-item" style="background-color: #FFF; border-radius: 16px; padding: 14px 16px; display: flex; align-items: center; gap: 14px; flex: 1; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
-          <div class="bundle-step-thumb" style="width: 50px; height: 58px; border-radius: 12px; background-color: var(--pastel-sage); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+        <div class="bundle-step-item">
+          <div class="bundle-step-thumb"
+            style="width: 50px; height: calc(50px + 1.5rem); border-radius: 12px; background-color: var(--pastel-sage); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
             <img src="assets/images/product-bottle.svg" alt="Cleanser" style="width: 18px; height: auto;">
           </div>
           <div>
-            <span style="font-size: 0.68rem; font-weight: 700; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 2px;">STEP 1 · CLEANSE</span>
-            <h5 style="font-size: 0.88rem; font-weight: 700; color: var(--color-dark); line-height: 1.25; margin: 0 0 4px 0;">Gentle Amino Foam Cleanser</h5>
+            <span
+              style="font-size: 0.68rem; font-weight: 700; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 2px;">STEP
+              1 · CLEANSE</span>
+            <h5
+              style="font-size: 0.88rem; font-weight: 700; color: var(--color-dark); line-height: 1.25; margin: 0 0 4px 0;">
+              Gentle Amino Foam Cleanser</h5>
             <strong style="font-size: 0.88rem; color: var(--color-dark);">$18.00</strong>
           </div>
         </div>
 
         <!-- Step 2 -->
-        <div class="bundle-step-item" style="background-color: #FFF; border-radius: 16px; padding: 14px 16px; display: flex; align-items: center; gap: 14px; flex: 1; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
-          <div class="bundle-step-thumb" style="width: 50px; height: 58px; border-radius: 12px; background-color: var(--pastel-pink); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+        <div class="bundle-step-item">
+          <div class="bundle-step-thumb"
+            style="width: 50px; height: calc(50px + 1.5rem); border-radius: 12px; background-color: var(--pastel-pink); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
             <img src="assets/images/product-bottle.svg" alt="Serum" style="width: 18px; height: auto;">
           </div>
           <div>
-            <span style="font-size: 0.68rem; font-weight: 700; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 2px;">STEP 2 · HYDRATE</span>
-            <h5 style="font-size: 0.88rem; font-weight: 700; color: var(--color-dark); line-height: 1.25; margin: 0 0 4px 0;">Rose Dew Hydrating Serum</h5>
+            <span
+              style="font-size: 0.68rem; font-weight: 700; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 2px;">STEP
+              2 · HYDRATE</span>
+            <h5
+              style="font-size: 0.88rem; font-weight: 700; color: var(--color-dark); line-height: 1.25; margin: 0 0 4px 0;">
+              Rose Dew Hydrating Serum</h5>
             <strong style="font-size: 0.88rem; color: var(--color-dark);">$28.00</strong>
           </div>
         </div>
 
         <!-- Step 3 -->
-        <div class="bundle-step-item" style="background-color: #FFF; border-radius: 16px; padding: 14px 16px; display: flex; align-items: center; gap: 14px; flex: 1; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
-          <div class="bundle-step-thumb" style="width: 50px; height: 58px; border-radius: 12px; background-color: var(--pastel-lilac); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+        <div class="bundle-step-item">
+          <div class="bundle-step-thumb"
+            style="width: 50px; height: calc(50px + 1.5rem); border-radius: 12px; background-color: var(--pastel-lilac); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
             <img src="assets/images/product-bottle.svg" alt="Cream" style="width: 18px; height: auto;">
           </div>
           <div>
-            <span style="font-size: 0.68rem; font-weight: 700; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 2px;">STEP 3 · SEAL</span>
-            <h5 style="font-size: 0.88rem; font-weight: 700; color: var(--color-dark); line-height: 1.25; margin: 0 0 4px 0;">Barrier Repair Night Cream</h5>
+            <span
+              style="font-size: 0.68rem; font-weight: 700; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 2px;">STEP
+              3 · SEAL</span>
+            <h5
+              style="font-size: 0.88rem; font-weight: 700; color: var(--color-dark); line-height: 1.25; margin: 0 0 4px 0;">
+              Barrier Repair Night Cream</h5>
             <strong style="font-size: 0.88rem; color: var(--color-dark);">$32.00</strong>
           </div>
         </div>
@@ -360,20 +451,33 @@
           <span style="font-size: 1.5rem; font-weight: 800; color: var(--color-dark);">$70.20</span>
           <span style="font-size: 0.95rem; text-decoration: line-through; color: var(--color-text-muted);">$78.00</span>
         </div>
-        <a href="cart.html" class="btn" style="background-color: var(--color-dark); color: #FFF; border-radius: var(--radius-full); padding: 12px 28px; width: 140px; height: 48px; display: inline-flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; text-decoration: none; box-sizing: border-box;">Add all 3</a>
+        <a href="cart.html" class="btn"
+          style="background-color: var(--color-dark); color: #FFF; border-radius: var(--radius-full); padding: 12px 28px; width: 140px; height: 48px; display: inline-flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; text-decoration: none; box-sizing: border-box;">Add
+          all 3</a>
       </div>
     </section>
 
     <!-- Reviews Section (matches 03-Desktop-Product.png) -->
     <section class="reviews-section" id="reviews" style="padding: 40px 0 60px;">
       <!-- Section Header with Title on Left and Filter Pills on Right -->
-      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; margin-bottom: 36px;">
-        <h2 style="font-family: 'Bricolage Grotesque', var(--font-body); font-size: 2.2rem; font-weight: 800; color: var(--color-dark); margin: 0;">Reviews</h2>
+      <div
+        style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; margin-bottom: 36px;">
+        <h2
+          style="font-family: 'Bricolage Grotesque', var(--font-body); font-size: 2.2rem; font-weight: 800; color: var(--color-dark); margin: 0;">
+          Reviews</h2>
         <div class="filter-pills-row" style="display: flex; gap: 8px; flex-wrap: wrap;">
-          <span class="filter-pill active" style="background-color: var(--color-dark); color: #FFF; border: 1px solid var(--color-dark); border-radius: var(--radius-full); padding: 8px 18px; font-size: 0.85rem; font-weight: 600; cursor: pointer;">Most helpful</span>
-          <span class="filter-pill" style="background-color: #FFF; color: var(--color-dark); border: 1px solid var(--color-border); border-radius: var(--radius-full); padding: 8px 18px; font-size: 0.85rem; font-weight: 500; cursor: pointer;">With photos</span>
-          <span class="filter-pill" style="background-color: #FFF; color: var(--color-dark); border: 1px solid var(--color-border); border-radius: var(--radius-full); padding: 8px 18px; font-size: 0.85rem; font-weight: 500; cursor: pointer;">Dry skin</span>
-          <span class="filter-pill" style="background-color: #FFF; color: var(--color-dark); border: 1px solid var(--color-border); border-radius: var(--radius-full); padding: 8px 18px; font-size: 0.85rem; font-weight: 500; cursor: pointer;">Sensitive skin</span>
+          <span class="filter-pill active"
+            style="background-color: var(--color-dark); color: #FFF; border: 1px solid var(--color-dark); border-radius: var(--radius-full); padding: 8px 18px; font-size: 0.85rem; font-weight: 600; cursor: pointer;">Most
+            helpful</span>
+          <span class="filter-pill"
+            style="background-color: #FFF; color: var(--color-dark); border: 1px solid var(--color-border); border-radius: var(--radius-full); padding: 8px 18px; font-size: 0.85rem; font-weight: 500; cursor: pointer;">With
+            photos</span>
+          <span class="filter-pill"
+            style="background-color: #FFF; color: var(--color-dark); border: 1px solid var(--color-border); border-radius: var(--radius-full); padding: 8px 18px; font-size: 0.85rem; font-weight: 500; cursor: pointer;">Dry
+            skin</span>
+          <span class="filter-pill"
+            style="background-color: #FFF; color: var(--color-dark); border: 1px solid var(--color-border); border-radius: var(--radius-full); padding: 8px 18px; font-size: 0.85rem; font-weight: 500; cursor: pointer;">Sensitive
+            skin</span>
         </div>
       </div>
 
@@ -383,7 +487,8 @@
           <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 16px;">
             <span style="font-size: 3.5rem; font-weight: 800; line-height: 1; color: var(--color-dark);">4.9</span>
             <div>
-              <div style="color: var(--color-accent); font-size: 1.1rem; letter-spacing: 2px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <div style="color: var(--color-accent); font-size: 1.1rem; letter-spacing: 2px;">
+                &#9733;&#9733;&#9733;&#9733;&#9733;</div>
               <span style="font-size: 0.82rem; color: var(--color-text-muted);">Based on 212 reviews</span>
             </div>
           </div>
@@ -427,7 +532,9 @@
             </div>
           </div>
 
-          <button type="button" class="btn" style="width: 100%; height: 48px; border-radius: var(--radius-full); border: 1.5px solid var(--color-dark); background: #FFF; color: var(--color-dark); font-weight: 700; font-size: 0.9rem; cursor: pointer; display: flex; align-items: center; justify-content: center;">Write a review</button>
+          <button type="button" class="btn"
+            style="width: 100%; height: 48px; border-radius: var(--radius-full); border: 1.5px solid var(--color-dark); background: #FFF; color: var(--color-dark); font-weight: 700; font-size: 0.9rem; cursor: pointer; display: flex; align-items: center; justify-content: center;">Write
+            a review</button>
         </div>
 
         <!-- Right Customer Testimonials List -->
@@ -442,11 +549,14 @@
                 <span class="text-muted" style="margin: 0 4px;">·</span>
                 <span style="color: #166534; font-weight: 600; font-size: 0.88rem;">&#10003; Verified buyer</span>
               </div>
-              <div style="color: var(--color-accent); font-size: 0.95rem; letter-spacing: 2px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <div style="color: var(--color-accent); font-size: 0.95rem; letter-spacing: 2px;">
+                &#9733;&#9733;&#9733;&#9733;&#9733;</div>
             </div>
-            <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--color-dark); margin: 0 0 6px 0;">[Review headline]</h4>
+            <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--color-dark); margin: 0 0 6px 0;">[Review
+              headline]</h4>
             <p style="font-size: 0.92rem; color: #4A3E45; line-height: 1.6; margin: 0;">
-              [Customer review text &mdash; how the product felt, results after a few weeks, and whether they would buy again.]
+              [Customer review text &mdash; how the product felt, results after a few weeks, and whether they would buy
+              again.]
             </p>
           </div>
 
@@ -460,9 +570,11 @@
                 <span class="text-muted" style="margin: 0 4px;">·</span>
                 <span style="color: #166534; font-weight: 600; font-size: 0.88rem;">&#10003; Verified buyer</span>
               </div>
-              <div style="color: var(--color-accent); font-size: 0.95rem; letter-spacing: 2px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <div style="color: var(--color-accent); font-size: 0.95rem; letter-spacing: 2px;">
+                &#9733;&#9733;&#9733;&#9733;&#9733;</div>
             </div>
-            <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--color-dark); margin: 0 0 6px 0;">[Review headline]</h4>
+            <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--color-dark); margin: 0 0 6px 0;">[Review
+              headline]</h4>
             <p style="font-size: 0.92rem; color: #4A3E45; line-height: 1.6; margin: 0;">
               [Customer review text &mdash; texture, finish under makeup, and how long the bottle lasted.]
             </p>
@@ -478,9 +590,11 @@
                 <span class="text-muted" style="margin: 0 4px;">·</span>
                 <span style="color: #166534; font-weight: 600; font-size: 0.88rem;">&#10003; Verified buyer</span>
               </div>
-              <div style="color: var(--color-accent); font-size: 0.95rem; letter-spacing: 2px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <div style="color: var(--color-accent); font-size: 0.95rem; letter-spacing: 2px;">
+                &#9733;&#9733;&#9733;&#9733;&#9733;</div>
             </div>
-            <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--color-dark); margin: 0 0 6px 0;">[Review headline]</h4>
+            <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--color-dark); margin: 0 0 6px 0;">[Review
+              headline]</h4>
             <p style="font-size: 0.92rem; color: #4A3E45; line-height: 1.6; margin: 0;">
               [Customer review text &mdash; any reaction, scent, and comparison to products used before.]
             </p>
@@ -489,15 +603,18 @@
       </div>
 
       <!-- Disclaimer Note below Reviews -->
-      <p style="text-align: center; font-size: 0.82rem; color: var(--color-text-muted); margin-top: 40px; margin-bottom: 0;">
-        Review layout shown with placeholder copy &mdash; connect real reviews (WooCommerce product reviews or Judge.me).
+      <p
+        style="text-align: center; font-size: 0.82rem; color: var(--color-text-muted); margin-top: 40px; margin-bottom: 0;">
+        Review layout shown with placeholder copy &mdash; connect real reviews (WooCommerce product reviews or
+        Judge.me).
       </p>
     </section>
 
     <!-- You May Also Love (matches 03-Desktop-Product.png y=2200..2900) -->
     <section class="products-section" style="padding: 40px 0 90px;">
       <div class="section-header" style="margin-bottom: 32px;">
-        <h2 class="section-title" style="font-family: 'Bricolage Grotesque', var(--font-body); font-size: 2.4rem; font-weight: 800; color: var(--color-dark); margin: 0;">
+        <h2 class="section-title"
+          style="font-family: 'Bricolage Grotesque', var(--font-body); font-size: 2.4rem; font-weight: 800; color: var(--color-dark); margin: 0;">
           You may also <em class="accent-serif" style="color: var(--color-accent); font-style: italic;">love</em>
         </h2>
       </div>
@@ -505,73 +622,100 @@
       <div class="product-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;">
         <!-- Card 1 -->
         <article class="product-card">
-          <div class="product-card-visual" style="background-color: var(--pastel-lilac); height: 392px; border-radius: 24px;">
+          <div class="product-card-visual"
+            style="background-color: var(--pastel-lilac); height: 392px; border-radius: 24px;">
             <div class="product-badge-top"><span class="pill-badge pill-badge-white">New</span></div>
             <a href="account.html#wishlist" class="wishlist-btn" title="Wishlist">&hearts;</a>
             <img src="assets/images/product-bottle.svg" alt="Barrier Repair Night Cream" style="width: 91.476px;">
             <span class="product-photo-label">PRODUCT PHOTO</span>
             <a href="cart.html" class="quick-add-btn" title="Add to bag">+</a>
           </div>
-          <span class="product-category-name" style="font-size: 0.78rem; color: var(--color-text-muted); display: block; margin-top: 14px; text-transform: uppercase; letter-spacing: 0.05em;">Skincare</span>
-          <h3 class="product-title" style="font-size: 1.05rem; font-weight: 700; margin: 4px 0 6px 0;"><a href="product.html" style="color: var(--color-dark); text-decoration: none;">Barrier Repair Night Cream</a></h3>
+          <span class="product-category-name"
+            style="font-size: 0.78rem; color: var(--color-text-muted); display: block; margin-top: 14px; text-transform: uppercase; letter-spacing: 0.05em;">Skincare</span>
+          <h3 class="product-title" style="font-size: 1.05rem; font-weight: 700; margin: 4px 0 6px 0;"><a
+              href="product.html" style="color: var(--color-dark); text-decoration: none;">Barrier Repair Night
+              Cream</a></h3>
           <div class="product-meta-row" style="display: flex; justify-content: space-between; align-items: center;">
-            <span class="product-price" style="font-size: 1.05rem; font-weight: 700; color: var(--color-dark);">$32</span>
+            <span class="product-price"
+              style="font-size: 1.05rem; font-weight: 700; color: var(--color-dark);">$32</span>
           </div>
         </article>
 
         <!-- Card 2 -->
         <article class="product-card">
-          <div class="product-card-visual" style="background-color: var(--pastel-peach); height: 392px; border-radius: 24px;">
+          <div class="product-card-visual"
+            style="background-color: var(--pastel-peach); height: 392px; border-radius: 24px;">
             <div class="product-badge-top"><span class="pill-badge pill-badge-sale">Sale</span></div>
             <a href="account.html#wishlist" class="wishlist-btn" title="Wishlist">&hearts;</a>
             <img src="assets/images/product-bottle.svg" alt="Vitamin C Brightening Drops" style="width: 91.476px;">
             <span class="product-photo-label">PRODUCT PHOTO</span>
             <a href="cart.html" class="quick-add-btn" title="Add to bag">+</a>
           </div>
-          <span class="product-category-name" style="font-size: 0.78rem; color: var(--color-text-muted); display: block; margin-top: 14px; text-transform: uppercase; letter-spacing: 0.05em;">Skincare</span>
-          <h3 class="product-title" style="font-size: 1.05rem; font-weight: 700; margin: 4px 0 6px 0;"><a href="product.html" style="color: var(--color-dark); text-decoration: none;">Vitamin C Brightening Drops</a></h3>
+          <span class="product-category-name"
+            style="font-size: 0.78rem; color: var(--color-text-muted); display: block; margin-top: 14px; text-transform: uppercase; letter-spacing: 0.05em;">Skincare</span>
+          <h3 class="product-title" style="font-size: 1.05rem; font-weight: 700; margin: 4px 0 6px 0;"><a
+              href="product.html" style="color: var(--color-dark); text-decoration: none;">Vitamin C Brightening
+              Drops</a></h3>
           <div class="product-meta-row" style="display: flex; justify-content: space-between; align-items: center;">
             <div class="product-price-wrap" style="display: flex; align-items: baseline; gap: 6px;">
-              <span class="product-price" style="font-size: 1.05rem; font-weight: 700; color: var(--color-dark);">$26</span>
-              <span class="product-old-price" style="font-size: 0.9rem; text-decoration: line-through; color: var(--color-text-muted);">$32</span>
+              <span class="product-price"
+                style="font-size: 1.05rem; font-weight: 700; color: var(--color-dark);">$26</span>
+              <span class="product-old-price"
+                style="font-size: 0.9rem; text-decoration: line-through; color: var(--color-text-muted);">$32</span>
             </div>
-            <span class="product-rating" style="font-size: 0.85rem; font-weight: 600; color: var(--color-dark);"><span class="star-icon" style="color: var(--color-accent);">&#9733;</span> 4.6</span>
+            <span class="product-rating" style="font-size: 0.85rem; font-weight: 600; color: var(--color-dark);"><span
+                class="star-icon" style="color: var(--color-accent);">&#9733;</span> 4.6</span>
           </div>
         </article>
 
         <!-- Card 3 -->
         <article class="product-card">
-          <div class="product-card-visual" style="background-color: var(--pastel-blue); height: 392px; border-radius: 24px;">
+          <div class="product-card-visual"
+            style="background-color: var(--pastel-blue); height: 392px; border-radius: 24px;">
             <div class="product-badge-top"><span class="pill-badge pill-badge-sale">Sale</span></div>
             <a href="account.html#wishlist" class="wishlist-btn" title="Wishlist">&hearts;</a>
             <img src="assets/images/product-steamer.svg" alt="Nano Ionic Facial Steamer" style="width: 91.476px;">
             <span class="product-photo-label">PRODUCT PHOTO</span>
             <a href="cart.html" class="quick-add-btn" title="Add to bag">+</a>
           </div>
-          <span class="product-category-name" style="font-size: 0.78rem; color: var(--color-text-muted); display: block; margin-top: 14px; text-transform: uppercase; letter-spacing: 0.05em;">Beauty Tools</span>
-          <h3 class="product-title" style="font-size: 1.05rem; font-weight: 700; margin: 4px 0 6px 0;"><a href="product.html" style="color: var(--color-dark); text-decoration: none;">Nano Ionic Facial Steamer</a></h3>
+          <span class="product-category-name"
+            style="font-size: 0.78rem; color: var(--color-text-muted); display: block; margin-top: 14px; text-transform: uppercase; letter-spacing: 0.05em;">Beauty
+            Tools</span>
+          <h3 class="product-title" style="font-size: 1.05rem; font-weight: 700; margin: 4px 0 6px 0;"><a
+              href="product.html" style="color: var(--color-dark); text-decoration: none;">Nano Ionic Facial Steamer</a>
+          </h3>
           <div class="product-meta-row" style="display: flex; justify-content: space-between; align-items: center;">
             <div class="product-price-wrap" style="display: flex; align-items: baseline; gap: 6px;">
-              <span class="product-price" style="font-size: 1.05rem; font-weight: 700; color: var(--color-dark);">$49</span>
-              <span class="product-old-price" style="font-size: 0.9rem; text-decoration: line-through; color: var(--color-text-muted);">$65</span>
+              <span class="product-price"
+                style="font-size: 1.05rem; font-weight: 700; color: var(--color-dark);">$49</span>
+              <span class="product-old-price"
+                style="font-size: 0.9rem; text-decoration: line-through; color: var(--color-text-muted);">$65</span>
             </div>
-            <span class="product-rating" style="font-size: 0.85rem; font-weight: 600; color: var(--color-dark);"><span class="star-icon" style="color: var(--color-accent);">&#9733;</span> 4.8</span>
+            <span class="product-rating" style="font-size: 0.85rem; font-weight: 600; color: var(--color-dark);"><span
+                class="star-icon" style="color: var(--color-accent);">&#9733;</span> 4.8</span>
           </div>
         </article>
 
         <!-- Card 4 -->
         <article class="product-card">
-          <div class="product-card-visual" style="background-color: var(--pastel-pink); height: 392px; border-radius: 24px;">
+          <div class="product-card-visual"
+            style="background-color: var(--pastel-pink); height: 392px; border-radius: 24px;">
             <a href="account.html#wishlist" class="wishlist-btn" title="Wishlist">&hearts;</a>
             <img src="assets/images/product-bottle.svg" alt="Mulberry Silk Pillowcase" style="width: 91.476px;">
             <span class="product-photo-label">PRODUCT PHOTO</span>
             <a href="cart.html" class="quick-add-btn" title="Add to bag">+</a>
           </div>
-          <span class="product-category-name" style="font-size: 0.78rem; color: var(--color-text-muted); display: block; margin-top: 14px; text-transform: uppercase; letter-spacing: 0.05em;">Personal Care</span>
-          <h3 class="product-title" style="font-size: 1.05rem; font-weight: 700; margin: 4px 0 6px 0;"><a href="product.html" style="color: var(--color-dark); text-decoration: none;">Mulberry Silk Pillowcase</a></h3>
+          <span class="product-category-name"
+            style="font-size: 0.78rem; color: var(--color-text-muted); display: block; margin-top: 14px; text-transform: uppercase; letter-spacing: 0.05em;">Personal
+            Care</span>
+          <h3 class="product-title" style="font-size: 1.05rem; font-weight: 700; margin: 4px 0 6px 0;"><a
+              href="product.html" style="color: var(--color-dark); text-decoration: none;">Mulberry Silk Pillowcase</a>
+          </h3>
           <div class="product-meta-row" style="display: flex; justify-content: space-between; align-items: center;">
-            <span class="product-price" style="font-size: 1.05rem; font-weight: 700; color: var(--color-dark);">$39</span>
-            <span class="product-rating" style="font-size: 0.85rem; font-weight: 600; color: var(--color-dark);"><span class="star-icon" style="color: var(--color-accent);">&#9733;</span> 4.9</span>
+            <span class="product-price"
+              style="font-size: 1.05rem; font-weight: 700; color: var(--color-dark);">$39</span>
+            <span class="product-rating" style="font-size: 0.85rem; font-weight: 600; color: var(--color-dark);"><span
+                class="star-icon" style="color: var(--color-accent);">&#9733;</span> 4.9</span>
           </div>
         </article>
       </div>
@@ -625,11 +769,13 @@
       <div class="footer-bottom">
         <div>&copy; 2026 ABeauty &amp; Fashion. All rights reserved.</div>
         <div class="payment-methods-text">
-          <span>Secure payments</span> · <span>Visa</span> · <span>Mastercard</span> · <span>PayPal</span> · <span>Apple Pay</span>
+          <span>Secure payments</span> · <span>Visa</span> · <span>Mastercard</span> · <span>PayPal</span> · <span>Apple
+            Pay</span>
         </div>
       </div>
     </div>
   </footer>
 
 </body>
+
 </html>
