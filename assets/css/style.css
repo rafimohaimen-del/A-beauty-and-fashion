@@ -1882,6 +1882,33 @@ h4.toast-info {
   font-style: italic;
 }
 
+.footer-logo-link {
+  display: inline-block;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.footer-logo-img {
+  height: 44px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+
 .footer-tagline {
   font-size: 0.85rem;
   color: rgba(255, 255, 255, 0.7);
@@ -2986,7 +3013,7 @@ body.page-404 span.accent-serif {
 }
 
 .cart-upsell-thumb-img {
-  width: 28px;
+  width: 56px;
   height: auto;
   display: block;
 }
@@ -3053,7 +3080,7 @@ body.page-404 span.accent-serif {
   border: none;
   border-radius: var(--radius-full);
   background-color: var(--color-dark);
-  color: var(--color-white);
+  color: white;
   font-family: var(--font-body);
   font-size: 0.82rem;
   font-weight: 700;
@@ -3751,7 +3778,7 @@ body.lang-bn .trust-props-section {
     gap: 32px;
   }
 
-    .routine-grid {
+  .routine-grid {
     grid-template-columns: 1fr 1.2fr;
     gap: 32px;
   }
@@ -3782,7 +3809,8 @@ body.lang-bn .trust-props-section {
     height: 68px;
   }
 
-  .brand-logo img {
+  .brand-logo img,
+  .footer-logo-img {
     height: 36px;
   }
 
