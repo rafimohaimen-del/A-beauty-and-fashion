@@ -239,75 +239,81 @@
       </aside>
     </div>
 
-    <!-- Upsell Recommendation Bar: Add $6 more for free shipping -->
-    <section style="margin: 50px 0 80px;">
-      <div class="section-header" style="margin-bottom: 24px;">
-        <div>
-          <h2 class="section-title">Add $6 more for <em class="accent-serif">free shipping</em></h2>
-          <p class="text-muted" style="margin-top: 4px;">Small picks that pair well with your bag</p>
-        </div>
+        <!-- Upsell Recommendation Bar: Add $6 more for free shipping (04-Desktop-Cart-redo-2) -->
+    <section class="cart-upsell-section" aria-labelledby="cart-upsell-heading">
+      <div class="cart-upsell-header">
+        <h2 id="cart-upsell-heading" class="cart-upsell-title">Add $6 more for <em class="accent-serif">free shipping</em></h2>
+        <p class="cart-upsell-subtitle">Small picks that pair easily with your bag</p>
       </div>
 
-      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">
+      <div class="cart-upsell-grid">
         <!-- Upsell 1 -->
-        <div style="border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 16px; display: flex; align-items: center; gap: 14px;">
-          <div style="width: 64px; height: 72px; background-color: var(--pastel-sage); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-            <img src="assets/images/product-bottle.svg" alt="Brush" style="width: 24px;">
+        <article class="cart-upsell-card">
+          <div class="cart-upsell-thumb" style="background-color: #E2EEE5;">
+            <img src="assets/images/product-bottle.svg" alt="Bamboo Detangling Brush" class="cart-upsell-thumb-img">
           </div>
-          <div style="flex: 1;">
-            <span class="product-category-name" style="font-size: 0.7rem;">Hair Care</span>
-            <h4 style="font-size: 0.88rem; font-weight: 700; color: var(--color-dark); margin-bottom: 4px;">Bamboo Detangling Brush</h4>
-            <div style="display: flex; align-items: center; justify-content: space-between;">
-              <strong style="font-size: 0.95rem;">$14</strong>
-              <button type="button" class="btn btn-primary btn-sm" style="padding: 4px 12px; font-size: 0.78rem;">Add</button>
+          <div class="cart-upsell-info">
+            <div class="cart-upsell-meta">
+              <span class="cart-upsell-tag">Haircare</span>
+              <h3 class="cart-upsell-name"><a href="product.html">Bamboo Detangling Brush</a></h3>
+            </div>
+            <div class="cart-upsell-bottom">
+              <span class="cart-upsell-price">$14</span>
+              <button type="button" class="cart-upsell-btn" aria-label="Add Bamboo Detangling Brush to bag">+ Add</button>
             </div>
           </div>
-        </div>
+        </article>
 
         <!-- Upsell 2 -->
-        <div style="border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 16px; display: flex; align-items: center; gap: 14px;">
-          <div style="width: 64px; height: 72px; background-color: var(--pastel-blue); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-            <img src="assets/images/product-bottle.svg" alt="Toner" style="width: 24px;">
+        <article class="cart-upsell-card">
+          <div class="cart-upsell-thumb" style="background-color: #E2ECF6;">
+            <img src="assets/images/product-bottle.svg" alt="Calming Cica Toner" class="cart-upsell-thumb-img">
           </div>
-          <div style="flex: 1;">
-            <span class="product-category-name" style="font-size: 0.7rem;">Skincare</span>
-            <h4 style="font-size: 0.88rem; font-weight: 700; color: var(--color-dark); margin-bottom: 4px;">Calming Cica Toner</h4>
-            <div style="display: flex; align-items: center; justify-content: space-between;">
-              <strong style="font-size: 0.95rem;">$17</strong>
-              <button type="button" class="btn btn-primary btn-sm" style="padding: 4px 12px; font-size: 0.78rem;">Add</button>
+          <div class="cart-upsell-info">
+            <div class="cart-upsell-meta">
+              <span class="cart-upsell-tag">Skincare</span>
+              <h3 class="cart-upsell-name"><a href="product.html">Calming Cica Toner</a></h3>
+            </div>
+            <div class="cart-upsell-bottom">
+              <span class="cart-upsell-price">$17</span>
+              <button type="button" class="cart-upsell-btn" aria-label="Add Calming Cica Toner to bag">+ Add</button>
             </div>
           </div>
-        </div>
+        </article>
 
         <!-- Upsell 3 -->
-        <div style="border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 16px; display: flex; align-items: center; gap: 14px;">
-          <div style="width: 64px; height: 72px; background-color: var(--pastel-peach); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-            <img src="assets/images/product-bottle.svg" alt="Blush" style="width: 24px;">
+        <article class="cart-upsell-card">
+          <div class="cart-upsell-thumb" style="background-color: #FCE6D9;">
+            <img src="assets/images/product-bottle.svg" alt="Petal Blush Stick" class="cart-upsell-thumb-img">
           </div>
-          <div style="flex: 1;">
-            <span class="product-category-name" style="font-size: 0.7rem;">Makeup</span>
-            <h4 style="font-size: 0.88rem; font-weight: 700; color: var(--color-dark); margin-bottom: 4px;">Petal Blush Stick</h4>
-            <div style="display: flex; align-items: center; justify-content: space-between;">
-              <strong style="font-size: 0.95rem;">$19</strong>
-              <button type="button" class="btn btn-primary btn-sm" style="padding: 4px 12px; font-size: 0.78rem;">Add</button>
+          <div class="cart-upsell-info">
+            <div class="cart-upsell-meta">
+              <span class="cart-upsell-tag">Makeup</span>
+              <h3 class="cart-upsell-name"><a href="product.html">Petal Blush Stick</a></h3>
+            </div>
+            <div class="cart-upsell-bottom">
+              <span class="cart-upsell-price">$18</span>
+              <button type="button" class="cart-upsell-btn" aria-label="Add Petal Blush Stick to bag">+ Add</button>
             </div>
           </div>
-        </div>
+        </article>
 
         <!-- Upsell 4 -->
-        <div style="border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 16px; display: flex; align-items: center; gap: 14px;">
-          <div style="width: 64px; height: 72px; background-color: var(--pastel-lilac); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-            <img src="assets/images/product-bottle.svg" alt="Scrunchie" style="width: 24px;">
+        <article class="cart-upsell-card">
+          <div class="cart-upsell-thumb" style="background-color: #ECE4F6;">
+            <img src="assets/images/product-bottle.svg" alt="Silk Scrunchie Set" class="cart-upsell-thumb-img">
           </div>
-          <div style="flex: 1;">
-            <span class="product-category-name" style="font-size: 0.7rem;">Personal Care</span>
-            <h4 style="font-size: 0.88rem; font-weight: 700; color: var(--color-dark); margin-bottom: 4px;">Silk Scrunchie Set</h4>
-            <div style="display: flex; align-items: center; justify-content: space-between;">
-              <strong style="font-size: 0.95rem;">$12</strong>
-              <button type="button" class="btn btn-primary btn-sm" style="padding: 4px 12px; font-size: 0.78rem;">Add</button>
+          <div class="cart-upsell-info">
+            <div class="cart-upsell-meta">
+              <span class="cart-upsell-tag">Accessories</span>
+              <h3 class="cart-upsell-name"><a href="product.html">Silk Scrunchie Set</a></h3>
+            </div>
+            <div class="cart-upsell-bottom">
+              <span class="cart-upsell-price">$12</span>
+              <button type="button" class="cart-upsell-btn" aria-label="Add Silk Scrunchie Set to bag">+ Add</button>
             </div>
           </div>
-        </div>
+        </article>
       </div>
     </section>
   </main>
