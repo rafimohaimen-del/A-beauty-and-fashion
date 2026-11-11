@@ -11,7 +11,8 @@
   /* Fonts per prompt specification */
   --font-body: "Inter", "Arial", sans-serif;
   --font-display: "Inter", "Arial", sans-serif;
-  --font-accent: "Cormorant Garamond", "Georgia", serif;
+  --font-accent: "Instrument Serif", "Georgia", serif;
+  --font-serif: "Instrument Serif", "Georgia", serif;
   --font-bn: "Hind Siliguri", "Inter", sans-serif;
   --font-hero: "Bricolage Grotesque", "Inter", sans-serif;
 
@@ -191,6 +192,12 @@ h4 em,
   font-style: italic;
   font-weight: 600;
   color: var(--color-accent);
+}
+
+em,
+i {
+  font-family: var(--font-accent);
+  font-style: italic;
 }
 
 em {
@@ -1889,7 +1896,7 @@ h4.toast-info {
 }
 
 .footer-logo-img {
-  height: 44px;
+  height: 48.4px; /* +10% from 44px */
   width: auto;
   max-width: 100%;
   object-fit: contain;
@@ -3809,9 +3816,12 @@ body.lang-bn .trust-props-section {
     height: 68px;
   }
 
-  .brand-logo img,
-  .footer-logo-img {
+  .brand-logo img {
     height: 36px;
+  }
+
+  .footer-logo-img {
+    height: 39.6px; /* +10% from 36px */
   }
 
   .action-icon-btn {
