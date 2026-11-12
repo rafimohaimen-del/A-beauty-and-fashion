@@ -3,230 +3,321 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Checkout — ABeauty & Fashion</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <title>Checkout — ABeauty &amp; Fashion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Hind+Siliguri:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body style="background-color: #FAF8F8;">
+<body class="checkout-page">
 
-  <!-- Minimal Checkout Header (matches 05-Desktop-Checkout.png) -->
-  <header style="background: #FFF; border-bottom: 1px solid var(--color-border); padding: 18px 0;">
-    <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
-      <a href="cart.html" style="font-size: 0.9rem; font-weight: 600; color: var(--color-dark); display: flex; align-items: center; gap: 6px;">
-        &lsaquo; Back to bag
+  <!-- Header (matches 15-Mobile-Checkout.png y=0..120) -->
+  <header class="checkout-header-bar">
+    <div class="checkout-header-inner">
+      <a href="cart.html" class="checkout-back-btn" aria-label="Back to bag">
+        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" stroke="#1F1219" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 1L1 9L9 17"/>
+        </svg>
       </a>
-      <a href="index.html" class="brand-logo">
-        <img src="assets/images/logo.png" alt="ABeauty & Fashion" style="height: 38px;">
+      <a href="index.html" class="brand-logo" aria-label="ABeauty &amp; Fashion">
+        <img src="assets/images/logo.png" alt="ABeauty &amp; Fashion" class="checkout-header-logo-img">
       </a>
-      <div style="font-size: 0.85rem; font-weight: 600; color: var(--color-dark); display: flex; align-items: center; gap: 6px;">
-        <span>&#128274;</span> Secure checkout
+      <div class="checkout-lock-icon" aria-label="Secure checkout">
+        <svg width="18" height="22" viewBox="0 0 24 24" fill="none" stroke="#2E7D4F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+          <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+        </svg>
       </div>
     </div>
   </header>
 
-  <!-- Checkout Stepper Progress -->
-  <div class="container">
-    <div class="checkout-stepper">
-      <div class="step-indicator completed">
-        <span class="step-num">&#10003;</span>
-        <span>Bag</span>
+  <!-- Mobile Order Summary Bar (matches 15-Mobile-Checkout.png y=120..234) -->
+  <details class="checkout-summary-accordion">
+    <summary class="checkout-summary-bar">
+      <div class="checkout-summary-left">
+        <svg class="checkout-summary-bag" width="16" height="18" viewBox="0 0 24 24" fill="none" stroke="#C2305C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <span>Show order summary</span>
+        <svg class="checkout-summary-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="#C2305C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M1 1L5 5L9 1"/>
+        </svg>
       </div>
-      <span style="opacity: 0.3;">&mdash;&mdash;</span>
-      <div class="step-indicator active">
-        <span class="step-num">2</span>
-        <span>Details &amp; delivery</span>
+      <span class="checkout-summary-amount">$48.99</span>
+    </summary>
+    <div class="checkout-summary-dropdown">
+      <div style="display: flex; flex-direction: column; gap: 14px; margin-bottom: 16px;">
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <div style="position: relative; width: 56px; height: 64px; background: var(--pastel-pink); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <img src="assets/images/product-bottle.svg" alt="Rose Dew" style="width: 22px;">
+            <span class="badge-count" style="top: -6px; right: -6px; background: var(--color-dark);">1</span>
+          </div>
+          <div style="flex: 1;">
+            <h4 style="font-size: 0.9rem; font-weight: 700; color: var(--color-dark); margin: 0 0 4px;">Rose Dew Hydrating Serum</h4>
+            <div style="font-size: 0.78rem; color: var(--color-text-muted);">30 ml</div>
+          </div>
+          <strong style="font-size: 0.95rem; color: var(--color-dark);">$28.00</strong>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <div style="position: relative; width: 56px; height: 64px; background: var(--pastel-pink); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <img src="assets/images/product-bottle.svg" alt="Velvet Tint" style="width: 22px;">
+            <span class="badge-count" style="top: -6px; right: -6px; background: var(--color-dark);">1</span>
+          </div>
+          <div style="flex: 1;">
+            <h4 style="font-size: 0.9rem; font-weight: 700; color: var(--color-dark); margin: 0 0 4px;">Velvet Matte Lip Tint</h4>
+            <div style="font-size: 0.78rem; color: var(--color-text-muted);">Rosewood</div>
+          </div>
+          <strong style="font-size: 0.95rem; color: var(--color-dark);">$16.00</strong>
+        </div>
       </div>
-      <span style="opacity: 0.3;">&mdash;&mdash;</span>
-      <div class="step-indicator">
-        <span class="step-num">3</span>
-        <span>Payment</span>
+
+      <div class="coupon-group" style="margin-bottom: 16px;">
+        <input type="text" placeholder="Coupon code" class="coupon-input">
+        <button type="button" class="btn btn-outline btn-sm">Apply</button>
       </div>
-      <span style="opacity: 0.3;">&mdash;&mdash;</span>
-      <div class="step-indicator">
-        <span class="step-num">4</span>
-        <span>Confirmation</span>
+
+      <div style="border-top: 1px solid var(--color-border); padding-top: 14px; display: flex; flex-direction: column; gap: 8px;">
+        <div class="summary-row">
+          <span style="color: var(--color-text-muted); font-size: 0.9rem;">Subtotal</span>
+          <strong style="color: var(--color-dark); font-size: 0.9rem;">$44.00</strong>
+        </div>
+        <div class="summary-row">
+          <span style="color: var(--color-text-muted); font-size: 0.9rem;">Shipping · Standard</span>
+          <strong style="color: var(--color-dark); font-size: 0.9rem;">$4.99</strong>
+        </div>
+        <div class="summary-row total-row" style="padding-top: 10px; border-top: 1px solid var(--color-border);">
+          <span style="font-size: 1.15rem; font-weight: 800; color: var(--color-dark);">Total</span>
+          <span style="font-size: 1.6rem; font-weight: 800; color: var(--color-dark);">$48.99</span>
+        </div>
       </div>
     </div>
+  </details>
 
-    <!-- Main Checkout Form & Order Summary Layout -->
-    <div class="checkout-layout">
-      <!-- Left Steps Form -->
+  <!-- Main Checkout Container (Calibrated for mobile 390px viewport, 356px card width) -->
+  <div class="checkout-container">
+
+    <!-- Segmented Stepper Progress (matches 15-Mobile-Checkout.png y=266..273) -->
+    <div class="checkout-progress-bar">
+      <div class="progress-segment" style="background-color: #2E7D4F;"></div>
+      <div class="progress-segment" style="background-color: #1F1219;"></div>
+      <div class="progress-segment" style="background-color: #EADBE0;"></div>
+      <div class="progress-segment" style="background-color: #EADBE0;"></div>
+    </div>
+
+    <div class="checkout-main-wrap">
+      <!-- Steps Form -->
       <div>
-        <!-- Express Checkout -->
-        <div class="checkout-section-card" style="text-align: center; padding: 20px 28px;">
-          <span style="font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; color: var(--color-text-muted); display: block; margin-bottom: 14px;">EXPRESS CHECKOUT</span>
-          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;">
-            <button type="button" class="btn" style="background-color: #FFC439; color: #003087; font-weight: 700; height: 44px;">PayPal</button>
-            <button type="button" class="btn" style="background-color: #000; color: #FFF; font-weight: 700; height: 44px;">Apple Pay</button>
-            <button type="button" class="btn" style="background-color: #FFF; color: #3c4043; border: 1.5px solid #dadce0; font-weight: 600; height: 44px;">Google Pay</button>
+        <!-- Express Checkout (matches 15-Mobile-Checkout.png y=320..500) -->
+        <div class="checkout-express-section">
+          <div class="checkout-express-title">EXPRESS CHECKOUT</div>
+          <div class="checkout-express-grid">
+            <button type="button" class="checkout-express-btn checkout-express-paypal" aria-label="PayPal">
+              <span style="color: #003087; font-weight: 800; font-style: italic; font-family: 'Inter', sans-serif;">Pay</span><span style="color: #0079C1; font-weight: 800; font-style: italic; font-family: 'Inter', sans-serif;">Pal</span>
+            </button>
+            <button type="button" class="checkout-express-btn checkout-express-apple" aria-label="Apple Pay">
+              <svg width="16" height="19" viewBox="0 0 170 170" fill="currentColor" style="margin-right: 4px; vertical-align: -2px;"><path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.7-3.04-7.58-7.74-11.64-14.1-6.19-9.79-11.03-20.94-14.53-33.45-3.5-12.51-5.25-24.47-5.25-35.88 0-16.1 4.13-29.35 12.39-39.75 8.26-10.4 18.52-15.69 30.79-15.89 4.35 0 9.27 1.13 14.75 3.39 5.48 2.26 9.38 3.45 11.7 3.57 1.85-.24 5.99-1.55 12.43-3.92 6.44-2.38 12.02-3.4 16.74-3.07 13.92 1.06 24.87 6.45 32.86 16.18-11.96 7.27-17.82 17.34-17.58 30.22.25 10.16 4.13 18.58 11.64 25.26 7.51 6.68 16.53 10.42 27.06 11.22-2.35 7.18-5.19 14.51-8.52 22zM119.22 31.84c0-7.72 2.76-14.99 8.28-21.81 5.52-6.82 12.3-10.99 20.34-12.51.54 1.34.81 2.65.81 3.93 0 7.72-2.88 15.15-8.63 22.29-5.75 7.14-12.63 11.28-20.64 12.42-.08-1.45-.16-2.89-.16-4.32z"/></svg><span>Pay</span>
+            </button>
+          </div>
+          <div class="checkout-divider">
+            <span>or continue below</span>
           </div>
         </div>
 
         <form action="#order-confirmed-modal" method="get">
-          <!-- Step 1: Contact -->
-          <div class="checkout-section-card">
-            <div class="checkout-section-head" style="justify-content: space-between;">
-              <div style="display: flex; align-items: center; gap: 12px;">
-                <span class="checkout-badge-num">1</span>
-                <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--color-dark);">Contact</h3>
+          <!-- Step 1: Contact (matches 15-Mobile-Checkout.png y=540..912) -->
+          <div class="checkout-card">
+            <div class="checkout-card-head">
+              <div class="checkout-card-title-wrap">
+                <span class="checkout-step-badge">1</span>
+                <h3 class="checkout-card-title">Contact</h3>
               </div>
-              <span style="font-size: 0.85rem; color: var(--color-text-muted);">Have an account? <a href="account.html" style="font-weight: 600; text-decoration: underline; color: var(--color-dark);">Log in</a></span>
+              <a href="account.html" class="checkout-login-link">Log in</a>
             </div>
 
-            <div class="form-group" style="margin-bottom: 14px;">
-              <label class="form-label">Email address</label>
-              <input type="email" class="form-control" placeholder="[customer@email.com]" required>
+            <div class="checkout-form-group">
+              <label class="checkout-form-label">Email address</label>
+              <input type="email" class="checkout-input" placeholder="you@example.com" value="you@example.com" required>
             </div>
 
-            <label class="custom-checkbox">
-              <input type="checkbox" checked>
-              <span style="font-size: 0.85rem;">Email me about new drops and offers</span>
+            <label class="checkout-checkbox-label">
+              <input type="checkbox" class="checkout-checkbox" checked>
+              <span>Email me about new drops</span>
             </label>
           </div>
 
-          <!-- Step 2: Shipping Address -->
-          <div class="checkout-section-card">
-            <div class="checkout-section-head">
-              <span class="checkout-badge-num">2</span>
-              <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--color-dark);">Shipping address</h3>
+          <!-- Step 2: Shipping address (matches 15-Mobile-Checkout.png y=942..2120) -->
+          <div class="checkout-card">
+            <div class="checkout-card-head">
+              <div class="checkout-card-title-wrap">
+                <span class="checkout-step-badge">2</span>
+                <h3 class="checkout-card-title">Shipping address</h3>
+              </div>
             </div>
 
-            <div class="checkout-form-grid">
-              <div class="form-group">
-                <label class="form-label">First name</label>
-                <input type="text" class="form-control" required>
+            <div class="checkout-row-2">
+              <div class="checkout-form-group" style="margin-bottom: 0;">
+                <label class="checkout-form-label">First name</label>
+                <input type="text" class="checkout-input" required>
               </div>
-              <div class="form-group">
-                <label class="form-label">Last name</label>
-                <input type="text" class="form-control" required>
+              <div class="checkout-form-group" style="margin-bottom: 0;">
+                <label class="checkout-form-label">Last name</label>
+                <input type="text" class="checkout-input" required>
               </div>
-              <div class="form-group full-span">
-                <label class="form-label">Street address</label>
-                <input type="text" class="form-control" placeholder="Start typing your address" required>
-              </div>
-              <div class="form-group full-span">
-                <label class="form-label">Apartment, suite, etc. (optional)</label>
-                <input type="text" class="form-control">
-              </div>
-              <div class="form-group">
-                <label class="form-label">City</label>
-                <input type="text" class="form-control" required>
-              </div>
-              <div class="form-group">
-                <label class="form-label">State</label>
-                <select class="form-control">
-                  <option>Select</option>
+            </div>
+
+            <div class="checkout-form-group">
+              <label class="checkout-form-label">Street address</label>
+              <input type="text" class="checkout-input" placeholder="Start typing your address" required>
+            </div>
+
+            <div class="checkout-form-group">
+              <label class="checkout-form-label">Apartment, suite (optional)</label>
+              <input type="text" class="checkout-input">
+            </div>
+
+            <div class="checkout-form-group">
+              <label class="checkout-form-label">City</label>
+              <input type="text" class="checkout-input" required>
+            </div>
+
+            <div class="checkout-row-2">
+              <div class="checkout-form-group" style="margin-bottom: 0;">
+                <label class="checkout-form-label">State</label>
+                <select class="checkout-input" style="cursor: pointer;">
+                  <option selected>Select</option>
                   <option>California</option>
                   <option>New York</option>
                   <option>Texas</option>
+                  <option>Florida</option>
                   <option>Dhaka</option>
                 </select>
               </div>
-              <div class="form-group">
-                <label class="form-label">ZIP code</label>
-                <input type="text" class="form-control" required>
+              <div class="checkout-form-group" style="margin-bottom: 0;">
+                <label class="checkout-form-label">ZIP code</label>
+                <input type="text" class="checkout-input" required>
               </div>
-              <div class="form-group full-span">
-                <label class="form-label">Phone (for delivery updates)</label>
-                <input type="tel" class="form-control" required>
-              </div>
+            </div>
+
+            <div class="checkout-form-group" style="margin-bottom: 0;">
+              <label class="checkout-form-label">Phone</label>
+              <input type="tel" class="checkout-input" required>
             </div>
           </div>
 
-          <!-- Step 3: Delivery Method -->
-          <div class="checkout-section-card">
-            <div class="checkout-section-head">
-              <span class="checkout-badge-num">3</span>
-              <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--color-dark);">Delivery method</h3>
+          <!-- Step 3: Delivery (matches 15-Mobile-Checkout.png y=2150..2636) -->
+          <div class="checkout-card">
+            <div class="checkout-card-head">
+              <div class="checkout-card-title-wrap">
+                <span class="checkout-step-badge">3</span>
+                <h3 class="checkout-card-title">Delivery</h3>
+              </div>
             </div>
 
-            <label class="delivery-method-option selected">
-              <div style="display: flex; align-items: center; gap: 12px;">
-                <input type="radio" name="shipping_rate" checked style="accent-color: var(--color-accent);">
+            <label class="checkout-option-box selected" style="margin-bottom: 12px; height: 72px;">
+              <div class="checkout-radio-wrap">
+                <input type="radio" name="shipping_rate" class="checkout-radio" checked>
                 <div>
-                  <strong style="font-size: 0.95rem; color: var(--color-dark);">Standard</strong>
-                  <div style="font-size: 0.8rem; color: var(--color-text-muted);">3&ndash;5 business days</div>
+                  <div style="font-weight: 700; font-size: 0.95rem; color: #1F1219; margin-bottom: 2px;">Standard</div>
+                  <div style="font-size: 0.82rem; color: #6E5A63;">3–5 business days</div>
                 </div>
               </div>
-              <strong style="font-size: 0.95rem;">$4.99</strong>
+              <strong style="font-size: 0.95rem; color: #1F1219;">$4.99</strong>
             </label>
 
-            <label class="delivery-method-option">
-              <div style="display: flex; align-items: center; gap: 12px;">
-                <input type="radio" name="shipping_rate" style="accent-color: var(--color-accent);">
+            <label class="checkout-option-box" style="height: 74px;">
+              <div class="checkout-radio-wrap">
+                <input type="radio" name="shipping_rate" class="checkout-radio">
                 <div>
-                  <strong style="font-size: 0.95rem; color: var(--color-dark);">Express</strong>
-                  <div style="font-size: 0.8rem; color: var(--color-text-muted);">1&ndash;2 business days</div>
+                  <div style="font-weight: 700; font-size: 0.95rem; color: #1F1219; margin-bottom: 2px;">Express</div>
+                  <div style="font-size: 0.82rem; color: #6E5A63;">1–2 business days</div>
                 </div>
               </div>
-              <strong style="font-size: 0.95rem;">$9.99</strong>
-            </label>
-
-            <p style="font-size: 0.78rem; color: var(--color-text-muted); margin-top: 10px;">
-              Delivery times and rates are placeholders &mdash; set them in WooCommerce &rsaquo; Shipping zones.
-            </p>
-          </div>
-
-          <!-- Step 4: Payment -->
-          <div class="checkout-section-card">
-            <div class="checkout-section-head">
-              <span class="checkout-badge-num">4</span>
-              <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--color-dark);">Payment</h3>
-            </div>
-
-            <label class="delivery-method-option selected" style="margin-bottom: 16px;">
-              <div style="display: flex; align-items: center; gap: 10px;">
-                <input type="radio" name="payment_choice" checked style="accent-color: var(--color-accent);">
-                <strong style="font-size: 0.95rem;">Credit or debit card</strong>
-              </div>
-              <span style="font-size: 0.75rem; font-weight: 700; color: var(--color-text-muted);">VISA · MC · AMEX</span>
-            </label>
-
-            <div class="checkout-form-grid" style="margin-bottom: 16px;">
-              <div class="form-group full-span">
-                <label class="form-label">Card number</label>
-                <input type="text" class="form-control" placeholder="1234 1234 1234 1234">
-              </div>
-              <div class="form-group">
-                <label class="form-label">Expiry</label>
-                <input type="text" class="form-control" placeholder="MM / YY">
-              </div>
-              <div class="form-group">
-                <label class="form-label">Security code</label>
-                <input type="text" class="form-control" placeholder="CVC">
-              </div>
-            </div>
-
-            <label class="delivery-method-option" style="margin-bottom: 18px;">
-              <div style="display: flex; align-items: center; gap: 10px;">
-                <input type="radio" name="payment_choice" style="accent-color: var(--color-accent);">
-                <strong style="font-size: 0.95rem;">PayPal</strong>
-              </div>
-            </label>
-
-            <label class="custom-checkbox">
-              <input type="checkbox" checked>
-              <span style="font-size: 0.85rem;">Billing address same as shipping</span>
+              <strong style="font-size: 0.95rem; color: #1F1219;">$9.99</strong>
             </label>
           </div>
 
-          <!-- Place Order Button -->
-          <button type="submit" class="btn btn-accent btn-lg btn-block" style="padding: 16px; font-size: 1.15rem; margin-bottom: 16px;">
-            <span>&#128274;</span> Place order &mdash; $48.99
+          <!-- Step 4: Payment (matches 15-Mobile-Checkout.png y=2666..3420) -->
+          <div class="checkout-card">
+            <div class="checkout-card-head">
+              <div class="checkout-card-title-wrap">
+                <span class="checkout-step-badge">4</span>
+                <h3 class="checkout-card-title">Payment</h3>
+              </div>
+            </div>
+
+            <!-- Card Option Header (Selected box with #FFF7F8 bg, #1F1219 border) -->
+            <label class="checkout-option-box selected" style="margin-bottom: 16px; height: 52px;">
+              <div class="checkout-radio-wrap">
+                <input type="radio" name="payment_choice" class="checkout-radio" checked>
+                <strong style="font-size: 0.95rem; color: #1F1219;">Card</strong>
+              </div>
+              <span style="font-size: 0.72rem; font-weight: 700; color: #6E5A63; letter-spacing: 0.05em;">VISA · MC · AMEX</span>
+            </label>
+
+            <!-- Card Inputs (Directly below Card Option Header, on white card background) -->
+            <div class="checkout-form-group">
+              <label class="checkout-form-label">Card number</label>
+              <input type="text" class="checkout-input" placeholder="1234 1234 1234 1234">
+            </div>
+            <div class="checkout-row-2" style="margin-bottom: 16px;">
+              <div class="checkout-form-group" style="margin-bottom: 0;">
+                <label class="checkout-form-label">Expiry</label>
+                <input type="text" class="checkout-input" placeholder="MM / YY">
+              </div>
+              <div class="checkout-form-group" style="margin-bottom: 0;">
+                <label class="checkout-form-label">CVC</label>
+                <input type="text" class="checkout-input" placeholder="CVC">
+              </div>
+            </div>
+
+            <!-- PayPal Option Header (Unselected box with #FFFFFF bg, #EADBE0 border) -->
+            <label class="checkout-option-box" style="height: 54px;">
+              <div class="checkout-radio-wrap">
+                <input type="radio" name="payment_choice" class="checkout-radio">
+                <strong style="font-size: 0.95rem; color: #1F1219;">PayPal</strong>
+              </div>
+            </label>
+          </div>
+
+          <!-- Step 5: Order Totals Card (matches 15-Mobile-Checkout.png y=3450..3728) -->
+          <div class="checkout-card checkout-totals-card">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <span style="font-size: 0.92rem; color: #6E5A63;">Subtotal</span>
+              <strong style="font-size: 0.95rem; color: #1F1219;">$44.00</strong>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+              <span style="font-size: 0.92rem; color: #6E5A63;">Shipping</span>
+              <strong style="font-size: 0.95rem; color: #1F1219;">$4.99</strong>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: baseline; padding-top: 14px; border-top: 1px solid #F1E4E8;">
+              <span style="font-size: 1.2rem; font-weight: 800; color: #1F1219;">Total</span>
+              <span style="font-size: 1.75rem; font-weight: 800; color: #1F1219;">$48.99</span>
+            </div>
+          </div>
+
+          <!-- Place Order Button (matches 15-Mobile-Checkout.png y=3758..3870) -->
+          <button type="submit" class="checkout-place-order-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px; vertical-align: -2px;">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+            Place order &mdash; $48.99
           </button>
 
-          <p style="font-size: 0.78rem; color: var(--color-text-muted); text-align: center;">
-            By placing your order you agree to our <a href="terms.html" style="text-decoration: underline;">Terms &amp; Conditions</a> and <a href="privacy.html" style="text-decoration: underline;">Privacy Policy</a>.
+          <!-- Legal Notice (matches 15-Mobile-Checkout.png y=3906..3928) -->
+          <p class="checkout-legal-notice">
+            By placing your order you agree to our <a href="terms.html">Terms</a> and <a href="privacy.html">Privacy Policy</a>.
           </p>
         </form>
       </div>
 
-      <!-- Right Order Summary (matches 05-Desktop-Checkout.png) -->
-      <aside>
+      <!-- Right Order Summary for Desktop (matches 05-Desktop-Checkout.png) -->
+      <aside class="desktop-summary-aside" style="display: none;">
         <div class="order-summary-card" style="background: #FFF;">
           <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--color-border); padding-bottom: 16px;">
             <h2 class="summary-title" style="font-size: 1.25rem;">Your order</h2>
@@ -341,8 +432,8 @@
     </div>
   </div>
 
-  <!-- Minimal Footer -->
-  <footer style="text-align: center; padding: 40px 0; font-size: 0.82rem; color: var(--color-text-muted); border-top: 1px solid var(--color-border); margin-top: 40px;">
+  <!-- Minimal Footer for Desktop -->
+  <footer class="checkout-footer-nav" style="text-align: center; padding: 40px 0; font-size: 0.82rem; color: var(--color-text-muted); border-top: 1px solid var(--color-border); margin-top: 40px;">
     <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 12px;">
       <a href="contact.html">Shipping policy</a>
       <a href="contact.html">Returns</a>
@@ -354,4 +445,3 @@
 
 </body>
 </html>
-
