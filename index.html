@@ -221,6 +221,26 @@
           </a>
         </div>
       </div>
+      <!-- Mobile Subheader: Search Bar & Quick Category Chips (matches 10-Mobile-Home.png y=190..380) -->
+      <div class="mobile-subheader">
+        <form action="search.html" method="get" class="mobile-search-form">
+          <span class="search-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </span>
+          <input type="text" name="q" class="mobile-search-input" placeholder="Search serums, dryers...">
+        </form>
+        <div class="mobile-category-chips">
+          <a href="shop.html" class="chip active">Shop All</a>
+          <a href="shop.html" class="chip">Skincare</a>
+          <a href="shop.html" class="chip">Makeup</a>
+          <a href="shop.html" class="chip">Hair Care</a>
+          <a href="shop.html" class="chip">Personal Care</a>
+          <a href="shop.html" class="chip">Beauty Tools</a>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -503,13 +523,16 @@
           </div>
         </article>
       </div>
+      <div class="bestsellers-mobile-footer">
+        <a href="shop.html" class="btn btn-outline btn-block">View all bestsellers</a>
+      </div>
     </div>
   </section>
 
   <!-- Split Promo Feature Banners (matches 01-Desktop-Home.png) -->
   <section class="feature-split-section">
     <div class="container">
-      <div class="feature-split-grid">
+      <div class="feature-split-grid feature-grid">
         <!-- Lavender Card: Night Shift -->
         <div class="feature-card feature-card-lavender">
           <div class="feature-card-content" style="align-self: flex-start;"
@@ -617,7 +640,7 @@
         <a href="shop.html" class="section-link">Shop new in &rarr;</a>
       </div>
 
-      <div class="product-grid">
+      <div class="product-grid just-landed-grid">
         <!-- New Product 1 -->
         <article class="product-card">
           <div class="product-card-visual" style="background-color: var(--pastel-peach);">
@@ -856,8 +879,7 @@
         <div class="newsletter-content" style="width: calc(100% - 6rem);"
           data-calibrated="width: calc(100% - 6rem); (further -3rem width, total -6rem)">
           <h2 class="newsletter-title">Join the <em>Glow List</em></h2>
-          <p class="newsletter-desc">Early access to drops, routine tips from the journal and members-only offers. No
-            spam, unsubscribe anytime.</p>
+          <p class="newsletter-desc">Early access to drops, routine tips and members-only offers.<span class="newsletter-desc-extra"> No spam, unsubscribe anytime.</span></p>
         </div>
         <form action="#subscribed-modal" method="get" class="newsletter-form" style="transform: translateX(-4rem);"
           data-calibrated="transform: translateX(-4rem); (further -2rem to the left, total -4rem)">
