@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body class="cart-page">
 
   <!-- Top Announcement Bar -->
   <div class="announcement-bar">
@@ -206,18 +206,18 @@
             <span>Shipping</span>
             <span>Calculated at checkout</span>
           </div>
-          <div class="summary-row">
+          <div class="summary-row summary-tax-row">
             <span>Estimated tax</span>
             <span>&mdash;</span>
           </div>
 
           <!-- Coupon Code Input -->
-          <div style="margin: 2px 0;">
+          <div class="cart-coupon-box" style="margin: 2px 0;">
             <label
               style="display: block; font-size: 0.85rem; font-weight: 600; color: var(--color-dark); margin-bottom: 8px;">Coupon
               code</label>
             <div class="coupon-group">
-              <input type="text" placeholder="Enter code" class="coupon-input">
+              <input type="text" placeholder="Coupon code" class="coupon-input">
               <button type="button" class="btn-coupon-apply">Apply</button>
             </div>
           </div>
@@ -236,7 +236,7 @@
             <span>Secure checkout</span>
           </a>
 
-          <div
+          <div class="cart-or-pay-text"
             style="text-align: center; font-size: 0.78rem; color: var(--color-text-muted); position: relative; margin: 2px 0;">
             <span>or pay with</span>
           </div>
