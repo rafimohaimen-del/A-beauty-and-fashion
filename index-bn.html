@@ -23,15 +23,15 @@
   </style>
 </head>
 
-<body class="lang-bn">
+<body class="index-bn-page lang-bn">
 
   <!-- Top Announcement Bar (Bangla, matches 32-Bangla-Desktop-Home.png) -->
   <div class="announcement-bar" style="font-size: 0.7825rem;">
     <span>৳২,০০০+ অর্ডারে ফ্রি ডেলিভারি</span>
     <span class="announcement-sep" style="margin: 0 25px;">&#183;</span>
     <span>সারা দেশে ক্যাশ অন ডেলিভারি</span>
-    <span class="announcement-sep" style="margin: 0 25px;">&#183;</span>
-    <span>হেল্পলাইন: +৮৮০ ১৭০০-০০০০০০</span>
+    <span class="announcement-sep announcement-sep-desktop" style="margin: 0 25px;">&#183;</span>
+    <span class="announcement-helpline-desktop">হেল্পলাইন: +৮৮০ ১৭০০-০০০০০০</span>
   </div>
 
   <!-- Pure CSS Drawer Toggle Checkbox -->
@@ -215,9 +215,21 @@
               <line x1="3" y1="6" x2="21" y2="6"></line>
               <path d="M16 10a4 4 0 0 1-8 0"></path>
             </svg>
-            <span class="badge-count">2</span>
+            <span class="badge-count"><span class="badge-desktop">2</span><span class="badge-mobile" style="display: none;">২</span></span>
           </a>
         </div>
+      </div>
+      <!-- Mobile Subheader: Search Bar (matches 33-Bangla-Mobile-Home.png) -->
+      <div class="mobile-subheader mobile-bn-subheader">
+        <form action="search.html" method="get" class="mobile-search-form">
+          <span class="search-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </span>
+          <input type="text" name="q" class="mobile-search-input" placeholder="সিরাম, লিপস্টিক খুঁজুন...">
+        </form>
       </div>
     </div>
   </header>
@@ -277,8 +289,9 @@
             <img src="assets/images/hero-model.svg" alt="ক্যাম্পেইন মডেল" class="hero-model-img"
               style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); margin: auto; width: 62.92px; display: block;"
               data-calibrated="52px + 10% = 57.2px, + further 10% = 62.92px (62.4px); centered: top: 50%; left: 50%; transform: translate(-50%, -50%);">
-            <span class="hero-label-caption"
+            <span class="hero-label-caption hero-label-caption-desktop"
               style="left: 28px; right: auto; text-align: left; transform: translateX(-1rem);">ক্যাম্পেইন ছবি &mdash; জামদানি শাড়িতে মডেল, ঈদ গ্লো লুক</span>
+            <span class="hero-label-caption hero-label-caption-mobile" style="display: none;">জামদানি শাড়িতে মডেল — ঈদ লুক</span>
           </div>
 
           <div class="hero-glow-badge">
@@ -319,7 +332,11 @@
       style="width: calc(100% - 0.5rem); min-height: calc(96px + 1.2rem); padding-top: calc(24px + 0.6rem); padding-bottom: calc(24px + 0.6rem); margin-left: auto; margin-right: auto;"
       data-calibrated="height: +1.2rem; width: -0.5rem;">
       <div>
-        <h2 class="flash-sale-title">ফ্ল্যাশ সেল &mdash; ৮০% পর্যন্ত ছাড়</h2>
+        <h2 class="flash-sale-title">
+          <span class="desktop-flash-title">ফ্ল্যাশ সেল &mdash; ৮০% পর্যন্ত ছাড়</span>
+          <span class="mobile-flash-title" style="display: none;">ফ্ল্যাশ সেল</span>
+        </h2>
+        <span class="mobile-flash-badge" style="display: none;">৪০% পর্যন্ত ছাড়</span>
         <p style="font-size: 0.88rem; opacity: 0.9; margin-top: 4px;">সীমিত স্টক · শেষ হওয়ার আগেই সংগ্রহ করুন</p>
       </div>
 
@@ -338,7 +355,10 @@
         </div>
       </div>
 
-      <a href="shop.html" class="btn" style="background: #FFF; color: var(--color-dark); font-weight: 700;">অফার দেখুন &rarr;</a>
+      <a href="shop.html" class="btn flash-sale-action-btn" style="background: #FFF; color: var(--color-dark); font-weight: 700;">
+        <span class="desktop-btn-text">অফার দেখুন &rarr;</span>
+        <span class="mobile-btn-text" style="display: none;">দেখুন</span>
+      </a>
     </div>
   </section>
 
@@ -346,7 +366,10 @@
   <section class="category-section">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">ক্যাটাগরি অনুযায়ী <span style="color: var(--color-accent);">কেনাকাটা</span></h2>
+        <h2 class="section-title">
+          <span class="desktop-cat-title">ক্যাটাগরি অনুযায়ী <span style="color: var(--color-accent);">কেনাকাটা</span></span>
+          <span class="mobile-cat-title" style="display: none;">ক্যাটাগরি</span>
+        </h2>
         <a href="shop.html" class="section-link">সব দেখুন &rarr;</a>
       </div>
       <div class="category-grid" style="gap: 20px; justify-content: space-between;">
@@ -406,7 +429,10 @@
   <section class="products-section">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">এই সপ্তাহের <span style="color: var(--color-accent);">বেস্টসেলার</span></h2>
+        <h2 class="section-title">
+          <span class="desktop-bs-title">এই সপ্তাহের <span style="color: var(--color-accent);">বেস্টসেলার</span></span>
+          <span class="mobile-bs-title" style="display: none;">বেস্টসেলার</span>
+        </h2>
         <a href="shop.html" class="section-link">সব দেখুন &rarr;</a>
       </div>
 
@@ -560,7 +586,10 @@
   <section class="journal-section" id="journal">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">বিউটি <span style="color: var(--color-accent);">ব্লগ</span> থেকে</h2>
+        <h2 class="section-title">
+          <span class="desktop-journal-title">বিউটি <span style="color: var(--color-accent);">ব্লগ</span> থেকে</span>
+          <span class="mobile-journal-title" style="display: none;">বিউটি <span style="color: var(--color-accent);">ব্লগ</span></span>
+        </h2>
         <a href="about.html#journal" class="section-link">সব আর্টিকেল &rarr;</a>
       </div>
 
@@ -726,13 +755,19 @@
       </div>
 
       <div class="footer-bottom">
-        <div>&copy; ২০২৬ ABeauty &amp; Fashion · সর্বস্বত্ব সংরক্ষিত</div>
+        <div class="footer-copy-text">&copy; ২০২৬ ABeauty &amp; Fashion · সর্বস্বত্ব সংরক্ষিত</div>
         <div class="payment-methods-text">
           <span class="payment-pill">বিকাশ</span>
           <span class="payment-pill">নগদ</span>
           <span class="payment-pill">ভিসা</span>
           <span class="payment-pill">মাস্টারকার্ড</span>
           <span class="payment-pill">ক্যাশ অন ডেলিভারি</span>
+        </div>
+        <div class="mobile-bn-footer-payment" style="display: none;">
+          পেমেন্ট: বিকাশ · নগদ · কার্ড · ক্যাশ অন ডেলিভারি
+        </div>
+        <div class="mobile-bn-footer-copy" style="display: none;">
+          &copy; ২০২৬ ABeauty &amp; Fashion
         </div>
       </div>
     </div>
